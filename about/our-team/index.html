@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Our Team"
+description: "The research scientists, postdocs, PhD students, and staff of the Shepherd Research Lab."
+---
+
+<section class="section">
+  <div class="container">
+    <div style="text-align:center; max-width: 680px; margin: 0 auto 3rem;">
+      <h1 style="margin-bottom: 0.75rem;">Our Team</h1>
+      <p style="color: var(--gray-500);">The researchers, clinicians, and staff innovating cancer and metabolic-risk detection at SRL.</p>
+    </div>
+
+    <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+      {% for person in site.data.team %}
+      <div class="feature-card" style="text-align: center;">
+        {% if person.photo %}
+        <img src="{{ site.baseurl }}{{ person.photo }}" alt="{{ person.name }}" loading="lazy" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center top; border-radius: var(--radius-lg); margin-bottom: 1.25rem;">
+        {% endif %}
+        <h3 style="font-size: 1.05rem; margin-bottom: 0.35rem;">{{ person.name }}</h3>
+        <p style="color: var(--primary); font-weight: 600; font-size: 0.8rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;">{{ person.role }}</p>
+        <p style="font-size: 0.9rem; color: var(--gray-700);">{{ person.bio }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

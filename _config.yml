@@ -16,7 +16,7 @@ nav:
   - title: "About"
     url: "/about/"
   - title: "Team"
-    url: "/team/"
+    url: "/about/our-team/"
   - title: "Research"
     url: "/research/"
   - title: "Publications"
