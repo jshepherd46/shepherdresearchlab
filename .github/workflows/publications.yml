@@ -1,9 +1,9 @@
 name: Publications Pipeline
 
 on:
-  # Run weekly on Mondays at 8am UTC
+  # Run monthly on the 1st at 8am UTC
   schedule:
-    - cron: '0 8 * * 1'
+    - cron: '0 8 1 * *'
 
   # Manual trigger from GitHub Actions UI or via `gh workflow run publications.yml`
   workflow_dispatch:
