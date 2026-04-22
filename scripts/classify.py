@@ -66,7 +66,7 @@ Instructions:
 {{"tags": ["tag1", "tag2"], "confidence": "high/medium/low", "reasoning": "one sentence"}}"""
 
     message = client.messages.create(
-        model="claude-opus-4-6",
+        model="claude-sonnet-4-6",
         max_tokens=300,
         messages=[{"role": "user", "content": prompt}]
     )
