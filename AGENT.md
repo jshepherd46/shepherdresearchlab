@@ -12,23 +12,23 @@ This repository manages publications for the Shepherd Research Lab website.
 It is the canonical source of truth for all publications displayed at shepherdresearchlab.org.
 
 **The pipeline:**
-1. `publications.yaml` — master library of all publications with tags
+1. `_data/publications.yaml` — master library of all publications with tags (Jekyll auto-loads as `site.data.publications`)
 2. `tags.yaml` — the classification taxonomy (study tags, research areas, modalities, cohorts)
 3. `scripts/scraper.py` — finds new papers on OpenAlex (author A5069392685 / ORCID 0000-0003-2280-2541)
 4. `scripts/classify.py` — uses Claude API to propose tags for new papers
-5. `scripts/merge.py` — merges approved papers into publications.yaml
-6. `scripts/build_pubs.py` — generates HTML pages, RIS, and BibTeX from the library
+5. `scripts/merge.py` — merges approved papers into `_data/publications.yaml`
+6. `scripts/build_pubs.py` — generates RIS and BibTeX exports from the library. HTML rendering of the `/publications/` page is handled by Jekyll/Liquid directly from the data file (see `publications/index.md`).
 
 ---
 
 ## Tasks You Can Do Autonomously
 
 ### Add a new publication manually
-1. Open `publications.yaml`
+1. Open `_data/publications.yaml`
 2. Add the entry following the existing schema (key, title, authors, year, journal, doi, tags)
 3. Use `tags.yaml` as the tag reference — only use tags that exist there
-4. Run `python3 scripts/build_pubs.py` to verify it builds without errors
-5. Commit and push — the site will rebuild automatically
+4. Run `python3 scripts/build_pubs.py` to regenerate `publications/publications.ris` and `.bib`
+5. Commit `_data/publications.yaml` + `publications/publications.ris` + `publications/publications.bib` together — the site rebuilds automatically via GitHub Pages
 
 ### Run the discovery pipeline (local)
 ```bash
@@ -44,7 +44,7 @@ Discovery runs automatically on the **1st of each month at 8am UTC** via
 `.github/workflows/publications.yml`, and can be triggered manually from the
 Actions tab. The workflow runs `scraper → classify → merge --auto` in the
 runner, then opens a PR titled "📚 New publications — tags need review"
-containing the resulting `publications.yaml` diff. Review the tags in the
+containing the resulting `_data/publications.yaml` diff. Review the tags in the
 PR (edit inline if needed); merging triggers the site-build job.
 
 ### Check papers for a specific tag
@@ -52,11 +52,13 @@ PR (edit inline if needed); merging triggers the site-build job.
 python3 scripts/build_pubs.py --tag hipimr
 python3 scripts/build_pubs.py --tag body-composition
 ```
+(Prints matching papers; does not write files.)
 
-### Regenerate RIS/BibTeX exports only
+### Regenerate RIS/BibTeX exports
 ```bash
-python3 scripts/build_pubs.py --ris-only
+python3 scripts/build_pubs.py
 ```
+Writes `publications/publications.ris` and `publications/publications.bib`. The Jekyll site picks them up on the next build; commit them alongside any `_data/publications.yaml` changes so the download links stay in sync.
 
 ---
 
@@ -82,7 +84,7 @@ python3 scripts/build_pubs.py --ris-only
 
 ---
 
-## Data Schema for publications.yaml
+## Data Schema for _data/publications.yaml
 
 ```yaml
 - key: lastname-year-shortword        # unique identifier, lowercase-hyphenated
@@ -108,10 +110,11 @@ python3 scripts/build_pubs.py --ris-only
 
 ## What NOT to Do
 
-- Do not delete `publications_backup_*.yaml` files for 30 days
-- Do not modify `publications.yaml` without running build_pubs.py to verify
+- Do not delete `publications_backup_*.yaml` files (kept in repo root, gitignored) for 30 days
+- Do not modify `_data/publications.yaml` without running `build_pubs.py` afterward to keep the RIS/BibTeX exports in sync
 - Do not push directly to main if you have unreviewed papers — open a PR instead
-- Do not change the RIS or BibTeX output files directly — they are generated artifacts
+- Do not change the RIS or BibTeX output files directly — they are generated artifacts (regenerate with `build_pubs.py`)
+- Do not add `<!-- exclude -->` style comments — use the `exclude: true` YAML field for tombstoned/misattributed entries (the Liquid template and Python exports both honor it)
 
 ---
 

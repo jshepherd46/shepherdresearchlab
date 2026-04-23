@@ -13,7 +13,7 @@ import sys
 import os
 from datetime import datetime
 
-PUBLICATIONS_FILE = "publications.yaml"
+PUBLICATIONS_FILE = "_data/publications.yaml"
 CLASSIFIED_FILE = "classified_papers.yaml"
 BACKUP_FILE = f"publications_backup_{datetime.today().strftime('%Y%m%d')}.yaml"
 

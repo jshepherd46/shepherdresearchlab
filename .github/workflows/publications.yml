@@ -8,18 +8,11 @@ on:
   # Manual trigger from GitHub Actions UI or via `gh workflow run publications.yml`
   workflow_dispatch:
 
-  # Rebuild site on every push that changes publications.yaml / tags.yaml / builder
-  push:
-    branches: [main]
-    paths:
-      - 'publications.yaml'
-      - 'tags.yaml'
-      - 'scripts/build_pubs.py'
-
 jobs:
   discover-classify-propose:
-    # Only run discovery on scheduled/manual runs, not on push
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    # Scrape OpenAlex, classify, merge, regenerate exports, open PR.
+    # GitHub Pages handles site deploy automatically on merge — no separate
+    # deploy step in this workflow.
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -45,55 +38,36 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 scripts/classify.py
 
-      - name: Merge classified papers into publications.yaml
+      - name: Merge classified papers into _data/publications.yaml
         if: hashFiles('classified_papers.yaml') != ''
         run: python3 scripts/merge.py --auto
 
-      - name: Open PR with publications.yaml diff for review
-        if: hashFiles('publications.yaml') != ''
+      - name: Regenerate RIS/BibTeX exports
+        if: hashFiles('_data/publications.yaml') != ''
+        run: python3 scripts/build_pubs.py
+
+      - name: Open PR with updated publications data + exports
+        if: hashFiles('_data/publications.yaml') != ''
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: new-publications
           delete-branch: true
-          add-paths: publications.yaml
+          add-paths: |
+            _data/publications.yaml
+            publications/publications.ris
+            publications/publications.bib
           commit-message: "chore: add newly discovered publications (auto-tagged, unreviewed)"
           title: "📚 New publications — tags need review"
           body: |
             The publications pipeline found new papers on OpenAlex and auto-tagged them.
 
-            **Action required:** Review `publications.yaml`. For each new entry:
-              - Verify the tags match the paper's content (tags are auto-proposed, not human-reviewed)
-              - Remove any mis-attributed papers (OpenAlex author disambiguation is imperfect)
-              - Adjust tags directly in this PR if needed
+            **Action required:** Review `_data/publications.yaml`. For each new entry:
+              - Verify the auto-proposed tags match the paper's content
+              - Tombstone misattributed entries by setting `exclude: true` and clearing tags (see AGENT.md)
+              - Adjust tags inline in this PR if needed
 
-            Merging this PR will trigger a site rebuild with the new papers.
+            The RIS and BibTeX exports in `publications/` have been regenerated to match.
+
+            Merging this PR will trigger the site rebuild via GitHub Pages.
           labels: publications, needs-review
-
-  build-site:
-    # Rebuild site when publications.yaml / tags.yaml / build_pubs.py change on main
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install pyyaml
-
-      - name: Build publication pages and exports
-        run: python3 scripts/build_pubs.py
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          keep_files: true

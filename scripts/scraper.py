@@ -29,7 +29,7 @@ import yaml
 AUTHOR_ID = "A5069392685"               # John Shepherd, confirmed by ORCID + UH Mānoa affiliation
 ORCID = "0000-0003-2280-2541"
 OPENALEX_MAILTO = os.environ.get("OPENALEX_MAILTO", "jshepherd46@gmail.com")
-PUBLICATIONS_FILE = "publications.yaml"
+PUBLICATIONS_FILE = "_data/publications.yaml"
 NEW_PAPERS_FILE = "new_papers_staging.yaml"
 PAGE_SIZE = 200
 
