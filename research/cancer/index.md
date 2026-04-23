@@ -60,3 +60,16 @@ Evaluated the iBreastExam's effectiveness as an early-detection tool among Pacif
 
   </div>
 </section>
+
+<section class="section section--alt">
+  <div class="container" markdown="1" style="max-width: 820px;">
+
+## Publications
+
+Published work spanning breast density, cancer-screening methods, and cancer risk modeling.
+
+[Cancer publications →]({{ site.baseurl }}/publications/cancer/){: .btn .btn-primary}
+[All publications →]({{ site.baseurl }}/publications/){: .btn .btn-outline-primary}
+
+  </div>
+</section>

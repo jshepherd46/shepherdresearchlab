@@ -9,46 +9,11 @@ description: "Peer-reviewed publications from the Shepherd Research Lab — rend
 
 # Publications
 
-{% assign active_pubs = site.data.publications | where_exp: "p", "p.exclude != true" %}
-{% assign pub_count = active_pubs | size %}
+{% assign filtered = site.data.publications | where_exp: "p", "p.exclude != true" %}
 
-{% if pub_count > 0 %}
+Browse by topic: [AI for Health]({{ site.baseurl }}/publications/ai/) · [Body Composition]({{ site.baseurl }}/publications/body-composition/) · [Cancer]({{ site.baseurl }}/publications/cancer/)
 
-{{ pub_count }} publication{% if pub_count != 1 %}s{% endif %} · sorted by year, newest first.
-
-<p><a href="{{ site.baseurl }}/publications/publications.ris" download class="btn btn-outline-primary">⬇ RIS (EndNote / Zotero)</a> &nbsp; <a href="{{ site.baseurl }}/publications/publications.bib" download class="btn btn-outline-primary">⬇ BibTeX</a></p>
-
-{% assign sorted_pubs = active_pubs | sort: "year" | reverse %}
-{% assign years = sorted_pubs | map: "year" | uniq %}
-
-<nav class="pub-years" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 2rem 0;">
-{% for y in years %}<a href="#y{{ y }}" style="padding: 0.35rem 0.8rem; border: 1px solid var(--gray-300); border-radius: 100px; font-size: 0.85rem; text-decoration: none; color: var(--gray-700); font-weight: 600;">{{ y }}</a>{% endfor %}
-</nav>
-
-{% for y in years %}
-<section id="y{{ y }}" style="margin-top: 2.5rem;">
-<h2 style="border-bottom: 2px solid var(--primary); padding-bottom: 0.4rem;">{{ y }}</h2>
-
-{% assign year_pubs = sorted_pubs | where: "year", y %}
-{% for pub in year_pubs %}
-<article class="pub-entry" style="padding: 1rem 0; border-bottom: 1px solid var(--gray-300);">
-<div style="font-weight: 600; margin-bottom: 0.2rem;">{{ pub.title }}</div>
-<div style="color: var(--gray-700); font-size: 0.9rem; margin-bottom: 0.2rem;">{% assign authors = pub.authors | split: ", " %}{% for a in authors %}{% if a contains "Shepherd" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
-{% if pub.journal %}<div style="color: var(--gray-500); font-size: 0.9rem;"><em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}{% if pub.year %} ({{ pub.year }}){% endif %}</div>{% endif %}
-{% if pub.doi %}<div style="font-size: 0.85rem; margin-top: 0.25rem;"><a href="https://doi.org/{{ pub.doi | remove: 'https://doi.org/' }}" target="_blank" rel="noopener">DOI: {{ pub.doi | remove: 'https://doi.org/' }}</a></div>{% endif %}
-{% if pub.tags.size > 0 %}<div style="margin-top: 0.4rem;">{% for tag in pub.tags %}<span style="display: inline-block; background: var(--primary-light); color: var(--primary-dark); font-size: 0.72rem; padding: 2px 8px; border-radius: 3px; margin-right: 4px; margin-bottom: 2px;">{{ tag }}</span>{% endfor %}</div>{% endif %}
-</article>
-{% endfor %}
-</section>
-{% endfor %}
-
-{% else %}
-
-The full publications list is regenerated each month from our automated pipeline — OpenAlex discovery, Claude-assisted classification, and exports to RIS and BibTeX — and will appear here once the first pipeline run completes.
-
-In the meantime, see the [homepage]({{ site.baseurl }}/) for three recent representative papers. Pipeline technical details live in `AGENT.md` in the repo.
-
-{% endif %}
+{% include publications-list.html entries=filtered show_downloads=true empty_message="The full publications list is regenerated each month from our automated pipeline — OpenAlex discovery, Claude-assisted classification, and exports to RIS and BibTeX — and will appear here once the first pipeline run completes." %}
 
 </div>
 </section>

@@ -47,7 +47,8 @@ Examines computer-aided diagnostic systems and lesion-composition analysis in di
 
 Recent AI/ML work from the lab spans breast-lesion detection in ultrasound images, mammographic breast-density assessment, mortality prediction from DXA imaging, and skin-cancer diagnosis in multiethnic populations.
 
-[Full publications list →]({{ site.baseurl }}/publications/){: .btn .btn-outline-primary}
+[AI for Health publications →]({{ site.baseurl }}/publications/ai/){: .btn .btn-primary}
+[All publications →]({{ site.baseurl }}/publications/){: .btn .btn-outline-primary}
 
   </div>
 </section>

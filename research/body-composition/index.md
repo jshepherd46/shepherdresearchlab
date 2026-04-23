@@ -48,7 +48,8 @@ Addresses the physiological challenges of long-duration spaceflight, including d
 
 The lab has published extensively on body-composition assessment — including 3D optical-imaging accuracy, pediatric populations, eating disorders, smartphone-based muscle prediction, and multicompartment body-composition models in cancer patients.
 
-[Full publications list →]({{ site.baseurl }}/publications/){: .btn .btn-outline-primary}
+[Body Composition publications →]({{ site.baseurl }}/publications/body-composition/){: .btn .btn-primary}
+[All publications →]({{ site.baseurl }}/publications/){: .btn .btn-outline-primary}
 
   </div>
 </section>
