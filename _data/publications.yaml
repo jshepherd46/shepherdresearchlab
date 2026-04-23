@@ -496,12 +496,14 @@
   source_url: https://doi.org/10.1053/j.jvca.2025.09.013
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviwed
   tag_confidence: high
   tag_reasoning: This paper about a 'phantom mass in the transverse sinus' is a cardiothoracic/vascular
     anesthesia case report with no relevance to the Shepherd Research Lab's focus
     areas of breast imaging, body composition, cancer screening, AI, or Pacific Islander
     health disparities; the Shepherd co-author is likely a different individual.
+  exclude: true
+    
 
 - key: bunnell-2025-deep
   title: Deep Learning Enables Large-Scale Shape and Appearance Modeling in Total-Body
@@ -554,6 +556,8 @@
     and Lombrosian theory in mid-20th century United States, with no relevance to
     cancer research, body composition, imaging, AI, or any of the Shepherd Research
     Lab's scientific focus areas.
+  exclude: true
+
 
 - key: bennett-2024-variations
   title: Variations in bioelectrical impedance devices impact raw measures comparisons
@@ -648,13 +652,15 @@
   - metabolic-health
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (medium confidence) - please review
+  notes: AUTO-TAGGED (medium confidence) manually reviwed
   tag_confidence: medium
   tag_reasoning: This GWAS paper examines genetic determinants of pubertal height
     growth and their shared heritability with adult health outcomes including glycemic,
     cardiac, and respiratory traits, which relates to body composition and metabolic
     health research areas; notably, co-author J. Shepherd is listed, suggesting a
     connection to the Shepherd Research Lab.
+  exclude: true
+    
 
 - key: bennett-2024-advancing
   title: 'Advancing body composition assessment in patients with cancer: First comparisons
@@ -934,12 +940,14 @@
   - metabolic-health
   - bcepem
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper uses 3D optical body scanning to measure trunk-to-leg
     volume and appendicular lean mass for disease risk identification, directly aligning
     with the Shape Up! study's focus on 3D optical scanning and body composition,
     as well as the broader body composition and metabolic health research themes.
+  exclude: false
+
 
 - key: merritt-2024-dietary
   title: 'Dietary intake and visceral adiposity in older adults: The Multiethnic Cohort
@@ -962,12 +970,14 @@
   - metabolic-health
   - health-equity
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper examines dietary intake and visceral adiposity in older
     adults from the Multiethnic Cohort Adiposity Phenotype study, directly relating
     to body composition measurement and metabolic health outcomes in a diverse/multiethnic
     population.
+  exclude: false
+    
 
 - key: sniatynski-2024-dirac
   title: 'The DIRAC framework: Geometric structure underlies roles of and in combining
@@ -993,7 +1003,7 @@
   - risk-modeling
   - xai
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper presents the DIRAC framework for combining classifiers/ranking
     systems, focusing on accuracy and diversity as geometric factors—a methodological
@@ -1026,11 +1036,13 @@
   - body-composition
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper examines trace metals and breast density measured by DXA
     in adolescent Chilean girls, directly relevant to breast density measurement,
     DXA methodology, and breast cancer risk modeling during puberty.
+  exclude: false
+
 
 - key: valdez-2024-performance
   title: Performance of Progressive Generations of GPT on an Exam Designed for Certifying
@@ -1056,7 +1068,7 @@
   - dxa
   - body-composition
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper evaluates GPT/LLM performance on the Certified Clinical
     Densitometrist (CCD) exam, directly relating to AI capabilities in DXA/densitometry
@@ -1089,13 +1101,15 @@
   - dxa
   - impact
   added: '2026-04-23'
-  notes: AUTO-TAGGED (medium confidence) - please review
+  notes: AUTO-TAGGED (medium confidence) manually reviewed
   tag_confidence: medium
   tag_reasoning: This HDLS2 protocol paper examines intermittent vs. continuous energy
     restriction on visceral fat in an ethnicity-focused randomized trial led by Shepherd
     lab investigators, involving body composition measurement (likely DXA for visceral
     fat assessment) and addressing obesity-cancer links in ethnic/Pacific Islander
     groups, with potential connection to the IMPACT cooperative agreement study.
+  exclude: false
+    
 
 - key: lloyd-2024-prospective
   title: The Prospective Association between Early Life Growth and Breast Density
@@ -1124,7 +1138,7 @@
   - risk-modeling
   - optical-scan
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper investigates the association between early-life growth
     and breast density measured via Optical Breast Spectroscopy (OBS) and DXA in the
@@ -1159,7 +1173,7 @@
   - phanes
   - shape-up
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper evaluates 3D optical imaging for body composition assessment
     in isolated/extreme environments (space simulation and Antarctic expeditions),
@@ -1188,13 +1202,15 @@
   source_url: https://doi.org/10.1136/jnis-2024-snis.131
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper is about middle meningeal artery embolization for chronic
     subdural hematoma using PVA particles, which is an interventional neuroradiology/neurosurgery
     topic completely unrelated to any of the Shepherd Research Lab's focus areas (breast
     imaging, body composition, cancer screening, AI for medical imaging, Pacific Islander
     health disparities, etc.).
+  exclude: true
+
 
 - key: mccarthy-2024-accurate
   title: Accurate prediction of three-dimensional humanoid avatars for anthropometric
@@ -1223,7 +1239,7 @@
   - shape-up
   - metabolic-health
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper describes predicting 3D avatars/body representations from
     demographic and physical characteristics using manifold regression algorithms
@@ -1250,7 +1266,7 @@
   - breast-density
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper examines associations between one-carbon metabolism vitamins
     and breast density in young women, directly relating to breast density measurement
@@ -1279,7 +1295,7 @@
   - dxa
   - radiomics
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper uses 3D convolutional deep learning to estimate body composition
     from whole-body 3D morphology (optical scanning), directly aligning with the Shape
@@ -1313,7 +1329,7 @@
   - makawalu
   - pacificfed
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This systematic review directly evaluates AI-enhanced breast ultrasound
     for cancer screening in low-resource environments (including USAPI), aligning
@@ -1342,7 +1358,7 @@
   - body-composition
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This paper examines associations between one-carbon metabolism-related
     vitamin intakes and breast density (ADBV - absolute dense breast volume) in young
@@ -1373,7 +1389,7 @@
   - risk-modeling
   - mammography
   added: '2026-04-23'
-  notes: AUTO-TAGGED (medium confidence) - please review
+  notes: AUTO-TAGGED (medium confidence) ok
   tag_confidence: medium
   tag_reasoning: This paper examines associations between one-carbon metabolism vitamins
     (folate, B vitamins) and breast density in young women, directly relating to breast
@@ -1398,7 +1414,7 @@
   - mammography
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (medium confidence) - please review
+  notes: AUTO-TAGGED (medium confidence) ok
   tag_confidence: medium
   tag_reasoning: This paper examines associations between one-carbon metabolism vitamins
     and breast density among young women, directly relating to breast density measurement
@@ -1426,7 +1442,7 @@
   - mammography
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This paper examines associations between one-carbon metabolism-related
     vitamin intakes and breast density (ADBV - absolute dense breast volume) in young
@@ -1453,7 +1469,7 @@
   - mammography
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This paper examines associations between one-carbon metabolism-related
     vitamin intakes and breast density (specifically volume-based density measures
@@ -1481,7 +1497,7 @@
   - mammography
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This paper examines associations between one-carbon metabolism-related
     vitamin intakes and breast density (ANDBV) in young women across pubertal stages,
@@ -1508,7 +1524,7 @@
   - mammography
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This paper examines associations between one-carbon metabolism–related
     vitamin intakes and breast density (ANDBV) in young women, directly relating to
@@ -1535,7 +1551,7 @@
   - risk-modeling
   - mammography
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This supplementary table from a 2024 paper examines associations
     between one-carbon metabolism-related vitamin intakes and breast density (ADBV
@@ -1563,7 +1579,7 @@
   - breast-density
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This supplementary table from a 2024 paper examines associations
     between one-carbon metabolism-related vitamin intakes and breast density (ADBV)
@@ -1591,7 +1607,7 @@
   - mammography
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) ok
   tag_confidence: high
   tag_reasoning: This paper examines associations between one-carbon metabolism-related
     vitamin intakes and breast density (ADBV - absolute dense breast volume) among
@@ -1657,8 +1673,7 @@
   - cancer-screening
   - breast-density
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
-  tag_confidence: high
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_reasoning: This paper examines breast cancer incidence in Native Hawaiians using
     the Multiethnic Cohort, focusing on ethnic admixture as a risk factor, directly
     relevant to health equity in NHPI populations and cancer risk modeling.
@@ -1696,7 +1711,7 @@
   - body-composition
   - shape-up
   added: '2026-04-23'
-  notes: AUTO-TAGGED (low confidence) - please review
+  notes: AUTO-TAGGED (low confidence) manually reviewed
   tag_confidence: low
   tag_reasoning: This is an author correction notice for a genome-wide association
     study of pubertal height growth and adult health outcomes; James Shepherd appears
@@ -17501,6 +17516,7 @@
   tag_reasoning: This 1999 paper on music and cultural theory published in a sociology
     journal has no relevance to the Shepherd Research Lab's focus areas of cancer,
     body composition, medical imaging, or health equity research.
+  exclude: true
 
 - key: shepherd-1999-reporting
   title: 'Reporting of bone mineral density values as T-scores or Z-scores: Comment
@@ -17520,7 +17536,7 @@
   - dxa-qc
   - body-composition
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: manually reviewed
   tag_confidence: high
   tag_reasoning: This letter/comment concerns the reporting of bone mineral density
     values as T-scores or Z-scores from DXA measurements, directly relevant to DXA
@@ -17570,11 +17586,9 @@
   added: '2026-04-23'
   notes: AUTO-TAGGED (high confidence) - please review
   tag_confidence: high
-  tag_reasoning: This 1998 paper on SSRI-associated hyponatraemia is a clinical psychiatry/pharmacology
-    publication with no relevance to any of the Shepherd Research Lab's focus areas
-    including breast imaging, body composition, cancer screening, AI, or Pacific Islander
-    health equity.
-
+  tag_reasoning: manually reviewed and found not to be valid
+  exclude: true
+  
 - key: shepherd-1997-study
   title: Study of afterglow in x-ray phosphors for use on fast-framing charge-coupled
     device detectors
@@ -17597,7 +17611,7 @@
   tags:
   - mammography
   added: '2026-04-23'
-  notes: AUTO-TAGGED (medium confidence) - please review
+  notes: manually reviewed
   tag_confidence: medium
   tag_reasoning: This 1997 paper by Shepherd characterizes x-ray phosphor afterglow/persistence
     properties for fast-framing CCD detectors, which is relevant to x-ray imaging
@@ -17626,7 +17640,7 @@
   source_url: https://doi.org/10.1109/23.603783
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) 
   tag_confidence: high
   tag_reasoning: This 1997 paper describes hardware development of a pixel array detector
     for X-ray diffraction studies, with no relevance to any of the Shepherd Research
@@ -17707,6 +17721,7 @@
   tag_reasoning: This 1995 book review/notes entry about rock and popular music politics
     and institutions has no relevance to any of the Shepherd Research Lab's cancer,
     imaging, body composition, or health equity research areas.
+  exclude: true
 
 - key: barna-1995-development
   title: Development of a fast pixel array detector for use in microsecond time-resolved
@@ -17946,12 +17961,13 @@
   source_url: https://doi.org/10.1080/02642068700000027
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: manually reviewed
   tag_confidence: high
   tag_reasoning: This 1987 book review published in the Service Industries Journal
     by 'Shepherd J' has no relevance to the Shepherd Research Lab's scientific domains
     including breast imaging, body composition, cancer screening, AI, or Pacific Islander
     health.
+  exclude: true
 
 - key: shepherd-1986-big
   title: 'Big Sounds from Small Peoples: The Music Industry in Small Countries'
@@ -17967,12 +17983,14 @@
   source_url: https://doi.org/10.2307/851852
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper is about the music industry in small countries, published
     in Ethnomusicology — it has no relevance to cancer research, body composition,
     medical imaging, or any topic studied by the Shepherd Research Lab at UH Cancer
     Center.
+  exclude: true
+
 
 - key: shepherd-1986-accounting
   title: 'Accounting for Aggression: Perspectives on Aggression and Violence, Gerda
@@ -17994,6 +18012,7 @@
   tag_reasoning: This is a 1986 book review of a psychology text on aggression and
     violence, completely unrelated to the Shepherd Research Lab's focus areas of cancer
     imaging, body composition, breast density, or Pacific Islander health.
+  exclude: true
 
 - key: shepherd-1985-smart
   title: ‘The Smart of the Knife’ — Early Anaesthesia in the Services
@@ -18009,12 +18028,13 @@
   source_url: https://doi.org/10.1136/jramc-131-02-11
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviwed
   tag_confidence: high
   tag_reasoning: This 1985 paper by J Shepherd in the Journal of the Royal Army Medical
     Corps about early anaesthesia history has no relevance to any of the Shepherd
     Research Lab's current research areas at the University of Hawaii Cancer Center
     — it is a historical/military medicine article by a different Shepherd author.
+  exclude: true
 
 - key: lamb-1983-lighter
   title: Lighter Music
@@ -18030,11 +18050,12 @@
   source_url: https://doi.org/10.2307/961706
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: manually reviwed and excluded
   tag_confidence: high
   tag_reasoning: This 1983 publication in The Musical Times about 'Lighter Music'
     is a musicology paper with no relevance to cancer research, body composition,
     medical imaging, or any of the Shepherd Research Lab's scientific domains.
+  exclude: true
 
 - key: davies-1981-li
   title: LI Peiving and remembering faces
@@ -18050,12 +18071,13 @@
   source_url: http://ci.nii.ac.jp/ncid/BA00418664
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: manually reviwed
   tag_confidence: high
   tag_reasoning: This 1981 book chapter about perceiving and remembering faces has
     no relevance to any of the Shepherd Research Lab's cancer, imaging, body composition,
     or Pacific Islander health research areas.
-
+  exclude: true
+  
 - key: davies-1979-effects
   title: Effects of interpolated mugshot exposure on accuracy of eyewitness identification.
   authors: Davies G, Shepherd J, Ellis HD

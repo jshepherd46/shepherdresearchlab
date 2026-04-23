@@ -425,21 +425,6 @@ KW  - risk-modeling
 ER  - 
 
 TY  - JOUR
-TI  - The Phantom Mass in the Transverse Sinus
-AU  - Katunaric B
-AU  - Shepherd J
-AU  - Duvall L
-AU  - Boettcher BT
-PY  - 2025
-JO  - Journal of Cardiothoracic and Vascular Anesthesia
-VL  - 40
-SP  - 394
-EP  - 396
-DO  - 10.1053/j.jvca.2025.09.013
-UR  - https://doi.org/10.1053/j.jvca.2025.09.013
-ER  - 
-
-TY  - JOUR
 TI  - Deep Learning Enables Large-Scale Shape and Appearance Modeling in Total-Body DXA Imaging
 AU  - Bunnell A
 AU  - Cataldi D
@@ -462,16 +447,6 @@ KW  - dxa
 KW  - ai
 KW  - radiomics
 KW  - shape-up
-ER  - 
-
-TY  - GEN
-TI  - Criminal Somatotypes and Ambivalent Lombrosianism in the United States, c . 1940–60
-AU  - Shepherd J
-PY  - 2025
-SP  - 245
-EP  - 258
-DO  - 10.5040/9781350577947.ch-018
-UR  - https://doi.org/10.5040/9781350577947.ch-018
 ER  - 
 
 TY  - JOUR
@@ -513,120 +488,6 @@ KW  - body-composition
 KW  - metabolic-health
 KW  - health-equity
 KW  - bcepem
-ER  - 
-
-TY  - JOUR
-TI  - Trans-ancestral genome-wide association study of longitudinal pubertal height growth and shared heritability with adult health outcomes
-AU  - Bradfield JP
-AU  - Kember RL
-AU  - Ulrich A
-AU  - Balkhiyarova Z
-AU  - Alyass A
-AU  - Aris IM
-AU  - Bell JA
-AU  - Broadaway KA
-AU  - Chen Z
-AU  - Chai JF
-AU  - Davies NM
-AU  - Fernández‐Orth D
-AU  - Bustamante M
-AU  - Fore R
-AU  - Ganguli A
-AU  - Heiskala A
-AU  - Hottenga J
-AU  - Íñiguez C
-AU  - Kobes S
-AU  - Leinonen JT
-AU  - Lowry E
-AU  - Lyytikäinen L
-AU  - Mahajan A
-AU  - Pitkänen N
-AU  - Schnurr TM
-AU  - Have CT
-AU  - Strachan DP
-AU  - Thiering E
-AU  - Vogelezang S
-AU  - Wade KH
-AU  - Wang CA
-AU  - Wong A
-AU  - Holm LA
-AU  - Chesi A
-AU  - Choong CS
-AU  - Cruz M
-AU  - Elliott P
-AU  - Franks S
-AU  - Frithioff‐Bøjsøe C
-AU  - Gauderman WJ
-AU  - Glessner J
-AU  - Gilsanz V
-AU  - Griesman K
-AU  - Hanson RL
-AU  - Kaakinen M
-AU  - Kalkwarf HJ
-AU  - Kelly A
-AU  - Kindler JM
-AU  - Kähönen M
-AU  - Lança C
-AU  - Lappe JM
-AU  - Lee S
-AU  - McCormack SE
-AU  - Mentch F
-AU  - Mitchell JA
-AU  - Mononen N
-AU  - Niinikoski H
-AU  - Oken E
-AU  - Pahkala K
-AU  - Sim X
-AU  - Teo Y
-AU  - Baier LJ
-AU  - Beijsterveldt TV
-AU  - Adair LS
-AU  - Boomsma DI
-AU  - Geus EJCD
-AU  - Guxens M
-AU  - Eriksson JG
-AU  - Felix JF
-AU  - Gilliland FD
-AU  - BioBank PM
-AU  - Hansen T
-AU  - Hardy R
-AU  - Hivert M
-AU  - Holm J
-AU  - Jaddoe VWV
-AU  - Järvelin M
-AU  - Lehtimäki T
-AU  - Mackey DA
-AU  - Meyre D
-AU  - Mohlke KL
-AU  - Mykkänen J
-AU  - Oberfield SE
-AU  - Pennell CE
-AU  - Perry JRB
-AU  - Raitakari OT
-AU  - Rivadeneira F
-AU  - Saw S
-AU  - Sebért S
-AU  - Shepherd J
-AU  - Standl M
-AU  - Sørensen TIA
-AU  - Timpson NJ
-AU  - Torrent M
-AU  - Willemsen G
-AU  - Hyppönen E
-AU  - Power C
-AU  - McCarthy MI
-AU  - Freathy RM
-AU  - Widén E
-PY  - 2024
-JO  - Genome biology
-VL  - 25
-SP  - 22
-DO  - 10.1186/s13059-023-03136-z
-UR  - https://doi.org/10.1186/s13059-023-03136-z
-AB  - We report novel genetic associations with the tempo of pubertal growth and find that genetic determinants of growth are correlated with reproductive, glycemic, respiratory, and cardiac traits in adulthood. These results aid in identifying specific growth trajectories impacting lifelong health and show that there may not be a single "optimal" pubertal growth pattern.
-KW  - body-composition
-KW  - metabolic-health
-KW  - risk-modeling
 ER  - 
 
 TY  - JOUR
@@ -1022,27 +883,6 @@ KW  - optical-scan
 KW  - dxa
 KW  - phanes
 KW  - shape-up
-ER  - 
-
-TY  - GEN
-TI  - E-026 Does size really matter? Comparing PVA particle size in MMA embolization
-AU  - Shah V
-AU  - Shepherd J
-AU  - Azghadi A
-AU  - Nguyen Q
-AU  - Defta D
-AU  - Sirinit J
-AU  - Hika B
-AU  - Huerta M
-AU  - Amin‐Hanjani S
-AU  - Ray A
-AU  - Hu Y
-PY  - 2024
-SP  - A95.1
-EP  - A95
-DO  - 10.1136/jnis-2024-snis.131
-UR  - https://doi.org/10.1136/jnis-2024-snis.131
-AB  - <h3>Introduction/Purpose</h3> The efficacy of middle meningeal artery (MMA) embolization for chronic subdural hematoma (cSDH) has been demonstrated. The initial technique was described using polyvinyl alcohol (PVA) particles, but over time, other embolic agents have been applied. Comparative studies have shown polyvinyl alcohol (PVA) particles are as safe and efficacious as liquid embolisate, though a comparison of particle size has yet to be done. The theory behind particle embolization of the ...
 ER  - 
 
 TY  - JOUR
@@ -14296,19 +14136,6 @@ KW  - dxa-qc
 ER  - 
 
 TY  - JOUR
-TI  - Music and Cultural Theory
-AU  - Fisher AL
-AU  - Shepherd J
-AU  - Wicke P
-PY  - 1999
-JO  - The Canadian Journal of Sociology
-VL  - 24
-SP  - 141
-DO  - 10.2307/3341481
-UR  - https://doi.org/10.2307/3341481
-ER  - 
-
-TY  - JOUR
 TI  - Reporting of bone mineral density values as T-scores or Z-scores: Comment on the article by Sowers et al
 AU  - Shepherd J
 AU  - Prevrhal S
@@ -14334,20 +14161,6 @@ SP  - 2706
 DO  - 10.1118/1.598820
 UR  - https://doi.org/10.1118/1.598820
 KW  - mammography
-ER  - 
-
-TY  - JOUR
-TI  - Hyponatraemia Associated with the Use of Selective Serotonin Re-Uptake Inhibitors
-AU  - Strachan J
-AU  - Shepherd J
-PY  - 1998
-JO  - Australian & New Zealand Journal of Psychiatry
-VL  - 32
-SP  - 295
-EP  - 298
-DO  - 10.3109/00048679809062743
-UR  - https://doi.org/10.3109/00048679809062743
-AB  - Hyponatraemia may be a relatively common early asymptomatic side effect of SSRIs, especially in older women. Serum sodium should be measured before commencing an SSRI and monitored during the first month. Any patient who exhibits symptoms of hyponatraemia, or whose depression apparently worsens, while on an SSRI must have their serum sodium measured. Discontinuation of the SSRI may be avoidable if serum sodium levels can be closely monitored.
 ER  - 
 
 TY  - JOUR
@@ -14412,22 +14225,6 @@ SP  - 3360
 DO  - 10.1063/1.1147389
 UR  - https://doi.org/10.1063/1.1147389
 AB  - This paper describes the development of a large area hybrid pixel detector designed for time-resolved synchrotron x-ray scattering experiments in which limited frames, with a high framing rate, are required. The final design parameters call for a 1024×1024 pixel array device with 150-micron pixels that is 100% quantum efficient for x-rays with energy up to 20 keV, with a framing rate in the microsecond range. The device will consist of a fully depleted diode array bump bonded to a CMOS electroni...
-ER  - 
-
-TY  - JOUR
-TI  - Rock and Popular Music: Politics, Policies, Institutions
-AU  - Walser R
-AU  - Bennett T
-AU  - Frith S
-AU  - Grossberg L
-AU  - Shepherd J
-AU  - Turner G
-PY  - 1995
-JO  - Notes
-VL  - 51
-SP  - 1348
-DO  - 10.2307/899143
-UR  - https://doi.org/10.2307/899143
 ER  - 
 
 TY  - CONF
@@ -14550,78 +14347,4 @@ EP  - 157
 DO  - 10.1109/23.289290
 UR  - https://doi.org/10.1109/23.289290
 AB  - Measurements made on the readout of large microchannel plates (MCPs) with crossed delay line anodes are reported. Two chevron pairs of MCPs were used: a 127-mm-diameter circular pair and a 100-mm*100-mm square pair. The modal gain varied over the surface of the MCPs by as much as a factor of three, both before and after extensive UV scrubbing. Attempts to decrease the variations in gain by further full flood scrubbing and by spot scrubbing the high-gain areas were unsuccessful. The full width at...
-ER  - 
-
-TY  - JOUR
-TI  - Book Reviews
-AU  - Shepherd J
-PY  - 1987
-JO  - Service Industries Journal
-VL  - 7
-SP  - 240
-EP  - 241
-DO  - 10.1080/02642068700000027
-UR  - https://doi.org/10.1080/02642068700000027
-ER  - 
-
-TY  - JOUR
-TI  - Big Sounds from Small Peoples: The Music Industry in Small Countries
-AU  - Shepherd J
-AU  - Wallis R
-AU  - Malm K
-PY  - 1986
-JO  - Ethnomusicology
-VL  - 30
-SP  - 171
-DO  - 10.2307/851852
-UR  - https://doi.org/10.2307/851852
-ER  - 
-
-TY  - JOUR
-TI  - Accounting for Aggression: Perspectives on Aggression and Violence, Gerda Siann (Allen and Unwin, 1985), pp. 294, £20 and £6.95
-AU  - Shepherd J
-PY  - 1986
-JO  - Scottish Educational Review
-VL  - 18
-SP  - 64
-EP  - 66
-DO  - 10.1163/27730840-01801014
-UR  - https://doi.org/10.1163/27730840-01801014
-ER  - 
-
-TY  - JOUR
-TI  - ‘The Smart of the Knife’ — Early Anaesthesia in the Services
-AU  - Shepherd J
-PY  - 1985
-JO  - Journal of the Royal Army Medical Corps
-VL  - 131
-SP  - 109
-EP  - 115
-DO  - 10.1136/jramc-131-02-11
-UR  - https://doi.org/10.1136/jramc-131-02-11
-ER  - 
-
-TY  - JOUR
-TI  - Lighter Music
-AU  - Lamb A
-AU  - Lee EA
-AU  - Shepherd J
-AU  - Turner MR
-AU  - Miall A
-AU  - Bradley I
-PY  - 1983
-JO  - The Musical Times
-VL  - 124
-SP  - 619
-DO  - 10.2307/961706
-UR  - https://doi.org/10.2307/961706
-ER  - 
-
-TY  - JOUR
-TI  - LI Peiving and remembering faces
-AU  - Davies G
-AU  - Ellis HD
-AU  - Shepherd J
-PY  - 1981
-JO  - Academic Press eBooks
 ER  - 
