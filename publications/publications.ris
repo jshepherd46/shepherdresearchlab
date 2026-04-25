@@ -351,7 +351,7 @@ KW  - dxa
 ER  - 
 
 TY  - JOUR
-TI  - Abstract 1029: Prevalence of mammographically dense breasts in Guam
+TI  - Prevalence of mammographically dense breasts in Guam
 AU  - Evangelista RFP
 AU  - Dulana L
 AU  - Teria R
@@ -366,7 +366,7 @@ VL  - 85
 SP  - 1029
 DO  - 10.1158/1538-7445.am2025-1029
 UR  - https://doi.org/10.1158/1538-7445.am2025-1029
-AB  - Abstract Background: Breast cancer is the most diagnosed cancer among women in Guam. Mammographic breast density is a critical factor in assessing breast cancer risk and the effectiveness of screening. Guam’s female population is diverse, comprising CHamoru (37.3%), Filipino (26.3%), Mixed (9.5%), White (7.1%), Chuukese (7%), and other Pacific Islander and Asian ethnicities. Understanding breast density patterns among these groups is essential for developing tailored public health strategies. Ho...
+AB  - Background: Breast cancer is the most diagnosed cancer among women in Guam. Mammographic breast density is a critical factor in assessing breast cancer risk and the effectiveness of screening. Guam’s female population is diverse, comprising CHamoru (37.3%), Filipino (26.3%), Mixed (9.5%), White (7.1%), Chuukese (7%), and other Pacific Islander and Asian ethnicities. Understanding breast density patterns among these groups is essential for developing tailored public health strategies. Ho...
 KW  - breast-density
 KW  - mammography
 KW  - cancer-screening
@@ -1017,7 +1017,7 @@ PY  - 2024
 JO  - Research Square
 DO  - 10.21203/rs.3.rs-4251510/v1
 UR  - https://doi.org/10.21203/rs.3.rs-4251510/v1
-AB  - <title>Abstract</title> Accurate assessment of body composition is essential for evaluating the risk of chronic disease. Access to medical imaging methods is limited due to practical and ethical constraints. 3D body shape, which can be obtained using smartphones, correlates strongly with body composition. However, large-scale datasets containing 3D body shapes with paired anthropometric and metabolic traits are scarce. Here, we present a novel method that fits a 3D body mesh to a dual-energy X-r...
+AB  - Accurate assessment of body composition is essential for evaluating the risk of chronic disease. Access to medical imaging methods is limited due to practical and ethical constraints. 3D body shape, which can be obtained using smartphones, correlates strongly with body composition. However, large-scale datasets containing 3D body shapes with paired anthropometric and metabolic traits are scarce. Here, we present a novel method that fits a 3D body mesh to a dual-energy X-r...
 KW  - body-composition
 KW  - dxa
 KW  - optical-scan
@@ -2989,7 +2989,7 @@ AU  - Shepherd J
 PY  - 2023
 DO  - 10.2196/preprints.49529
 UR  - https://doi.org/10.2196/preprints.49529
-AB  - <sec> <title>BACKGROUND</title> Artificial intelligence (AI) large language models (LLMs) such as ChatGPT have demonstrated the ability to pass standardized exams. These models are not trained for a specific task, but instead trained to predict sequences of text from large corpora of documents sourced from the internet. It has been shown that even models trained on this general task can pass exams in a variety of domain-specific fields, including the United States Medical Licensing Examination. ...
+AB  - BACKGROUND Artificial intelligence (AI) large language models (LLMs) such as ChatGPT have demonstrated the ability to pass standardized exams. These models are not trained for a specific task, but instead trained to predict sequences of text from large corpora of documents sourced from the internet. It has been shown that even models trained on this general task can pass exams in a variety of domain-specific fields, including the United States Medical Licensing Examination. ...
 KW  - ai
 KW  - dxa
 ER  - 
@@ -4614,15 +4614,6 @@ DO  - 10.1016/j.jocd.2021.03.002
 UR  - https://doi.org/10.1016/j.jocd.2021.03.002
 KW  - dxa
 KW  - dxa-qc
-ER  - 
-
-TY  - GEN
-TI  - La Villa Wolkonsky di Roma : storia di un tesoro nascosto
-AU  - Shepherd J
-PY  - 2021
-SP  - 1
-EP  - 428
-AB  - The Villa Wolkonsky, Rome, is the incongruously named official residence of the British ambassador to Italy. Nestled within the city's Aurelian Wall, the site's history dates back to antiquity, its gardens dominated by the remains of a first-century imperial Roman aqueduct. In the 19th century a remarkable Russian princess, Zenaïde Wolkonsky, turned it into a country home and salon d'art with such illustrious visitors as Gogol, Turgenev and Walter Scott. Following generations excavated Roman tom...
 ER  - 
 
 TY  - GEN
@@ -13674,7 +13665,7 @@ AB  - The authors describe the preparation and performance of thin film NaI(Tl) 
 ER  - 
 
 TY  - CONF
-TI  - &lt;title&gt;Thin-film NaI(Tl) scintillators for high-resolution large-area imaging of soft x rays&lt;/title&gt;
+TI  - Thin-film NaI(Tl) scintillators for high-resolution large-area imaging of soft x rays&lt;/title&gt;'
 AU  - Shepherd J
 AU  - Sobottka S
 AU  - Williams MB
@@ -13690,7 +13681,7 @@ KW  - mammography
 ER  - 
 
 TY  - CONF
-TI  - &lt;title&gt;Properties of 100-mm x 100-mm triple stacks of microchannel plates used in a sealed detector for x-ray crystallography&lt;/title&gt;
+TI  - Properties of 100-mm x 100-mm triple stacks of microchannel plates used in a sealed detector for x-ray crystallography&lt;/title&gt;'
 AU  - Williams MB
 AU  - Sobottka S
 AU  - Shepherd J

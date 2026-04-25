@@ -387,7 +387,7 @@
     composition measurements.
 
 - key: rfp-2025-abstract
-  title: 'Abstract 1029: Prevalence of mammographically dense breasts in Guam'
+  title: 'Prevalence of mammographically dense breasts in Guam'
   authors: Evangelista RFP, Dulana L, Teria R, Jin SB, Paras G, Grino R, Shepherd
     J, Badowski G
   year: 2025
@@ -396,7 +396,7 @@
   issue: 8_Supplement_1
   pages: '1029'
   doi: 10.1158/1538-7445.am2025-1029
-  abstract: 'Abstract Background: Breast cancer is the most diagnosed cancer among
+  abstract: 'Background: Breast cancer is the most diagnosed cancer among
     women in Guam. Mammographic breast density is a critical factor in assessing breast
     cancer risk and the effectiveness of screening. Guam’s female population is diverse,
     comprising CHamoru (37.3%), Filipino (26.3%), Mixed (9.5%), White (7.1%), Chuukese
@@ -413,7 +413,7 @@
   - hipimr
   - risk-modeling
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper examines mammographic breast density prevalence in Guam's
     diverse female population including CHamoru and Pacific Islander ethnicities,
@@ -1608,7 +1608,7 @@
   issue: ''
   pages: ''
   doi: 10.21203/rs.3.rs-4251510/v1
-  abstract: <title>Abstract</title> Accurate assessment of body composition is essential
+  abstract: Accurate assessment of body composition is essential
     for evaluating the risk of chronic disease. Access to medical imaging methods
     is limited due to practical and ethical constraints. 3D body shape, which can
     be obtained using smartphones, correlates strongly with body composition. However,
@@ -3815,7 +3815,7 @@
   issue: ''
   pages: ''
   doi: 10.2196/preprints.49529
-  abstract: <sec> <title>BACKGROUND</title> Artificial intelligence (AI) large language
+  abstract: BACKGROUND Artificial intelligence (AI) large language
     models (LLMs) such as ChatGPT have demonstrated the ability to pass standardized
     exams. These models are not trained for a specific task, but instead trained to
     predict sequences of text from large corpora of documents sourced from the internet.
@@ -5815,11 +5815,12 @@
   source_url: http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc_library=BVB01&amp;local_base=BVB01&amp;doc_number=032738965&amp;sequence=000001&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA
   tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: AUTO-TAGGED (high confidence) manually reviewed
   tag_confidence: high
   tag_reasoning: This paper is about the history of Villa Wolkonsky in Rome, a historical/architectural
     topic completely unrelated to cancer research, body composition, medical imaging,
     or any of the Shepherd Research Lab's scientific domains.
+  exclude: true
 
 - key: cataldi-2021-predicting
   title: Predicting Muscular Strength with 3D Optical in a Diverse Adult Population
@@ -17794,7 +17795,7 @@
     research areas, imaging modalities, or study cohorts listed in the available tags.
 
 - key: shepherd-1993-lttitlegtthinfilm
-  title: '&lt;title&gt;Thin-film NaI(Tl) scintillators for high-resolution large-area
+  title: Thin-film NaI(Tl) scintillators for high-resolution large-area
     imaging of soft x rays&lt;/title&gt;'
   authors: Shepherd J, Sobottka S, Williams MB
   year: 1993
@@ -17825,7 +17826,7 @@
     study tag.
 
 - key: williams-1993-lttitlegtproperties
-  title: '&lt;title&gt;Properties of 100-mm x 100-mm triple stacks of microchannel
+  title: Properties of 100-mm x 100-mm triple stacks of microchannel
     plates used in a sealed detector for x-ray crystallography&lt;/title&gt;'
   authors: Williams MB, Sobottka S, Shepherd J
   year: 1993

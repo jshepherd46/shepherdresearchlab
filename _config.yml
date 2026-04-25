@@ -21,6 +21,8 @@ nav:
     url: "/research/"
   - title: "Publications"
     url: "/publications/"
+  - title: "News"
+    url: "/news/"
   - title: "Join A Study"
     url: "/join-a-study/"
   - title: "Contact"
@@ -32,6 +34,17 @@ permalink: pretty
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Blog/news posts in _posts/ → /news/<slug>/
+# Override the global `permalink: pretty` for posts only (not pages) and assign
+# the post layout automatically so individual files don't need to repeat it.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /news/:slug/
 
 # Keep the publications pipeline OUT of the Jekyll build.
 # The pipeline writes its rendered HTML into the publications/ directory;

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="section">
+<div class="container" style="max-width: 760px;">
+
+<header style="margin-bottom: 2.5rem;">
+  <p style="margin-bottom: 0.5rem;"><a href="{{ site.baseurl }}/news/" style="padding: 0.35rem 0.8rem; border: 1px solid var(--gray-300); border-radius: 100px; font-size: 0.85rem; text-decoration: none; color: var(--gray-700); font-weight: 600;">← All news</a></p>
+  <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
+  <p style="color: var(--gray-500); margin: 0;">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} · by {{ page.author }}{% endif %}</p>
+</header>
+
+<article class="post-content">
+{{ content }}
+</article>
+
+</div>
+</section>
