@@ -1,6 +1,7 @@
 ---
 title: "Top honors for UH Mānoa STEM scholars, JABSOM epigeneticist"
 date: 2024-05-29
+thumbnail: "/wp-content/uploads/2024/06/manoa-arcs-scholars-group-2024.jpg"
 ---
 
 ![ARCS Scholars 2024]({{ site.baseurl }}/wp-content/uploads/2024/06/manoa-arcs-scholars-group-2024.jpg)

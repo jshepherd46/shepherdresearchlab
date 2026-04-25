@@ -1,6 +1,7 @@
 ---
 title: "Amazing turnout at the Body Composition Lab for the Orangetheory Challenge"
 date: 2022-02-08
+thumbnail: "/wp-content/uploads/2022/02/orangetheoryuhcc-thumbnail-3-1.png"
 ---
 
 ![Orangetheory + UHCC partnership]({{ site.baseurl }}/wp-content/uploads/2022/02/orangetheoryuhcc-thumbnail-3-1.png)

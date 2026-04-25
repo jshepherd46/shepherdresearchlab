@@ -1,6 +1,7 @@
 ---
 title: "Early cancer detection for saving lives: Symposium addresses new breast screening technology"
 date: 2023-06-12
+thumbnail: "/wp-content/uploads/2023/06/web1_Breast-Cancer-symposium_0005.jpg"
 ---
 
 ![Breast Cancer Symposium 2023]({{ site.baseurl }}/wp-content/uploads/2023/06/web1_Breast-Cancer-symposium_0005.jpg)

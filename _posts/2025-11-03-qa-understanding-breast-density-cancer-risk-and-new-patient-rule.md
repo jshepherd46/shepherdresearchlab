@@ -2,6 +2,7 @@
 title: "Q&A: Understanding breast density, cancer risk and new patient rule"
 date: 2025-11-03
 author: John Shepherd
+thumbnail: "/wp-content/uploads/2025/11/manoa-cancer-center-shepherd-qanda.jpg"
 ---
 
 ![Q&A featured image]({{ site.baseurl }}/wp-content/uploads/2025/11/manoa-cancer-center-shepherd-qanda.jpg)

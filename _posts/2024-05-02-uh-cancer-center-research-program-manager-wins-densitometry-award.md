@@ -1,6 +1,7 @@
 ---
 title: "UH Cancer Center research program manager wins densitometry award"
 date: 2024-05-02
+thumbnail: "/wp-content/uploads/2024/05/manoa-cancer-center-kazemi-leila.jpg"
 ---
 
 ![Leila Kazemi]({{ site.baseurl }}/wp-content/uploads/2024/05/manoa-cancer-center-kazemi-leila.jpg)

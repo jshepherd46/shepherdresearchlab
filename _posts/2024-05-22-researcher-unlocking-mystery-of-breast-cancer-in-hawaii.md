@@ -2,6 +2,7 @@
 title: "Researcher unlocking mystery of breast cancer in Hawaiʻi"
 date: 2024-05-22
 author: Rob Kay
+thumbnail: "/wp-content/uploads/2024/05/IMG_4030-930x620.jpg"
 ---
 
 ![John Shepherd]({{ site.baseurl }}/wp-content/uploads/2024/05/IMG_4030-930x620.jpg)

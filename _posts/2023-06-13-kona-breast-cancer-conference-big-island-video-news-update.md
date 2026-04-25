@@ -1,6 +1,7 @@
 ---
 title: "Kona Breast Cancer Conference — Big Island Video News update"
 date: 2023-06-13
+thumbnail: "/wp-content/uploads/2023/06/DSC06366-930x620.jpg"
 ---
 
 ![Kona Breast Cancer Conference]({{ site.baseurl }}/wp-content/uploads/2023/06/DSC06366-930x620.jpg)

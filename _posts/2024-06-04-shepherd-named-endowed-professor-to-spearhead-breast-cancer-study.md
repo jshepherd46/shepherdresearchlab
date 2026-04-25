@@ -1,6 +1,7 @@
 ---
 title: "Shepherd named endowed professor to spearhead breast cancer study"
 date: 2024-06-04
+thumbnail: "/wp-content/uploads/2024/06/manoa-jabsom-john-shepherd.png"
 ---
 
 ![John Shepherd at JABSOM]({{ site.baseurl }}/wp-content/uploads/2024/06/manoa-jabsom-john-shepherd.png)

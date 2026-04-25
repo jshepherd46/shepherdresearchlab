@@ -1,6 +1,7 @@
 ---
 title: "CREATE Program 2024 concludes with valuable findings on body composition measures for babies"
 date: 2024-08-05
+thumbnail: "/wp-content/uploads/2024/08/IMG_20240726_113016955_HDR-930x620.jpg"
 ---
 
 ![CREATE program 2024 — closing event]({{ site.baseurl }}/wp-content/uploads/2024/08/IMG_20240726_113016955_HDR-930x620.jpg)

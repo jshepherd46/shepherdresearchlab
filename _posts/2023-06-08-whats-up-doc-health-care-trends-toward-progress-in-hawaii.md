@@ -1,6 +1,7 @@
 ---
 title: "What's Up, Doc? Health Care Trends Toward Progress in Hawaiʻi (HONOLULU Magazine)"
 date: 2023-06-08
+thumbnail: "/wp-content/uploads/2019/05/uh-cancer-center-cover.jpg"
 ---
 
 ![UH Cancer Center]({{ site.baseurl }}/wp-content/uploads/2019/05/uh-cancer-center-cover.jpg)

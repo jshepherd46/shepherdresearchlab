@@ -5,24 +5,33 @@ description: "News, awards, conference reports, and Q&A pieces from the Shepherd
 ---
 
 <section class="section">
-<div class="container" markdown="1" style="max-width: 760px;">
+<div class="container" style="max-width: 960px;">
 
-# News
+<h1>News</h1>
+<p style="color: var(--gray-500); margin-top: -0.75rem; margin-bottom: 2.5rem;">Lab news, awards, conference reports, and Q&amp;A pieces. Listed newest first.</p>
 
-Lab news, awards, conference reports, and Q&A pieces. Listed newest first.
+<div style="display: flex; flex-direction: column; gap: 2rem;">
 
 {% for post in site.posts %}
-<article style="padding: 1.5rem 0; border-bottom: 1px solid var(--gray-300);">
-<p style="color: var(--gray-500); font-size: 0.85rem; margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">{{ post.date | date: "%B %-d, %Y" }}</p>
-<h2 style="margin-bottom: 0.5rem; font-size: 1.35rem;"><a href="{{ post.url | relative_url }}" style="color: inherit; text-decoration: none;">{{ post.title }}</a></h2>
-{% if post.excerpt %}<div style="color: var(--gray-700);">{{ post.excerpt | strip_html | truncate: 240 }}</div>{% endif %}
-<p style="margin-top: 0.75rem;"><a href="{{ post.url | relative_url }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">Read more →</a></p>
-</article>
+<a href="{{ post.url | relative_url }}" class="news-card" style="display: grid; grid-template-columns: minmax(0, 240px) 1fr; gap: 2rem; padding: 0; background: white; border: 1px solid var(--gray-300); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; color: inherit; transition: var(--transition);">
+{% if post.thumbnail %}
+<img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="" style="width: 100%; height: 100%; min-height: 160px; aspect-ratio: 4/3; object-fit: cover;">
+{% else %}
+<div style="background: var(--primary-light); min-height: 160px;"></div>
+{% endif %}
+<div style="padding: 1.5rem 1.75rem 1.5rem 0;">
+<p style="font-size: 0.75rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 0.5rem;">{{ post.date | date: "%B %-d, %Y" }}</p>
+<h2 style="font-size: 1.25rem; margin-bottom: 0.6rem; line-height: 1.3;">{{ post.title }}</h2>
+<p style="color: var(--gray-700); margin-bottom: 0.75rem;">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+<span style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Read more →</span>
+</div>
+</a>
 {% endfor %}
 
 {% if site.posts.size == 0 %}
-*No posts yet.*
+<p><em>No posts yet.</em></p>
 {% endif %}
 
+</div>
 </div>
 </section>

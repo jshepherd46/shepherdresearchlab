@@ -1,6 +1,7 @@
 ---
 title: "Improved breast cancer risk assessment aim of new questionnaire"
 date: 2023-09-20
+thumbnail: "/wp-content/uploads/2023/09/manoa-gnc-questionnaire.jpg"
 ---
 
 ![New HIPIMR questionnaire]({{ site.baseurl }}/wp-content/uploads/2023/09/manoa-gnc-questionnaire.jpg)
