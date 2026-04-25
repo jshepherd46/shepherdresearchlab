@@ -1952,23 +1952,17 @@
     breast density ca...'
   openalex_id: W4404388932
   source_url: http://arxiv.org/abs/2411.00891
-  tags:
-  - breast-density
-  - ai
-  - mammography
-  - ultrasound
-  - cancer-screening
-  - makawalu
-  - risk-modeling
-  - health-equity
+  tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: 'Preprint version superseded by published article in The Lancet Regional
+    Health - Americas (2025). Published OpenAlex ID: W4409573690'
   tag_confidence: high
   tag_reasoning: This paper uses deep learning to predict mammographic BI-RADS breast
     density from breast ultrasound images, directly relevant to breast density measurement,
     AI/deep learning, ultrasound/POCUS screening, and aligns with the Makawalu project's
     focus on AI-based POCUS breast cancer detection in USAPI/low-resource contexts,
     with health equity implications for rural and Pacific Island populations.
+  exclude: true
 
 - key: bunnell-2024-artificial
   title: 'Artificial Intelligence-Informed Handheld Breast Ultrasound for Screening:
@@ -1989,21 +1983,16 @@
     review (CRD420234...
   openalex_id: W4404403089
   source_url: http://arxiv.org/abs/2411.07322
-  tags:
-  - ai
-  - ultrasound
-  - cancer-screening
-  - health-equity
-  - makawalu
-  - xai
-  - radiomics
+  tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: 'Preprint version superseded by published article in PLOS Digital Health
+    (2025). Published OpenAlex ID: W4414406519'
   tag_confidence: high
   tag_reasoning: This systematic review directly examines AI-enabled handheld breast
     ultrasound for screening, with relevance to low-resource settings including USAPI/Pacific
     populations, aligning with the Makawalu XAI/POCUS breast cancer detection project,
     and involving AI, ultrasound, and cancer screening research areas.
+  exclude: true
 
 - key: mccarthy-2023-total
   title: Total and regional appendicular skeletal muscle mass prediction from dual-energy
@@ -2793,19 +2782,16 @@
     (D 3 Cr...
   openalex_id: W4377013519
   source_url: https://doi.org/10.1101/2023.05.17.23288849
-  tags:
-  - body-composition
-  - dxa
-  - bioimpedance
-  - bcepem
-  - metabolic-health
+  tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: 'Preprint version superseded by published article in Scientific Reports (2025).
+    Published OpenAlex ID: W4407718447'
   tag_confidence: high
   tag_reasoning: This paper directly examines body composition measurement methods
     (DXA, D3Cr, BIA) and their association with muscle strength in collegiate athletes,
     clearly falling under body composition assessment with DXA and bioimpedance as
     primary modalities, authored by Shepherd (lab PI).
+  exclude: true
 
 - key: bunnell-2023-abstract
   title: 'Abstract P3-04-05: Artificial Intelligence Detects, Classifies, and Describes
@@ -3808,20 +3794,16 @@
     deuterium-oxide dilution(D ...'
   openalex_id: W4378977718
   source_url: http://dx.doi.org/10.1101/2023.05.30.23290630
-  tags:
-  - body-composition
-  - dxa
-  - bioimpedance
-  - optical-scan
-  - bcepem
-  - phanes
+  tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: 'Preprint version superseded by published article in Clinical Nutrition (2023).
+    Published OpenAlex ID: W4389262792'
   tag_confidence: high
   tag_reasoning: This paper compares multiple body composition methods (ADP, deuterium
     oxide dilution, DXA, bioimpedance, 3D optical scanning implied by field methods)
     against a 5-compartment criterion model in collegiate athletes, directly aligned
     with the Body Composition Lab and physical performance research under PHANES.
+  exclude: true
 
 - key: valdez-2023-performance
   title: Performance of progressive generations of GPT on an exam designed for certifying
@@ -4825,21 +4807,17 @@
     and preci...
   openalex_id: W4308258990
   source_url: https://doi.org/10.1101/2022.11.02.22281819
-  tags:
-  - shape-up
-  - body-composition
-  - optical-scan
-  - dxa
-  - metabolic-health
-  - health-equity
+  tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (high confidence) - please review
+  notes: 'Preprint version superseded by published article in American Journal of
+    Clinical Nutrition (2023). Published OpenAlex ID: W4384831126'
   tag_confidence: high
   tag_reasoning: This paper directly evaluates 3D optical body scanning accuracy/precision
     versus DXA across subgroups including age, BMI, and ethnicity with metabolic markers,
     aligning with the Shape Up! study's core focus on 3DO body scanning and biomarkers,
     with relevant tags for body composition methods, DXA comparison, metabolic health
     outcomes, and health equity considerations across diverse populations.
+  exclude: true
 
 - key: cousminer-2021-genomewide
   title: Genome-wide association study implicates novel loci and reveals candidate
@@ -6850,17 +6828,16 @@
     betw...
   openalex_id: W3009652234
   source_url: https://doi.org/10.1101/2020.02.17.20024133
-  tags:
-  - dxa
-  - body-composition
-  - maps
+  tags: []
   added: '2026-04-23'
-  notes: AUTO-TAGGED (medium confidence) - please review
+  notes: 'Preprint version superseded by published article in Genome biology (2021).
+    Published OpenAlex ID: W3118862598'
   tag_confidence: medium
   tag_reasoning: This GWAS paper on pediatric bone accrual uses longitudinal DXA bone
     scans (~11,000 scans) to model bone mineral density phenotypes, and Shepherd (UH
     Cancer Center) is a co-author, connecting it to DXA-based body composition measurement
     methods relevant to the lab's work.
+  exclude: true
 
 - key: vachon-2020-abstract
   title: 'Abstract P5-08-02: Association of daily alcohol intake, volumetric density

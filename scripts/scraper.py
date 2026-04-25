@@ -43,6 +43,37 @@ SUPPLEMENTARY_TITLE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# OpenAlex `type` values to drop at ingest. Posters/abstracts also surface
+# under `article` (not in this list) — they're filtered in a second pass that
+# dedupes preprint+published pairs by normalized title.
+SKIP_OA_TYPES = {
+    "posted-content",  # arXiv / bioRxiv / medRxiv preprints (caught also by dedup)
+    "letter",          # letters to editor / correspondence
+    "editorial",       # editorials
+    "paratext",        # tables of contents, front matter, "Notes from the editor"
+    "erratum",         # errata / corrections
+    "retraction",
+    "review",          # treat reviews as articles? leave OUT of skip — keep them
+}
+# Note: "review" intentionally NOT in SKIP_OA_TYPES — review articles are real
+# publications. Listed here as a reminder of what NOT to filter.
+SKIP_OA_TYPES.discard("review")
+
+# Journal-name fragments that identify a preprint server. Used by the dedup
+# pass to detect which of a paired entry is the preprint.
+PREPRINT_VENUE_FRAGMENTS = (
+    "arxiv",
+    "biorxiv",
+    "medrxiv",
+    "chemrxiv",
+    "psyarxiv",
+    "cornell university",         # arXiv host org appears as "Cornell University"
+    "cold spring harbor laboratory",  # bioRxiv / medRxiv host
+    "research square",
+    "ssrn",
+    "preprints.org",
+)
+
 
 def load_yaml(path):
     if not os.path.exists(path):
@@ -163,6 +194,7 @@ def parse_work(w):
         "doi": doi,
         "abstract": abstract,
         "openalex_id": w.get("id", "").rsplit("/", 1)[-1],
+        "oa_type": w.get("type") or "",
         "source_url": (w.get("primary_location") or {}).get("landing_page_url") or "",
         "tags": [],
         "added": datetime.today().strftime("%Y-%m-%d"),
@@ -232,7 +264,7 @@ def main():
     works = fetch_all_works(AUTHOR_ID, ORCID)
     print(f"Retrieved {len(works)} works from OpenAlex.")
 
-    new_papers, skipped_dup, skipped_supp = [], 0, 0
+    new_papers, skipped_dup, skipped_supp, skipped_type = [], 0, 0, 0
     seen_dois, seen_titles = set(), set()
 
     for w in works:
@@ -250,6 +282,11 @@ def main():
             skipped_supp += 1
             print(f"  SKIP supplementary: {(parsed['title'] or '')[:80]}")
             continue
+        # Filter OpenAlex types we never want — preprints, letters, editorials, paratext, errata
+        if parsed.get("oa_type") in SKIP_OA_TYPES:
+            skipped_type += 1
+            print(f"  SKIP type={parsed['oa_type']}: {(parsed['title'] or '')[:80]}")
+            continue
         if doi:
             seen_dois.add(doi)
         if tkey:
@@ -259,6 +296,7 @@ def main():
     print(f"\nResults:")
     print(f"  Already in library:    {skipped_dup}")
     print(f"  Supplementary skipped: {skipped_supp}")
+    print(f"  Filtered by OA type:   {skipped_type}")
     print(f"  New papers found:      {len(new_papers)}")
 
     if new_papers:

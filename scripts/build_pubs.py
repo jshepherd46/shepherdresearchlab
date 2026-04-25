@@ -42,6 +42,31 @@ def load_yaml(filepath):
         return yaml.safe_load(f) or []
 
 
+# Conference acronyms whose papers Springer publishes in the LNCS series.
+# When a paper's journal is Lecture Notes in Computer Science AND its title
+# contains one of these markers, render the venue as the conference name +
+# year, not as "Lecture Notes in Computer Science." The Liquid template on
+# the website does the same thing — keep these two lookups in sync.
+LNCS_CONFERENCE_MARKERS = ("MICCAI", "MIDL", "IPMI", "IWBI", "IWDM")
+
+
+def display_journal(pub):
+    """Resolve the venue label to render for a publication.
+
+    Priority: explicit `journal_display` override > LNCS auto-detect > raw journal.
+    """
+    if pub.get("journal_display"):
+        return pub["journal_display"]
+    journal = pub.get("journal") or ""
+    if "lecture notes in computer science" in journal.lower():
+        title = pub.get("title") or ""
+        for marker in LNCS_CONFERENCE_MARKERS:
+            if marker in title:
+                year = pub.get("year")
+                return f"{marker} {year}" if year else marker
+    return journal
+
+
 def generate_ris(publications):
     """Generate RIS format for EndNote/Zotero/Mendeley import."""
     lines = []
@@ -50,12 +75,19 @@ def generate_ris(publications):
         if pub.get("exclude"):
             continue  # tombstoned entries — skip
 
+        # Use the display-resolved venue (handles journal_display override
+        # and the LNCS-conference fallback) so RIS exports match what
+        # readers see on the site.
+        journal = display_journal(pub)
+
         pub_type = "JOUR"
-        journal = pub.get("journal", "")
         if any(word in journal.lower() for word in ["conference", "proceedings", "workshop", "symposium"]):
             pub_type = "CONF"
         elif not journal:
             pub_type = "GEN"
+        # Also treat LNCS-conference acronyms as conference papers
+        elif any(marker in journal for marker in LNCS_CONFERENCE_MARKERS):
+            pub_type = "CONF"
 
         lines.append(f"TY  - {pub_type}")
         lines.append(f"TI  - {pub.get('title', '')}")
@@ -110,9 +142,11 @@ def generate_bibtex(publications):
 
         key = pub.get("key", "unknown")
         year = pub.get("year", "")
-        journal = pub.get("journal", "")
+        journal = display_journal(pub)
 
         if any(word in journal.lower() for word in ["conference", "proceedings", "workshop"]):
+            entry_type = "inproceedings"
+        elif any(marker in journal for marker in LNCS_CONFERENCE_MARKERS):
             entry_type = "inproceedings"
         elif journal:
             entry_type = "article"

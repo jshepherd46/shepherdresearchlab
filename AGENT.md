@@ -91,18 +91,27 @@ Writes `publications/publications.ris` and `publications/publications.bib`. The 
   title: "Full paper title"
   authors: "Last F, Last F, ..."      # comma-separated, standard bibliographic format
   year: 2024                          # integer
-  journal: "Journal Name"             # or conference name
+  journal: "Journal Name"             # or conference name (raw OpenAlex value)
+  journal_display: ""                 # optional override for rendered venue —
+                                      # use when raw journal is "Lecture Notes
+                                      # in Computer Science" and the actual
+                                      # venue is MICCAI / MIDL / IPMI / etc.
   volume: "7"                         # string or empty
   pages: "298"                        # or "1-12" format
   doi: "10.1038/s41746-024-01289-0"   # without https://doi.org/ prefix
   abstract: "First 500 chars..."      # optional, truncate long abstracts
   openalex_id: "W4412712238"          # OpenAlex work ID (without https://openalex.org/ prefix)
+  oa_type: "article"                  # OpenAlex type — "article" / "book-chapter".
+                                      # Pipeline filters posted-content / letter
+                                      # / editorial / paratext / erratum at ingest.
   source_url: "https://..."           # landing page URL from OpenAlex, if available
   tags:
     - body-composition
     - dxa
     - shape-up
   added: "2025-04-21"                 # ISO date when added to library
+  exclude: false                      # set to true to tombstone an entry
+                                      # (kept in YAML so dedup catches it next run)
   notes: ""                           # optional internal notes
 ```
 

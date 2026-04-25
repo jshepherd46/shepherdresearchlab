@@ -1350,56 +1350,6 @@ UR  - https://doi.org/10.1017/s1740355324000408
 ER  - 
 
 TY  - JOUR
-TI  - Deep Learning Predicts Mammographic Breast Density in Clinical Breast Ultrasound Images
-AU  - Bunnell A
-AU  - Valdez D
-AU  - Wolfgruber T
-AU  - Quon BK
-AU  - Hung K
-AU  - Hernandez BY
-AU  - Seto TB
-AU  - Killeen J
-AU  - Marshall M
-AU  - Sadowski P
-AU  - Shepherd J
-PY  - 2024
-JO  - arXiv (Cornell University)
-DO  - 10.48550/arxiv.2411.00891
-UR  - https://doi.org/10.48550/arxiv.2411.00891
-AB  - Background: Breast density, as derived from mammographic images and defined by the American College of Radiology's Breast Imaging Reporting and Data System (BI-RADS), is one of the strongest risk factors for breast cancer. Breast ultrasound (BUS) is an alternative breast cancer screening modality, particularly useful for early detection in low-resource, rural contexts. The purpose of this study was to explore an artificial intelligence (AI) model to predict BI-RADS mammographic breast density ca...
-KW  - breast-density
-KW  - ai
-KW  - mammography
-KW  - ultrasound
-KW  - cancer-screening
-KW  - makawalu
-KW  - risk-modeling
-KW  - health-equity
-ER  - 
-
-TY  - JOUR
-TI  - Artificial Intelligence-Informed Handheld Breast Ultrasound for Screening: A Systematic Review of Diagnostic Test Accuracy
-AU  - Bunnell A
-AU  - Valdez D
-AU  - Strand F
-AU  - Glaser Y
-AU  - Sadowski P
-AU  - Shepherd J
-PY  - 2024
-JO  - arXiv (Cornell University)
-DO  - 10.48550/arxiv.2411.07322
-UR  - https://doi.org/10.48550/arxiv.2411.07322
-AB  - Background. Breast cancer screening programs using mammography have led to significant mortality reduction in high-income countries. However, many low- and middle-income countries lack resources for mammographic screening. Handheld breast ultrasound (BUS) is a low-cost alternative but requires substantial training. Artificial intelligence (AI) enabled BUS may aid in both the detection (perception) and classification (interpretation) of breast cancer. Materials and Methods. This review (CRD420234...
-KW  - ai
-KW  - ultrasound
-KW  - cancer-screening
-KW  - health-equity
-KW  - makawalu
-KW  - xai
-KW  - radiomics
-ER  - 
-
-TY  - JOUR
 TI  - Total and regional appendicular skeletal muscle mass prediction from dual-energy X-ray absorptiometry body composition models
 AU  - McCarthy C
 AU  - Tinsley GM
@@ -2130,29 +2080,6 @@ DO  - 10.1007/s10552-023-01793-w
 UR  - https://doi.org/10.1007/s10552-023-01793-w
 KW  - breast-density
 KW  - risk-modeling
-KW  - metabolic-health
-ER  - 
-
-TY  - JOUR
-TI  - Association of Muscle Strength to Body Composition Measures using DXA, D <sub>3</sub> Cr, and BIA in Collegiate Athletes
-AU  - Cataldi D
-AU  - Bennett JP
-AU  - Quon BK
-AU  - Leong LT
-AU  - Kelly TL
-AU  - Evans WJ
-AU  - Prado CM
-AU  - Heymsfield SB
-AU  - Shepherd J
-PY  - 2023
-JO  - medRxiv
-DO  - 10.1101/2023.05.17.23288849
-UR  - https://doi.org/10.1101/2023.05.17.23288849
-AB  - Abstract Background Measurements of body composition are helpful indicators of health outcomes, but muscle strength has a greater correlation with disease risk and long-term health outcomes, particularly among older adults. Whole-body DXA scans uniquely parse out total and regional lean soft tissue (LST) and appendicular (ALST), primarily composed of skeletal muscle and often used to diagnose sarcopenia and frailty. An alternative approach measures the enrichment of deuterated Creatinine (D 3 Cr...
-KW  - body-composition
-KW  - dxa
-KW  - bioimpedance
-KW  - bcepem
 KW  - metabolic-health
 ER  - 
 
@@ -3052,31 +2979,6 @@ KW  - metabolic-health
 KW  - xai
 ER  - 
 
-TY  - JOUR
-TI  - Accuracy and Precision of Multiple Laboratory and Field Methods to The Criterion <i>In Vivo</i> Five-Compartment Body Composition Model and Their Association with Muscle Strength in Collegiate Athletes of Varying States of Hydration: The <i>Da Kine</i> Protocol Study
-AU  - Cataldi D
-AU  - Bennett JP
-AU  - Wong MC
-AU  - Quon BK
-AU  - Liu YE
-AU  - Kelly NN
-AU  - Kelly TL
-AU  - Schoeller DA
-AU  - Heymsfield SB
-AU  - Shepherd J
-PY  - 2023
-JO  - medRxiv
-DO  - 10.1101/2023.05.30.23290630
-UR  - https://doi.org/10.1101/2023.05.30.23290630
-AB  - Objective To compare multiple body composition analysis methods in athletes with varying states of hydration to the criterion 5-compartment model(5CM) of body composition and assess the relationships of technique-specific estimates of fat and fat-free mass(FM, FFM) to muscle strength. Methods Body composition was assessed in 80(40-female) athletes with a mean age of 21.8±4.2 years. All athletes underwent laboratory-based methods: air-displacement plethysmography(ADP), deuterium-oxide dilution(D ...
-KW  - body-composition
-KW  - dxa
-KW  - bioimpedance
-KW  - optical-scan
-KW  - bcepem
-KW  - phanes
-ER  - 
-
 TY  - GEN
 TI  - Performance of progressive generations of GPT on an exam designed for certifying physicians as Certified Clinical Densitometrists (Preprint)
 AU  - Valdez D
@@ -3810,35 +3712,6 @@ UR  - https://doi.org/10.1097/inf.0000000000003719
 AB  - Wang, Liming MD; Kourtis, Athena P. MD, PhD, MPH; Wiener, Jeffrey PhD; Chen, Lili MD; Liu, Wei MD; Fan, Bo PhD; Shepherd, John PhD; Bulterys, Marc MD, PhD Author Information
 KW  - body-composition
 KW  - dxa
-ER  - 
-
-TY  - JOUR
-TI  - Accuracy and Precision of 3D Optical Imaging for Body Composition and their Associations to Metabolic Markers by Age, BMI, and Ethnicity
-AU  - Wong MC
-AU  - Bennett JP
-AU  - Quon BK
-AU  - Leong LT
-AU  - Tian IY
-AU  - Liu YE
-AU  - Kelly NN
-AU  - McCarthy C
-AU  - Chow DC
-AU  - Pujades S
-AU  - Garber AK
-AU  - Maskarinec G
-AU  - Heymsfield SB
-AU  - Shepherd J
-PY  - 2022
-JO  - medRxiv
-DO  - 10.1101/2022.11.02.22281819
-UR  - https://doi.org/10.1101/2022.11.02.22281819
-AB  - ABSTRACT Background Recent three-dimensional optical (3DO) imaging advancements have provided a more accessible, affordable, and self-operating opportunities for assessing body composition. 3DO is accurate and precise compared to clinical measures measured by dual-energy X-ray absorptiometry (DXA) in diverse study samples. However, the accuracy and precision of an overall 3DO body composition model in specific subgroups is unknown. Therefore, this study aimed to evaluate 3DO’s accuracy and preci...
-KW  - shape-up
-KW  - body-composition
-KW  - optical-scan
-KW  - dxa
-KW  - metabolic-health
-KW  - health-equity
 ER  - 
 
 TY  - JOUR
@@ -5586,47 +5459,6 @@ KW  - body-composition
 KW  - dxa
 KW  - metabolic-health
 KW  - risk-modeling
-ER  - 
-
-TY  - JOUR
-TI  - Genome-wide association study implicates novel loci and reveals candidate effector genes for longitudinal pediatric bone accrual through variant-to-gene mapping
-AU  - Cousminer DL
-AU  - Wagley Y
-AU  - Pippin JA
-AU  - Elhakeem A
-AU  - Way GP
-AU  - McCormack SE
-AU  - Chesi A
-AU  - Mitchell JA
-AU  - Kindler JM
-AU  - Baird D
-AU  - Hartley A
-AU  - Howe LD
-AU  - Kalkwarf HJ
-AU  - Lappe JM
-AU  - Lu S
-AU  - Leonard ME
-AU  - Johnson ME
-AU  - Håkonarson H
-AU  - Gilsanz V
-AU  - Shepherd J
-AU  - Oberfield SE
-AU  - Greene CS
-AU  - Kelly A
-AU  - Lawlor D
-AU  - Voight BF
-AU  - Wells AD
-AU  - Zemel BS
-AU  - Hankenson KD
-AU  - Grant SF
-PY  - 2020
-JO  - medRxiv
-DO  - 10.1101/2020.02.17.20024133
-UR  - https://doi.org/10.1101/2020.02.17.20024133
-AB  - Introductory paragraph Bone accrual impacts lifelong skeletal health, but genetic discovery has been hampered by cross-sectional study designs and uncertainty about target effector genes. Here, we captured this dynamic phenotype by modeling longitudinal bone accrual across 11,000 bone scans followed by genome-wide association studies (GWAS). We revealed 40 loci (35 novel), half residing in topological associated domains harboring known bone genes. Variant-to-gene mapping identified contacts betw...
-KW  - dxa
-KW  - body-composition
-KW  - maps
 ER  - 
 
 TY  - JOUR
