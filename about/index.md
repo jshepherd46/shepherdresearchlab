@@ -49,7 +49,7 @@ The UH Cancer Center holds one of only 71 NCI-designated research organization d
 
 A lab facility within the UH Cancer Center offering measurements in Body Composition, Exercise Physiology, and Energy Metabolism.
 
-[Body Composition Lab ↗](https://bcepem.shepherdresearchlab.org/)
+[Body Composition Lab →]({{ site.baseurl }}/services/)
 
 ## Partners and Support
 

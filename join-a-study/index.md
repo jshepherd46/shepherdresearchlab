@@ -31,18 +31,32 @@ This study helps families learn about their children's health while researchers 
 <section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
 
-## Tanita Study
+## Samsung Study (2026)
 
-**Eligibility:** Healthy adults.
+**Eligibility:** Healthy adults; no removable metal, jewelry, or incompatible medical devices, and no chronic disease. Recruitment uses age and BMI categories — see the [BMI calculator ↗](https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm) to estimate yours.
 
-This research evaluates the accuracy of TANITA Bioimpedance Analysis (BIA) devices for measuring extracellular and total body water — compared against standard methods like dilution analysis and dual-energy X-ray absorptiometry (DXA).
+This research evaluates whether extracellular water and total body water measured by Samsung Bioimpedance Analysis (BIA) devices are accurate compared to standard tests including the dilution method and dual-energy X-ray absorptiometry (DXA).
 
-**Participation:** One visit, approximately 4 hours. Participants receive compensation and a complimentary body-composition measurement including a free DXA scan.
+**Participation:** A single 4-hour appointment that includes BIA, DXA, 3D optical scan, Bod Pod, biological samples (urine, saliva, blood), and a diet questionnaire. Participants receive compensation and a complimentary DXA scan report.
 
 </div>
 </section>
 
 <section class="section section--alt">
+<div class="container" markdown="1" style="max-width: 820px;">
+
+## Tanita Study
+
+**Eligibility:** Healthy adults; no non-removable metal, jewelry, or medical devices, and no chronic disease.
+
+This research evaluates the accuracy of TANITA Bioimpedance Analysis (BIA) devices for measuring extracellular and total body water — compared against standard methods like dilution analysis and dual-energy X-ray absorptiometry (DXA).
+
+**Participation:** One visit, approximately 4 hours (Mondays–Fridays, 7:30 AM check-in). Includes BIA, DXA, urine/saliva/blood samples, 3D optical scan, Bod Pod, and a diet questionnaire. Participants receive compensation and a complimentary DXA scan report.
+
+</div>
+</section>
+
+<section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
 
 ## Get in touch
@@ -76,6 +90,7 @@ Honolulu, HI 96813
 <select name="study" style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit;">
 <option>I'm not sure yet — please contact me</option>
 <option>Shape Up! Keiki</option>
+<option>Samsung Study (2026)</option>
 <option>Tanita Study</option>
 <option>Future studies — just add me to the list</option>
 </select>

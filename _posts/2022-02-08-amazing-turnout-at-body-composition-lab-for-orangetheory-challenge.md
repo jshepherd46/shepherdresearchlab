@@ -33,6 +33,6 @@ Participants are expected to return for follow-up scans at the challenge's concl
 
 The Body Composition Lab at the University of Hawaiʻi Cancer Center offers tests measuring body composition, exercise physiology, energy, and metabolism. Services support research within the Shepherd Research Lab and are available to the general public.
 
-- [Website ↗](https://bcepem.shepherdresearchlab.org/)
+- [Website →]({{ site.baseurl }}/services/)
 - [Instagram ↗](https://www.instagram.com/uhcc_bodycomplab/)
 - [Facebook ↗](https://www.facebook.com/UHCCBC/)

@@ -33,7 +33,7 @@ At SRL, we are a group of research scientists innovating the ways we detect canc
 
 The lab is led by **[Dr. John A. Shepherd](https://www.uhcancercenter.org/shepherd-john)** at the University of Hawaiʻi Cancer Center, with studies spanning breast cancer detection through breast density, metabolic risk prediction through body-composition analysis, and deep learning for AI-assisted diagnosis.
 
-[Visit the Body Composition Lab ↗](https://bcepem.shepherdresearchlab.org/)
+[Visit the Body Composition Lab →]({{ site.baseurl }}/services/)
 
 </div>
 </section>
