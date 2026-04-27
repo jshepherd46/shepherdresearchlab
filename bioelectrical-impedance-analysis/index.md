@@ -15,6 +15,8 @@ description: "Bioelectrical impedance analysis (BIA) for segmental lean and fat 
 <a href="{{ site.baseurl }}/make-an-appointment/" style="padding: 0.35rem 0.8rem; border: 1px solid var(--gray-300); border-radius: 100px; font-size: 0.85rem; text-decoration: none; color: var(--gray-700); font-weight: 600;">Make an appointment →</a>
 </nav>
 
+![A participant lying supine on the InBody S10 measurement table, with electrodes attached to ankles and fingers and the analyzer cart beside the bed]({{ site.baseurl }}/wp-content/uploads/2026/04/inbody-S10.png)
+
 Body composition and segmental lean/fat mass via safe, low-level electrical currents.
 
 </div>
