@@ -1,15 +1,17 @@
 ---
 layout: default
-title: "Services"
-description: "Body Composition Lab services — DXA, Bod Pod, 3D optical, BIA, muscle dynamometer — at the University of Hawaiʻi Cancer Center."
+title: "Body Composition Lab (BCEPEM)"
+description: "The Body Composition Lab (BCEPEM) at the UH Cancer Center — DXA, Bod Pod, 3D optical scans, BIA, and muscle dynamometry for researchers and the community."
 ---
 
 <section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
 
-# Services
+<div style="font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">BCEPEM · Body Composition, Exercise Physiology, Energy Metabolism</div>
 
-The Shepherd Research Lab operates the **Body Composition Lab (BCEPEM)** as a core facility within the University of Hawaiʻi Cancer Center. BCEPEM specializes in Body Composition, Exercise Physiology, and Energy Metabolism — providing accurate and precise measures of physiological biomarkers for research and self-assessment.
+# Body Composition Lab
+
+A core facility of the **Shepherd Research Lab** within the **University of Hawaiʻi Cancer Center**, providing accurate and precise measures of physiological biomarkers for research and self-assessment.
 
 [Make an appointment]({{ site.baseurl }}/make-an-appointment/){: .btn .btn-primary}
 [See pricing]({{ site.baseurl }}/pricing/){: .btn .btn-outline-primary}
