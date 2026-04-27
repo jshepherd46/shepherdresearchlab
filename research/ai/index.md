@@ -25,7 +25,7 @@ Studies that use AI, machine learning, and deep learning to assess human health,
 
 Based at the University of Hawaiʻi Cancer Center in Honolulu, AIPHI uses advanced technology — AI, machine learning, and deep learning — to assess human health and predict disease risk.
 
-[AIPHI ↗](https://aiphi.shepherdresearchlab.org/)
+[AI PHI →]({{ site.baseurl }}/aiphi/)
 
 ### The Makawalu Study — Breast Cancer Screening in the Pacific using Portable Ultrasound
 
