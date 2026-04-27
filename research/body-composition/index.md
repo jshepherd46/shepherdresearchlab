@@ -37,6 +37,12 @@ Applies deep learning to neural networks trained on large DXA datasets to genera
 Addresses the physiological challenges of long-duration spaceflight, including debilitating loss of muscle and bone mass during adaptation to microgravity.
 [Study details →]({{ site.baseurl }}/astro3do-3/)
 
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" markdown="1" style="max-width: 820px;">
+
 ## Completed Projects
 
 - [Samsung Bioimpedance System Evaluation Study →]({{ site.baseurl }}/samsung-bioimpedance-system-evaluation-study/)
@@ -45,7 +51,7 @@ Addresses the physiological challenges of long-duration spaceflight, including d
   </div>
 </section>
 
-<section class="section">
+<section class="section section--alt">
   <div class="container" markdown="1" style="max-width: 820px;">
 
 ## Recent Publications
