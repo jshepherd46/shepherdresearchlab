@@ -25,6 +25,8 @@ nav:
     url: "/news/"
   - title: "Join A Study"
     url: "/join-a-study/"
+  - title: "Services"
+    url: "/services/"
   - title: "Contact"
     url: "/contact/"
 

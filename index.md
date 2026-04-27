@@ -33,8 +33,6 @@ At SRL, we are a group of research scientists innovating the ways we detect canc
 
 The lab is led by **[Dr. John A. Shepherd](https://www.uhcancercenter.org/shepherd-john)** at the University of Hawaiʻi Cancer Center, with studies spanning breast cancer detection through breast density, metabolic risk prediction through body-composition analysis, and deep learning for AI-assisted diagnosis.
 
-[Visit the Body Composition Lab →]({{ site.baseurl }}/services/)
-
 </div>
 </section>
 
@@ -71,8 +69,29 @@ The lab is led by **[Dr. John A. Shepherd](https://www.uhcancercenter.org/shephe
 </div>
 </section>
 
-<!-- LATEST NEWS -->
+<!-- VISIT THE LAB (Body Composition Lab CTA) -->
 <section class="section">
+<div class="container">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2020/01/dxa_1920x900-1024x480.png" alt="A participant lying on a DXA scanner table during a body-composition scan at the Body Composition Lab" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+<div markdown="1">
+
+<div style="font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Visit the Lab</div>
+
+## Body Composition Lab
+
+The lab operates the **Body Composition Lab (BCEPEM)** — a core facility at the UH Cancer Center offering DXA, Bod Pod, 3D optical scans, BIA, and muscle dynamometry to researchers and the community.
+
+[Make an appointment]({{ site.baseurl }}/make-an-appointment/){: .btn .btn-primary style="margin-top: 0.5rem;"}
+[Services &amp; pricing]({{ site.baseurl }}/services/){: .btn .btn-outline-primary style="margin-top: 0.5rem;"}
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- LATEST NEWS -->
+<section class="section section--alt">
 <div class="container">
 <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
 <h2 style="margin: 0;">Latest News</h2>
@@ -97,7 +116,7 @@ The lab is led by **[Dr. John A. Shepherd](https://www.uhcancercenter.org/shephe
 </section>
 
 <!-- FEATURED RESEARCH -->
-<section class="section section--alt">
+<section class="section">
 <div class="container">
 <div style="text-align:center; margin-bottom: 2.5rem;">
 <div style="font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Featured Research</div>
@@ -119,7 +138,7 @@ Adding three-compartment breast (3CB) features to computer-aided detection yield
 </section>
 
 <!-- LATEST PUBLICATIONS (dynamic — top 3 by year) -->
-<section class="section">
+<section class="section section--alt">
 <div class="container">
 <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
 <h2 style="margin: 0;">Latest Publications</h2>
