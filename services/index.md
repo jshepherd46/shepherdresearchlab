@@ -51,7 +51,8 @@ A **Shared Resource** within the **University of Hawaiʻi Cancer Center**, provi
 </a>
 
 <a href="{{ site.baseurl }}/bioelectrical-impedance-analysis/" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; background: white;">
-<div style="padding: 1.25rem;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2026/04/inbody-S10.png" alt="Bioelectrical impedance analysis" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+<div style="padding: 1rem 1.25rem;">
 <h3 style="margin: 0 0 0.5rem;">Bioelectrical Impedance Analysis</h3>
 <p style="margin: 0; color: var(--gray-700); font-size: 0.95rem;">Segmental lean and fat mass via safe, low-level electrical currents.</p>
 </div>
