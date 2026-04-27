@@ -11,7 +11,7 @@ description: "The Body Composition Lab (BCEPEM) at the UH Cancer Center — DXA,
 
 # Body Composition Lab
 
-A core facility of the **Shepherd Research Lab** within the **University of Hawaiʻi Cancer Center**, providing accurate and precise measures of physiological biomarkers for research and self-assessment.
+A **Shared Resource** within the **University of Hawaiʻi Cancer Center**, providing accurate and precise measures of physiological biomarkers for research and self-assessment.
 
 [Make an appointment]({{ site.baseurl }}/make-an-appointment/){: .btn .btn-primary}
 [See pricing]({{ site.baseurl }}/pricing/){: .btn .btn-outline-primary}
@@ -83,6 +83,36 @@ If you'd like to participate in research while getting a body-composition assess
 </section>
 
 <section class="section section--alt">
+<div class="container" markdown="1" style="max-width: 920px;">
+
+## Faculty &amp; staff
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+
+<div style="text-align: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2022/08/john-2-768x1024.jpg" alt="John A. Shepherd" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; margin-bottom: 0.75rem;">
+<h3 style="margin: 0 0 0.25rem;">John A. Shepherd, PhD</h3>
+<p style="margin: 0; color: var(--gray-700); font-size: 0.9rem;">Shared Resource Faculty Director</p>
+</div>
+
+<div style="text-align: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2019/05/en-1-1.jpg" alt="En Liu" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; margin-bottom: 0.75rem;">
+<h3 style="margin: 0 0 0.25rem;">En Liu</h3>
+<p style="margin: 0; color: var(--gray-700); font-size: 0.9rem;">Program Manager</p>
+</div>
+
+<div style="text-align: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2023/07/Valerie_headshot-684x1024.jpg" alt="Valerie Saiki" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; margin-bottom: 0.75rem;">
+<h3 style="margin: 0 0 0.25rem;">Valerie Saiki</h3>
+<p style="margin: 0; color: var(--gray-700); font-size: 0.9rem;">Laboratory Technologist</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
 
 ## Visit the lab
