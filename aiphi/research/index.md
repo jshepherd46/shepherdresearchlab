@@ -51,7 +51,7 @@ Self-supervised learning on whole-body DXA images to predict clinical outcomes �
 
 Computerized records of women undergoing breast imaging in Hawaiʻi — demographics, clinical data, risk factors, imaging interpretations, cancer outcomes, vital status. Linked with the Hawaiʻi Tumor Registry and Department of Health vital records.
 
-[Visit HIPIMR ↗](https://hipimr.shepherdresearchlab.org)
+[Visit HIPIMR →]({{ site.baseurl }}/hipimr/)
 
 </div>
 </section>

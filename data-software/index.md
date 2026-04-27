@@ -26,7 +26,7 @@ Researchers can request data through the Analysis Plan Form. Additional data res
 
 [Request data →]({{ site.baseurl }}/request-data/){: .btn .btn-outline-primary}
 [Shape Up! portal ↗](https://shapeup.shepherdresearchlab.org/for-researchers/){: .btn .btn-outline-primary}
-[HIPIMR / Breast Health Questionnaire ↗](https://hipimr.shepherdresearchlab.org/research/projects/breast-health-questionnaire/){: .btn .btn-outline-primary}
+[HIPIMR / Breast Health Questionnaire →]({{ site.baseurl }}/hipimr/research/projects/breast-health-questionnaire/){: .btn .btn-outline-primary}
 
 </div>
 </section>

@@ -45,6 +45,24 @@ This research evaluates whether extracellular water and total body water measure
 <section class="section section--alt">
 <div class="container" markdown="1" style="max-width: 820px;">
 
+## Makawalu Study
+
+**Eligibility:** Women 18+ with a mammogram scheduled within 6 months. Not currently pregnant or breastfeeding. No breast augmentation or implants.
+
+A pilot study evaluating a handheld portable ultrasound device (Clarius HD3 L15) integrated with AI for breast-cancer detection — comparing its performance to traditional mammography. The research aims to enhance screening accessibility in remote and underserved Pacific communities. *"Makawalu" means "eight eyes" in Hawaiian — symbolizing examination from multiple perspectives.*
+
+**Participation:** One-time, 1-hour visit on a Saturday at the UH Cancer Center. Includes a portable-ultrasound breast exam and a short breast-health questionnaire. All participants receive a gift card.
+
+**Sign up:** Call **808-440-5234** or email [makawalustudy@cc.hawaii.edu](mailto:makawalustudy@cc.hawaii.edu).
+
+[Makawalu study details →]({{ site.baseurl }}/makawalu-study-breast-cancer-screening/)
+
+</div>
+</section>
+
+<section class="section">
+<div class="container" markdown="1" style="max-width: 820px;">
+
 ## Tanita Study
 
 **Eligibility:** Healthy adults; no non-removable metal, jewelry, or medical devices, and no chronic disease.
@@ -56,7 +74,7 @@ This research evaluates the accuracy of TANITA Bioimpedance Analysis (BIA) devic
 </div>
 </section>
 
-<section class="section">
+<section class="section section--alt">
 <div class="container" markdown="1" style="max-width: 820px;">
 
 ## Get in touch
@@ -91,6 +109,7 @@ Honolulu, HI 96813
 <option>I'm not sure yet — please contact me</option>
 <option>Shape Up! Keiki</option>
 <option>Samsung Study (2026)</option>
+<option>Makawalu Study</option>
 <option>Tanita Study</option>
 <option>Future studies — just add me to the list</option>
 </select>

@@ -24,7 +24,7 @@ The Shepherd Research Lab conducts studies focused on cancer, particularly breas
 ### Hawaiʻi and Pacific Islands Mammography Registry (HIPIMR)
 
 A computerized database maintaining records of women undergoing breast imaging in Hawaiʻi.
-[Visit HIPIMR ↗](https://hipimr.shepherdresearchlab.org/)
+[Visit HIPIMR →]({{ site.baseurl }}/hipimr/)
 
 ### Breast Cancer Risk Assessment in Hawaiʻi and the USAPI
 

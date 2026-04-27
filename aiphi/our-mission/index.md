@@ -63,7 +63,7 @@ We pursue this mission by:
 ## Related organizations
 
 - [Shepherd Research Lab →]({{ site.baseurl }}/)
-- [Hawaiʻi & Pacific Islands Mammography Registry (HIPIMR) ↗](https://hipimr.shepherdresearchlab.org)
+- [Hawaiʻi & Pacific Islands Mammography Registry (HIPIMR) →]({{ site.baseurl }}/hipimr/)
 - [Body Composition Lab →]({{ site.baseurl }}/services/)
 - [Shape Up! Study ↗](https://shapeup.shepherdresearchlab.org)
 
