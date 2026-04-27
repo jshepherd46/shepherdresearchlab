@@ -21,6 +21,12 @@ Dr. Shepherd serves as Professor/Researcher and Interim Deputy Director & Chief 
 
 Dr. Shepherd advises graduate students on the team, providing resources and professional connections to support their career goals.
 
+**Find Dr. Shepherd online:**
+[UH Cancer Center ↗](https://www.uhcancercenter.org/shepherd-john) ·
+[Google Scholar ↗](https://scholar.google.it/citations?hl=en&user=1r51d_AAAAAJ) ·
+[LinkedIn ↗](https://www.linkedin.com/in/john-shepherd-04bb257/) ·
+<a href="https://en.wikipedia.org/wiki/John_Shepherd_(physicist)" target="_blank" rel="noopener">Wikipedia ↗</a>
+
   </div>
 </section>
 
