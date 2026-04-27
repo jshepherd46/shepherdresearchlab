@@ -25,7 +25,7 @@ Researchers can request data through the Analysis Plan Form. Additional data res
 - **HIPIMR — Breast Health Questionnaire**
 
 [Request data →]({{ site.baseurl }}/request-data/){: .btn .btn-outline-primary}
-[Shape Up! portal ↗](https://shapeup.shepherdresearchlab.org/for-researchers/){: .btn .btn-outline-primary}
+[Shape Up! portal →]({{ site.baseurl }}/shapeup/for-researchers/){: .btn .btn-outline-primary}
 [HIPIMR / Breast Health Questionnaire →]({{ site.baseurl }}/hipimr/research/projects/breast-health-questionnaire/){: .btn .btn-outline-primary}
 
 </div>
@@ -41,7 +41,7 @@ Tools and repositories are available through our GitHub organization. Current of
 - **3DO Body Composition Analyzer** — uses 3D mesh technology to predict DXA scan outcomes (login required)
 - More tools in progress of being released
 
-[3DO Body Composition Analyzer ↗](https://shapeup.shepherdresearchlab.org/3do-bodycomp-analyzer/){: .btn .btn-outline-primary}
+[3DO Body Composition Analyzer →]({{ site.baseurl }}/shapeup/3do-bodycomp-analyzer/){: .btn .btn-outline-primary}
 [GitHub · shepherd-lab ↗](https://github.com/shepherd-lab){: .btn .btn-primary}
 
 </div>

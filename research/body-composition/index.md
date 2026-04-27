@@ -25,7 +25,7 @@ These studies examine fat, lean, and bone tissue to quantify how body shape rela
 
 This initiative develops methods to measure health and body composition from 2D and 3D images, providing detailed information about health and wellness risks.
 
-[Shape Up! ↗](https://shapeup.shepherdresearchlab.org/) · [Participate ↗](https://shapeup.shepherdresearchlab.org/for-participants/)
+[Shape Up! →]({{ site.baseurl }}/shapeup/) · [Participate →]({{ site.baseurl }}/shapeup/for-participants/)
 
 ### Deep Learning and Total-Body DXA Scans (TBDXA.I.)
 

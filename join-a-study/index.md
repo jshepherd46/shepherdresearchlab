@@ -23,7 +23,7 @@ The Shepherd Research Lab invites participants to join research studies focused 
 
 This study helps families learn about their children's health while researchers develop technologies to measure body shape and understand its relationship to physical strength and cardiovascular health.
 
-[Learn more at the Shape Up! site ↗](https://shapeup.shepherdresearchlab.org/for-participants/)
+[Shape Up! Keiki participant FAQ →]({{ site.baseurl }}/shapeup/for-keiki/)
 
 </div>
 </section>
