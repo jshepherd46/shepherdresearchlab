@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Publications"
-description: "Peer-reviewed publications from the Shepherd Research Lab — rendered from the monthly OpenAlex pipeline output."
+title: "Publications and Notable Abstracts"
+description: "Peer-reviewed publications and notable abstracts from the Shepherd Research Lab — rendered from the monthly OpenAlex pipeline output."
 ---
 
 <section class="section">
 <div class="container" markdown="1" style="max-width: 900px;">
 
-# Publications
+# Publications and notable abstracts
 
 <nav style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: 1.25rem 0 1.5rem;">
 <strong style="margin-right: 0.5rem; color: var(--gray-500); font-size: 0.9rem; font-weight: 600;">Browse by topic:</strong>
