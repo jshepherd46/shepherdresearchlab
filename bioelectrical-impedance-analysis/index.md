@@ -37,14 +37,14 @@ BIA served as one of the core modalities in the Shepherd Lab's **Da Kine Study**
 
 **Total body fat % and Fat Mass.**
 Impedance at 50 kHz, combined with participant height, weight, age, and sex, predicts total fat mass and fat percentage using validated population equations. BIA fat percentage agrees closely with DXA across normally hydrated populations and is a practical, high-throughput option for large cohort studies and repeated-measures monitoring. The **InBody S10** (supine, octapolar) and **InBody 770** (standing) systems used at the BCL have both been validated against the four-compartment model, with excellent agreement across diverse race and ethnicity groups.
-*Cataldi D, Bennett JP, Quon BK, Liu YE, Heymsfield SB, Kelly T, Shepherd JA. Agreement and precision of deuterium dilution for total body water and multicompartment body composition assessment in collegiate athletes. J Nutr. 2022;152:2048–2059.*
+*Cataldi D, Bennett JP, Quon BK, Liu YE, Heymsfield SB, Kelly T, **Shepherd JA**. Agreement and precision of deuterium dilution for total body water and multicompartment body composition assessment in collegiate athletes. J Nutr. 2022;152:2048–2059. [doi:10.1093/jn/nxac116](https://doi.org/10.1093/jn/nxac116)*
 
 **Fat-Free Mass (FFM) and Skeletal Muscle Mass (SMM).**
 Fat-free mass is computed from impedance-derived total body water and established assumptions about the hydration fraction of lean tissue. The InBody and Tanita flagship systems also report **segmental skeletal muscle mass** by limb and trunk, providing a lean-mass profile comparable in structure (though lower in precision) to DXA regional output. Segmental lean mass from octapolar BIA is a practical and widely used alternative for sarcopenia screening in settings where DXA is not available.
 
 **Total Body Water (TBW) and Intracellular Water (ICW).**
 BIA and BIS systems estimate total body water from impedance directly. Multifrequency and spectroscopy systems additionally separate TBW into its **intracellular (ICW)** and **extracellular (ECW)** fractions. TBW is the foundational measurement from which all BIA-derived body-composition outputs flow: the Shepherd Lab's validation work demonstrated that even small differences in TBW estimation translate to meaningful differences in two-compartment fat and lean models, and that five-compartment models partially mitigate this sensitivity.
-*Cataldi D, Bennett JP, Quon BK, Liu YE, Heymsfield SB, Kelly T, Shepherd JA. J Nutr. 2022;152:2048–2059.*
+*Cataldi D, Bennett JP, Quon BK, Liu YE, Heymsfield SB, Kelly T, **Shepherd JA**. J Nutr. 2022;152:2048–2059. [doi:10.1093/jn/nxac116](https://doi.org/10.1093/jn/nxac116)*
 
 **ECW/TBW ratio — BIA's most clinically unique output.**
 The ratio of extracellular water to total body water is a measure no other body-composition method provides, and it is one of BIA's most important clinical contributions. In a healthy, normally nourished adult, roughly 60% of body water is intracellular and 40% extracellular, giving a normal ECW/TBW of approximately **0.38–0.40**. When this ratio rises, it signals a shift of fluid out of cells — which occurs in malnutrition, inflammation, edema, cancer, renal disease, and advanced sarcopenia. An elevated ECW/TBW indicates that lean mass is being lost from the intracellular compartment, even when total body weight or simple fat-free mass estimates appear stable. In cancer patients with sarcopenia, a high ECW/TBW ratio is an independent predictor of reduced overall survival, making it a clinically actionable marker of physiological stress that is invisible to DXA or the Bod Pod.
@@ -58,7 +58,7 @@ Phase angle is the arctangent of the reactance-to-resistance ratio and is a dire
 
 **3DO + BIA multicompartment model.**
 A 2024 Shepherd Lab innovation combined 3D optical imaging (for body volume) with BIA (for total body water) and DXA-derived bone mineral from a demographic prediction to construct an accessible **five-compartment** body-composition model requiring no isotope dilution. Validated against the Wang five-compartment criterion, this hybrid approach brings research-grade body-composition precision within reach of any setting that has a 3DO scanner and a BIA device, and it is now used in Shape Up! Adults and related studies.
-*Bennett JP, Cataldi D, Liu YE, Kelly NN, Quon BK, Schoeller DA, Kelly T, Heymsfield SB, Shepherd JA. Development and validation of a rapid multicompartment body composition model using 3D optical imaging and bioelectrical impedance analysis. Clin Nutr. 2024;43:346–356.*
+*Bennett JP, Cataldi D, Liu YE, Kelly NN, Quon BK, Schoeller DA, Kelly T, Heymsfield SB, **Shepherd JA**. Development and validation of a rapid multicompartment body composition model using 3D optical imaging and bioelectrical impedance analysis. Clin Nutr. 2024;43:346–356. [doi:10.1016/j.clnu.2023.12.009](https://doi.org/10.1016/j.clnu.2023.12.009)*
 
 </div>
 </section>

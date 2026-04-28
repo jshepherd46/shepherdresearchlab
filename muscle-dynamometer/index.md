@@ -39,11 +39,11 @@ The BCL uses a research-grade isokinetic dynamometer system. Practically all maj
 
 **Grip strength (handgrip dynamometry).**
 Grip strength is the most widely used single measure of overall muscle function in epidemiology and clinical research. It is a component of every major sarcopenia diagnostic framework — including the European Working Group on Sarcopenia (EWGSOP2) and the Asian Working Group for Sarcopenia (AWGS) — and is an entry-level screening criterion in clinical practice guidelines. **Low grip strength predicts incident disability, hospitalization, cancer-treatment toxicity, frailty, and all-cause mortality** independently of age, body weight, and body composition. Grip is measured bilaterally and compared against sex- and age-matched normative data.
-*Cruz-Jentoft AJ, et al. Sarcopenia: revised European consensus on definition and diagnosis. Age Ageing. 2019;48:16–31.*
+*Cruz-Jentoft AJ, et al. Sarcopenia: revised European consensus on definition and diagnosis. Age Ageing. 2019;48:16–31. [doi:10.1093/ageing/afz046](https://doi.org/10.1093/ageing/afz046)*
 
 **Leg extension strength and power (isokinetic knee extension/flexion).**
 Knee-extensor (quadriceps) and flexor (hamstring) strength measured isokinetically across a range of test speeds is the standard endpoint for lower-extremity muscle function in aging research, rehabilitation, and sports physiology. **Peak torque, peak power, and the hamstring-to-quadriceps ratio** provide distinct clinical information: peak torque reflects absolute strength capacity, peak power reflects the ability to generate force rapidly (fall prevention), and the H:Q ratio flags injury risk and muscle balance asymmetry. The test is performed at standardized angular velocities (typically 60 and 180 degrees per second for strength and power protocols respectively) with bilateral comparison.
-*Goodpaster BH, et al. The loss of skeletal muscle strength, mass, and quality in older adults: the health, aging and body composition study. J Gerontol A Biol Sci Med Sci. 2006;61:1059–1064.*
+*Goodpaster BH, et al. The loss of skeletal muscle strength, mass, and quality in older adults: the health, aging and body composition study. J Gerontol A Biol Sci Med Sci. 2006;61:1059–1064. [doi:10.1093/gerona/61.10.1059](https://doi.org/10.1093/gerona/61.10.1059)*
 
 **Abdominal compression strength (trunk flexion).**
 Trunk-flexor strength reflects the functional integrity of the core musculature, which is central to posture, mobility, load transfer, and protection of the lumbar spine. Isokinetic trunk-flexion testing is used in rehabilitation research, cancer-survivor functional assessments, and occupational health studies where core endurance is a clinical endpoint. Trunk strength is particularly relevant in cancer populations because abdominal and core muscles are disproportionately affected by sarcopenia, deconditioning from treatment, and surgical recovery.
@@ -78,7 +78,7 @@ If your study requires a configuration not listed here, [contact the lab]({{ sit
 
 **Researchers.**
 Isokinetic dynamometry is the accepted gold standard for strength endpoints in NIH-funded clinical trials, aging studies, cancer-survivor research, rehabilitation science, and sports physiology. The BCL dynamometer has been used as the criterion strength method in the **Da Kine Study** comparison of body-composition techniques, establishing the relationship between BIA, DXA, 3DO, and functional muscle capacity.
-*Cataldi D, Bennett JP, Wong MC, et al. Accuracy and precision of multiple body composition methods and associations with muscle strength in athletes of varying hydration: The Da Kine Study. Clin Nutr. 2024;43:189–199.*
+*Cataldi D, Bennett JP, Wong MC, et al. Accuracy and precision of multiple body composition methods and associations with muscle strength in athletes of varying hydration: The Da Kine Study. Clin Nutr. 2024;43:189–199. [doi:10.1016/j.clnu.2023.11.040](https://doi.org/10.1016/j.clnu.2023.11.040)*
 
 **Community members and athletes.**
 Strength testing gives you an objective baseline for your training program, identifies left-right imbalances before they become injuries, tracks the effectiveness of a training or rehabilitation intervention, and provides age- and sex-matched percentile ranking for your muscle function relative to normative data. Unlike most gym-based testing, isokinetic dynamometry isolates each muscle group from compensatory movement and provides a reproducible measurement you can return to at any interval.

@@ -35,7 +35,7 @@ ADP agrees with hydrostatic weighing to within **1% body fat** on average and is
 
 **Total body fat % and Fat Mass (FM).**
 Body density is converted to fat percentage using validated prediction equations, giving total fat mass and fat as a percentage of body weight. This is the same output as hydrostatic weighing but without the need for submersion, and it is far more accurate than BMI, which cannot distinguish fat from muscle. Fat % is the primary endpoint for monitoring dietary interventions, weight-loss programs, and metabolic health.
-*Fields DA, Goran MI, McCrory MA. Body-composition assessment via air-displacement plethysmography in adults and children: a review. Am J Clin Nutr. 2002;75:453–467.*
+*Fields DA, Goran MI, McCrory MA. Body-composition assessment via air-displacement plethysmography in adults and children: a review. Am J Clin Nutr. 2002;75:453–467. [doi:10.1093/ajcn/75.3.453](https://doi.org/10.1093/ajcn/75.3.453)*
 
 **Fat-Free Mass (FFM).**
 Everything in the body that is not fat: skeletal muscle, bone mineral, body water, and organs. FFM is as clinically important as fat mass — it determines how the body burns calories and responds to exercise. Monitoring FFM alongside fat mass distinguishes a healthy weight loss (fat lost, muscle preserved) from an unhealthy one (muscle lost along with fat), and tracks the anabolic response to resistance training or nutritional interventions.
@@ -51,7 +51,7 @@ TEE adjusts your RMR upward based on your daily activity level, giving you your 
 
 **Progress tracking across visits.**
 Because ADP is fast, radiation-free, and highly reproducible, it is well-suited for longitudinal monitoring. Serial Bod Pod results let you track the *composition* of your weight change over time — whether you are pursuing fat loss, muscle gain, or metabolic health — and give you feedback that a scale alone cannot.
-*Toombs RJ, Ducher G, Shepherd JA, De Souza MJ. The impact of recent technological advances on the trueness and precision of DXA to assess body composition. Obesity. 2012;20:30–39.*
+*Toombs RJ, Ducher G, **Shepherd JA**, De Souza MJ. The impact of recent technological advances on the trueness and precision of DXA to assess body composition. Obesity. 2012;20:30–39. [doi:10.1038/oby.2011.211](https://doi.org/10.1038/oby.2011.211)*
 
 </div>
 </section>
@@ -70,8 +70,8 @@ The Pea Pod is an infant-specific ADP system designed for babies from birth thro
 The Pea Pod measures fat mass, fat-free mass, and fat percentage in newborns and young infants, producing body-composition data that no other practical clinical method can provide at this age. Body weight and body-fat percentage in the first months of life are strong predictors of later metabolic disease, growth trajectory, and neurodevelopmental outcomes. The Pea Pod is used in neonatal nutrition research, breastfeeding adequacy studies, assessment of intrauterine growth restriction, and early-life obesity prevention programs.
 
 The system uses age- and sex-specific estimates of fat-free mass density, accounting for the rapid changes in body water and mineral content that occur during early development, and has been validated against the four-compartment model in healthy full-term and moderately premature infants.
-*Ellis KJ, Yao M, Shypailo RJ, Urlando A, Wong WW, Heird WC. Body-composition assessment in infancy: air-displacement plethysmography compared with a reference 4-compartment model. Am J Clin Nutr. 2007;85:90–95.*
-*Urlando A, Dempster P, Aitkens S. A new air displacement plethysmograph for the measurement of body composition in infants. Pediatr Res. 2003;53:486–492.*
+*Ellis KJ, Yao M, Shypailo RJ, Urlando A, Wong WW, Heird WC. Body-composition assessment in infancy: air-displacement plethysmography compared with a reference 4-compartment model. Am J Clin Nutr. 2007;85:90–95. [doi:10.1093/ajcn/85.1.90](https://doi.org/10.1093/ajcn/85.1.90)*
+*Urlando A, Dempster P, Aitkens S. A new air displacement plethysmograph for the measurement of body composition in infants. Pediatr Res. 2003;53:486–492. [doi:10.1203/01.pdr.0000049669.74793.e3](https://doi.org/10.1203/01.pdr.0000049669.74793.e3)*
 
 ### Tod Pod chair — toddlers and young children ages 2–6 years
 
@@ -88,12 +88,12 @@ The transition from infant to adult body-composition measurement has historicall
 Body composition in the toddler and preschool years is increasingly recognized as a critical window for **metabolic programming**. Early adiposity trajectories in this age range predict cardiometabolic risk in adolescence and adulthood. The Tod Pod provides the only practical radiation-free method for quantifying fat and fat-free mass in this age group, making it a key tool in pediatric obesity research, early-childhood nutrition studies, and growth monitoring in clinical populations.
 
 The Pediatric Option has been validated against the four-compartment model as the criterion method in children two to six years of age, and was shown to accurately estimate percentage body fat in this population.
-*Fields DA, Allison DB. Air-displacement plethysmography pediatric option in 2–6 year olds using the four-compartment model as a criterion method. Obesity. 2012;20:1732–1737.*
+*Fields DA, Allison DB. Air-displacement plethysmography pediatric option in 2–6 year olds using the four-compartment model as a criterion method. Obesity. 2012;20:1732–1737. [doi:10.1038/oby.2012.28](https://doi.org/10.1038/oby.2012.28)*
 
 ### Bod Pod — children age 6 through adulthood
 
 For children six and older through adulthood, the standard Bod Pod applies. The Shepherd Lab's **Shape Up Keiki** study (NIH/NICHD R01 HD103885) deploys the full ADP system across pediatric ages in Hawaiʻi, building body-composition reference data for multiethnic populations including Native Hawaiian and Pacific Islander children who are underrepresented in existing reference standards. The Bod Pod is also used in the **Shape Up Adults** study to characterize the lifespan trajectory of body composition in diverse Pacific populations.
-*Zemel BS, Shepherd JA, Grant SFA, Lappe JM, Oberfield SE, Mitchell JA, Winer KK, Kelly A, Kalkwarf HJ. Reference ranges for body composition indices by dual energy X-ray absorptiometry from the Bone Mineral Density in Childhood Study Cohort. Am J Clin Nutr. 2023;118:792–803.*
+*Zemel BS, **Shepherd JA**, Grant SFA, Lappe JM, Oberfield SE, Mitchell JA, Winer KK, Kelly A, Kalkwarf HJ. Reference ranges for body composition indices by dual energy X-ray absorptiometry from the Bone Mineral Density in Childhood Study Cohort. Am J Clin Nutr. 2023;118:792–803. [doi:10.1016/j.ajcnut.2023.08.006](https://doi.org/10.1016/j.ajcnut.2023.08.006)*
 
 Taken together, the **Pea Pod, Tod Pod chair, and Bod Pod** give the BCL an unbroken chain of body-composition measurement from the first day of life through old age, using the same foundational physical principles at every stage.
 
