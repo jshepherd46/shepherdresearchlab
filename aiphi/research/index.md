@@ -21,7 +21,10 @@ AI PHI's research portfolio spans breast imaging, total-body DXA, mammography re
 </section>
 
 <section class="section section--alt">
-<div class="container" markdown="1" style="max-width: 820px;">
+<div class="container">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2019/06/3cb-cover-01.jpg" alt="Three-compartment breast imaging study illustration" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+<div markdown="1">
 
 ## Three-Compartment Breast Lesion Detection (3CB)
 
@@ -30,10 +33,15 @@ Quantifying lipid–protein–water signatures of suspicious breast lesions to e
 [3CB study details →]({{ site.baseurl }}/3cb/){: .btn .btn-outline-primary}
 
 </div>
+</div>
+</div>
 </section>
 
 <section class="section">
-<div class="container" markdown="1" style="max-width: 820px;">
+<div class="container">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2020/01/knee-scan-DL.png" alt="Deep-learning analysis of a total-body DXA scan" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+<div markdown="1">
 
 ## Deep Learning + Total-Body DXA (TBDXA.I.)
 
@@ -42,22 +50,32 @@ Self-supervised learning on whole-body DXA images to predict clinical outcomes �
 [TBDXA.I. study details →]({{ site.baseurl }}/tbdxai/){: .btn .btn-outline-primary}
 
 </div>
+</div>
+</div>
 </section>
 
 <section class="section section--alt">
-<div class="container" markdown="1" style="max-width: 820px;">
+<div class="container">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2019/06/UHCC-women.jpg" alt="Women receiving breast imaging at the UH Cancer Center" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+<div markdown="1">
 
 ## Hawaiʻi & Pacific Islands Mammography Registry (HIPIMR)
 
 Computerized records of women undergoing breast imaging in Hawaiʻi — demographics, clinical data, risk factors, imaging interpretations, cancer outcomes, vital status. Linked with the Hawaiʻi Tumor Registry and Department of Health vital records.
 
-[Visit HIPIMR →]({{ site.baseurl }}/hipimr/)
+[Visit HIPIMR →]({{ site.baseurl }}/hipimr/){: .btn .btn-outline-primary}
 
+</div>
+</div>
 </div>
 </section>
 
 <section class="section">
-<div class="container" markdown="1" style="max-width: 820px;">
+<div class="container">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2019/06/uhcc-moonshine-summit-group.jpg" alt="UH Cancer Center research group photo from the Moonshine Summit" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+<div markdown="1">
 
 ## SMART Melanoma
 
@@ -65,5 +83,7 @@ Systematic Melanoma Assessment and Risk Triaging — deep-learning computer visi
 
 [SMART Melanoma study details →]({{ site.baseurl }}/smart-melanoma/){: .btn .btn-outline-primary}
 
+</div>
+</div>
 </div>
 </section>
