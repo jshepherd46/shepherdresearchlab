@@ -57,9 +57,7 @@ For general inquiries, call **808-440-5234** or email [bodycompstudies@cc.hawaii
 </div>
 
 <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto;">
-{% if s.status != 'closed' %}
-<a href="mailto:{{ s.email }}?subject=Interest in {{ s.name }}" class="btn btn-primary">Email the team</a>
-{% endif %}
+<a href="#interest-form" class="btn btn-primary" data-prefill-study="{{ s.name }}">Learn More</a>
 {% if s.detail_page %}
 <a href="{{ site.baseurl }}{{ s.detail_page }}" class="btn btn-outline-primary">Study details →</a>
 {% endif %}
@@ -77,9 +75,9 @@ For general inquiries, call **808-440-5234** or email [bodycompstudies@cc.hawaii
 <section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
 
-## Not sure which study? Want to be notified?
+## Get in touch
 
-Fill in the form below or email the lab directly — we'll route your interest to the right study coordinator and add you to the future-studies notification list if you'd like.
+Use the form below to learn more about a specific study (clicking **Learn More** on any card above pre-fills your message), tell us what topics you're interested in, or ask to be notified when new studies open. We'll route your message to the right study coordinator.
 
 <div class="contact-grid" markdown="1" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-top: 2rem;">
 <div markdown="1">
@@ -97,25 +95,44 @@ Honolulu, HI 96813
 <div>
 <!-- TODO (Phase 3): replace YOUR_FORMSPREE_STUDIES_ID with the real form ID from formspree.io -->
 <!-- All submissions route to bodycompstudies@cc.hawaii.edu (configured in Formspree). -->
-<form action="https://formspree.io/f/YOUR_FORMSPREE_STUDIES_ID" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+<form id="interest-form" action="https://formspree.io/f/YOUR_FORMSPREE_STUDIES_ID" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
 <label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Your name
 <input type="text" name="name" required style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit;">
 </label>
 <label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Email address
 <input type="email" name="email" required style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit;">
 </label>
-<label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Which study interests you?
-<select name="study" style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit;">
-<option>I'm not sure yet — please contact me</option>
-{% for s in site.data.studies %}<option>{{ s.short_name }}{% if s.status == 'closed' %} (closed){% endif %}</option>
-{% endfor %}<option>Future studies — just add me to the list</option>
-</select>
+<fieldset style="border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 0.85rem 1rem 1rem; margin: 0;">
+<legend style="font-size: 0.9rem; font-weight: 600; padding: 0 0.4rem;">What study topics interest you?</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem 1rem; margin-top: 0.25rem;">
+<label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: normal; cursor: pointer;"><input type="checkbox" name="topics[]" value="Breast cancer"> Breast cancer</label>
+<label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: normal; cursor: pointer;"><input type="checkbox" name="topics[]" value="Obesity"> Obesity</label>
+<label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: normal; cursor: pointer;"><input type="checkbox" name="topics[]" value="Muscle health"> Muscle health</label>
+<label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: normal; cursor: pointer;"><input type="checkbox" name="topics[]" value="Other cancer studies"> Other cancer studies</label>
+</div>
+</fieldset>
+<label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: normal; cursor: pointer;">
+<input type="checkbox" name="future_studies" value="Yes"> Add me to the future-studies notification list
 </label>
 <label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Anything you'd like us to know
-<textarea name="message" rows="4" style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit; resize: vertical;"></textarea>
+<textarea name="message" id="interest-form-message" rows="4" style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit; resize: vertical;"></textarea>
 </label>
 <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Submit</button>
 </form>
+<script>
+(function() {
+  document.querySelectorAll('a[data-prefill-study]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var study = btn.dataset.prefillStudy;
+      var ta = document.getElementById('interest-form-message');
+      if (ta) {
+        ta.value = 'I am interested in hearing more about ' + study + '.';
+        ta.focus();
+      }
+    });
+  });
+})();
+</script>
 </div>
 </div>
 
