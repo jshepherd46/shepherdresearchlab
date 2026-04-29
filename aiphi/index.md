@@ -17,7 +17,7 @@ Reducing the burden of cancer in Hawaiʻi and the Pacific through artificial int
 <a href="{{ site.baseurl }}/aiphi/our-mission/" class="btn btn-primary">Our mission</a>
 <a href="{{ site.baseurl }}/aiphi/research/" class="btn btn-outline-primary">Research</a>
 <a href="{{ site.baseurl }}/aiphi/our-team/" class="btn btn-outline-primary">Team</a>
-<a href="{{ site.baseurl }}/aiphi/affinity-groups/" class="btn btn-outline-primary">Affinity Group</a>
+<a href="{{ site.baseurl }}/aiphi/events/" class="btn btn-outline-primary">Events</a>
 </div>
 
 </div>
@@ -129,6 +129,7 @@ A deep neural network trained on whole-body DXA scans from 3,000+ older adults i
 
 AI PHI news and publications are part of the wider Shepherd Research Lab feeds. Browse the full lists or filter by AI-related tags:
 
+[AI PHI news →]({{ site.baseurl }}/news/aiphi/){: .btn .btn-outline-primary}
 [All news →]({{ site.baseurl }}/news/){: .btn .btn-outline-primary}
 [All publications →]({{ site.baseurl }}/publications/){: .btn .btn-outline-primary}
 [AI / deep-learning publications →]({{ site.baseurl }}/publications/ai/){: .btn .btn-outline-primary}

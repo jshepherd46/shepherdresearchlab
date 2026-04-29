@@ -2,6 +2,7 @@
 title: "Shepherd Research Lab presents five projects at 2026 JABSOM Biomedical Sciences Symposium"
 date: 2026-04-25
 thumbnail: "/wp-content/uploads/2026/04/comic-architecture.png"
+tags: [aiphi]
 ---
 
 Shepherd Research Lab members presented **five posters** at the 2026 Annual Biomedical Sciences Symposium hosted by the John A. Burns School of Medicine on April 24 and 25 at the Kakaʻako campus. The symposium showcases research from graduate students, postdoctoral fellows, residents, and medical students across the University of Hawaiʻi system.
