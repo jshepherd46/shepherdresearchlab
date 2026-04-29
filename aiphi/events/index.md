@@ -32,7 +32,9 @@ To suggest a speaker for the Affinity Group, contact [johnshep@hawaii.edu](mailt
 **Speaker:** Yading Yuan
 **Topic:** Federated prediction for scalable and privacy-preserved knowledge-based planning in radiotherapy
 
-**Zoom:** [https://hawaii.zoom.us/j/93279758118](https://hawaii.zoom.us/j/93279758118)
+[Register for this Event →](https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg){: .btn .btn-primary}
+
+*Register once to attend this and any future Affinity Group meeting — Zoom emails you the join link and reminders automatically.*
 
 </div>
 </section>
@@ -48,6 +50,7 @@ A monthly group discussing current trends and applications of artificial intelli
 
 **Cadence.** First Friday of each month, 9:00 AM Hawaiʻi time, via Zoom. Speakers receive an AI PHI beer stein as thanks for their contributions.
 
+[Register for the series →](https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg){: .btn .btn-primary}
 [Watch past meetings on YouTube ↗](https://www.youtube.com/@UHCC_AIPHI){: .btn .btn-outline-primary}
 
 </div>
