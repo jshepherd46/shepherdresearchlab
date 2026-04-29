@@ -2,34 +2,57 @@
 layout: default
 title: "AI Precision Health Institute (AI PHI)"
 description: "AI Precision Health Institute at the University of Hawaiʻi Cancer Center — AI for cancer risk, detection, and intervention in Hawaiʻi and the Pacific."
+og_image: /wp-content/uploads/2019/06/uhcc-moonshine-summit-group.jpg
 ---
 
-<section class="section">
-<div class="container" markdown="1" style="max-width: 820px; text-align: center;">
-
-<img src="{{ site.baseurl }}/wp-content/uploads/2022/10/AI-PHI-logo-10-31-2022_Web-Dark-BG.png" alt="AI Precision Health Institute" style="max-width: 320px; width: 100%; margin: 0 auto 1.5rem; background: var(--gray-900); padding: 1.5rem; border-radius: var(--radius);">
-
-# AI Precision Health Institute
-
-Reducing the burden of cancer in Hawaiʻi and the Pacific through artificial intelligence — risk identification, early detection, and novel interventions.
-
-<div style="margin-top: 1.75rem;">
-<a href="{{ site.baseurl }}/aiphi/our-mission/" class="btn btn-primary">Our mission</a>
-<a href="{{ site.baseurl }}/aiphi/research/" class="btn btn-outline-primary">Research</a>
-<a href="{{ site.baseurl }}/aiphi/our-team/" class="btn btn-outline-primary">Team</a>
-<a href="{{ site.baseurl }}/aiphi/events/" class="btn btn-outline-primary">Events</a>
+<section class="hero">
+<div class="hero__bg" style="background-image: url('{{ site.baseurl }}/wp-content/uploads/2019/06/uhcc-moonshine-summit-group.jpg');" aria-hidden="true"></div>
+<div class="container">
+<div class="hero__content">
+<div class="hero__workshop-badge">University of Hawaiʻi Cancer Center</div>
+<img src="{{ site.baseurl }}/wp-content/uploads/2022/10/AI-PHI-logo-10-31-2022_Web-Dark-BG.png" alt="AI Precision Health Institute" style="max-width: 280px; width: 100%; margin-bottom: 1.75rem; display: block;">
+<h1>Reducing the burden of <span>cancer in Hawaiʻi</span> through AI</h1>
+<p class="hero__desc">The AI Precision Health Institute develops and validates AI models for cancer-risk identification, early detection, and novel interventions — focused on the unique ethnic and cultural qualities of Hawaiʻi and the Pacific.</p>
+<div class="hero__actions">
+<a href="{{ site.baseurl }}/aiphi/our-mission/" class="btn btn-primary">Our Mission</a>
+<a href="{{ site.baseurl }}/aiphi/research/" class="btn btn-outline">Research</a>
+<a href="{{ site.baseurl }}/aiphi/our-team/" class="btn btn-outline">Team</a>
+<a href="{{ site.baseurl }}/aiphi/events/" class="btn btn-outline">Events</a>
 </div>
-
+</div>
 </div>
 </section>
 
-<section class="section section--alt">
+<section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
 
 ## What we do
 
 AI PHI develops and validates AI models for cancer risk, detection, and intervention — with a focus on the unique ethnic and cultural qualities of Hawaiʻi and the Pacific. We support the AI-for-cancer community in the region through pilot project funding, technical resources, and a monthly affinity group bringing together AI researchers and clinicians.
 
+</div>
+</section>
+
+<section class="section section--alt">
+<div class="container">
+<div style="text-align:center; margin-bottom: 2.5rem;">
+<div style="font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Next Affinity Group meeting</div>
+<h2>Federated prediction for radiotherapy</h2>
+<p style="color: var(--gray-500); margin-top: 0.5rem; margin-bottom: 0;">Friday, May 1, 2026 · 9:00 AM HST · via Zoom</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; align-items: center; max-width: 1000px; margin: 0 auto;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2024/04/yading_yuan_may_2026.jpg" alt="Yading Yuan" style="width:100%; max-width: 360px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin: 0 auto; display: block;">
+<div markdown="1">
+
+**Yading Yuan**
+
+A talk on how deep learning can improve radiation-therapy planning efficiency through federated prediction — addressing data scarcity while preserving privacy across institutions.
+
+[Join via Zoom →](https://hawaii.zoom.us/j/93279758118){: .btn .btn-primary style="margin-top: 0.5rem;"}
+[All upcoming events →]({{ site.baseurl }}/aiphi/events/){: .btn .btn-outline-primary style="margin-top: 0.5rem;"}
+
+</div>
+</div>
 </div>
 </section>
 
@@ -95,6 +118,35 @@ A deep neural network trained on whole-body DXA scans from 3,000+ older adults i
 </section>
 
 <section class="section">
+<div class="container">
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+<h2 style="margin: 0;">Latest AI PHI news</h2>
+<a href="{{ site.baseurl }}/news/aiphi/" style="color: var(--primary); font-weight: 600; text-decoration: none;">All AI PHI news →</a>
+</div>
+<div class="features-grid">
+{% assign aiphi_posts = site.posts | where_exp: "p", "p.tags contains 'aiphi'" | slice: 0, 3 %}
+{% for post in aiphi_posts %}
+<a href="{{ post.url | relative_url }}" class="feature-card" style="padding: 0; overflow: hidden; text-decoration: none; color: inherit;">
+{% if post.thumbnail %}
+<img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
+{% else %}
+<div style="background: var(--primary-light); aspect-ratio: 16/9;"></div>
+{% endif %}
+<div style="padding: 1.25rem 1.5rem;">
+<p style="font-size: 0.75rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 0.5rem;">{{ post.date | date: "%b %-d, %Y" }}</p>
+<h3 style="font-size: 1rem; margin-bottom: 0.5rem;">{{ post.title }}</h3>
+<p style="font-size: 0.9rem; color: var(--gray-700);">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+</div>
+</a>
+{% endfor %}
+</div>
+<p style="text-align: center; margin-top: 2.5rem; color: var(--gray-700);">
+Browse <a href="{{ site.baseurl }}/publications/ai/">AI publications</a> · <a href="{{ site.baseurl }}/publications/">all SRL publications</a> · <a href="{{ site.baseurl }}/news/">all SRL news</a>
+</p>
+</div>
+</section>
+
+<section class="section section--alt">
 <div class="container" markdown="1" style="max-width: 820px;">
 
 ## Co-Directors
@@ -122,17 +174,17 @@ A deep neural network trained on whole-body DXA scans from 3,000+ older adults i
 </div>
 </section>
 
-<section class="section section--alt">
-<div class="container" markdown="1" style="max-width: 820px;">
-
-## News & publications
-
-AI PHI news and publications are part of the wider Shepherd Research Lab feeds. Browse the full lists or filter by AI-related tags:
-
-[AI PHI news →]({{ site.baseurl }}/news/aiphi/){: .btn .btn-outline-primary}
-[All news →]({{ site.baseurl }}/news/){: .btn .btn-outline-primary}
-[All publications →]({{ site.baseurl }}/publications/){: .btn .btn-outline-primary}
-[AI / deep-learning publications →]({{ site.baseurl }}/publications/ai/){: .btn .btn-outline-primary}
-
+<section class="section">
+<div class="container">
+<div style="text-align:center; margin-bottom: 2.5rem;">
+<div style="font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Partners &amp; support</div>
+<h2>Built with our community</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3rem; max-width: 900px; margin: 0 auto 2rem;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2019/06/Western-Digital-1024x366.jpg" alt="Western Digital" style="max-width: 240px; height: auto;">
+</div>
+<p style="text-align: center; color: var(--gray-700); max-width: 720px; margin-left: auto; margin-right: auto;">
+Industry support from <strong>Western Digital</strong> (data-storage equipment and expertise). Academic collaborations with the <strong>University of Hawaiʻi High Performance Computation Center</strong> and the <strong>UH Data Science Institute</strong>. Convening home: the <strong>University of Hawaiʻi Cancer Center</strong>.
+</p>
 </div>
 </section>
