@@ -20,7 +20,10 @@ Migration from WordPress is essentially complete. Remaining work is DNS cutover 
 - ✅ **AI Precision Health Institute** (Phase 7) — `aiphi.` → `/aiphi/` branded sub-section
 - ✅ **HIPIMR** (Phase 8) — `hipimr.` → `/hipimr/` branded sub-section
 - ✅ **Shape Up! Studies** (Phase 9) — `shapeup.` → `/shapeup/` branded sub-section
-- 🟡 **Forms** — Mailchimp + Formspree placeholders still need real account / form IDs (search for `YOUR_FORMSPREE_*` and the Mailchimp embed snippet)
+- 🟡 **Forms** — Mixed status:
+  - **Mailchimp newsletter** is paused (the existing IBDW Mailchimp account is over its 2,000-contact free-tier limit, sending disabled until the list is cleaned up). Footer form still uses placeholder values.
+  - **Formspree forms** (`/contact/`, `/join-a-study/`, `/shapeup/3do-bodycomp-analyzer/`) still use `YOUR_FORMSPREE_*` placeholders.
+  - **AI PHI affinity-meeting registration** *is* live via Zoom recurring-meeting registration — a single URL covers the entire monthly series.
 - 🟡 **3DO Body Composition Analyzer** — `/shapeup/3do-bodycomp-analyzer/` shows abstract + access-request form; the live interactive tool needs a new host (HuggingFace Space, Streamlit, internal UH server, …)
 - 🟡 **Oversize sample mesh PLYs** — two ~60 MB reference files at `/shapeup/mesh-preparation/` still link to the legacy WP host; need git-lfs / external storage before WP shutdown
 - ⬜ **DNS cutover** — `shepherdresearchlab.org` still points at the WordPress host; once cut over, all four WP subdomains can be retired
@@ -28,8 +31,8 @@ Migration from WordPress is essentially complete. Remaining work is DNS cutover 
 ## Content conventions
 
 - **URL preservation.** We match WordPress URLs where feasible. Keeping permalinks stable means existing external links (papers, partner sites, search engines) still resolve after DNS cutover.
-- **Branded sub-sections.** AI PHI, HIPIMR, Shape Up!, and the BCL each retain their identity as named sub-orgs under `/aiphi/`, `/hipimr/`, `/shapeup/`, and `/services/` (BCL). News and publications are shared with the main SRL feeds — filter via tag (e.g. `/publications/ai/`, `/publications/hipimr/`, `/publications/shape-up/`).
-- **Recruitment is unified.** Open studies live on `/join-a-study/` (currently Shape Up! Keiki, Samsung 2026, Makawalu, Tanita), not on per-study sub-pages.
+- **Branded sub-sections.** AI PHI, HIPIMR, Shape Up!, and the BCL each retain their identity as named sub-orgs under `/aiphi/`, `/hipimr/`, `/shapeup/`, and `/services/` (BCL). News and publications are shared with the main SRL feeds — filter via tag (e.g. `/publications/ai/`, `/publications/hipimr/`, `/publications/shape-up/`, `/news/aiphi/`).
+- **Recruitment is unified.** All studies are listed on `/join-a-study/` (driven by `_data/studies.yml`) with explicit Enrolling / Reopening soon / Closed status badges, active studies first. Per-study contact info is shown on each card; clicking **Learn More** scrolls to the page-bottom form and pre-fills the textarea with the study name.
 - **Images live at `wp-content/uploads/YYYY/MM/`** at the repo root, mirroring WordPress's original image URLs. Reference from Markdown as `{{ site.baseurl }}/wp-content/uploads/…`.
 - **Content extraction.** The old WordPress site was built with Elementor (a visual page builder), which produces nested widget markup that doesn't convert cleanly to Markdown by scraping. Pages were extracted via AI-assisted fetch and written as simple Markdown inside HTML section wrappers. See `index.html` for the pattern — each section is `<section class="section">…<div class="container" markdown="1">…Markdown…</div></section>`, alternating with `.section--alt` for visual separation.
 
@@ -47,11 +50,19 @@ Each lives at its own path (e.g. `about/index.md`, `services/index.md`). Pages u
 - Shape Up!: `shapeup/`
 - BCL services: `services/` plus the modality pages at root (`/dxa-scan/` etc.)
 
-### Team, sponsors, etc.
-Data-driven — edit YAML files in `_data/` (`team.yml`, `publications.yaml`).
+### Team, studies, publications
+Data-driven — edit YAML files in `_data/`:
+- `team.yml` — drives `/about/our-team/` and (by canonical-photo convention) the headshots used on AI PHI / HIPIMR / services pages.
+- `studies.yml` — drives `/join-a-study/`. Set `status: enrolling | reopening | closed` to change a study's badge and sort position; use `note:` for nuance like "expected to reopen 2026."
+- `publications.yaml` — owned by the Python pipeline; do not hand-edit (see `AGENT.md`).
 
 ### News posts
-Add a Markdown file to `_posts/` named `YYYY-MM-DD-slug.md`. The default layout + permalink (`/news/:slug/`) come from `_config.yml`.
+Add a Markdown file to `_posts/` named `YYYY-MM-DD-slug.md`. The default layout + permalink (`/news/:slug/`) come from `_config.yml`. Add `tags: [aiphi]` (or another tag) to surface the post in a tagged subfeed (see below).
+
+### Tagged subfeeds (news + publications)
+Branded sub-orgs get filtered subfeeds without separate post stores:
+- **Publications subfeeds** at `/publications/<tag>/` are auto-generated by the pipeline.
+- **News subfeeds** at `/news/<tag>/` are hand-written. `/news/aiphi/index.md` is the existing example; copy its Liquid `where_exp` filter and change the tag string to spin up a new subfeed (e.g. `/news/hipimr/`).
 
 ### Navigation
 Edit the `nav:` list in `_config.yml`.
@@ -69,13 +80,32 @@ bundle exec jekyll serve
 
 ## Services wired into the site
 
-- **Newsletter** — Mailchimp embed (placeholder until a real account ID is wired)
+- **Newsletter** — Mailchimp embed (paused; the IBDW Mailchimp account that owns the audience is over its 2,000-contact free-tier limit and needs list cleanup before sending resumes)
 - **Contact form** — Formspree (placeholder)
-- **Join A Study form** — Formspree (placeholder)
+- **Join A Study form** — Formspree (placeholder; pre-fills via the `Learn More` buttons on each study card)
 - **3DO Analyzer access request** — Formspree (placeholder)
 - **Appointment booking** — [Koalendar](https://koalendar.com/) iframe at `/make-an-appointment/` (live; embed `koalendar.com/e/dxa-bodpod`)
+- **AI PHI affinity-meeting registration** — Zoom recurring-meeting registration (live; single URL `https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg` covers the whole monthly series, with Zoom emailing the join link and reminders to each registrant)
 
 API keys / form IDs live in the embed snippets; subscribers and submissions live in the respective services, never in this repo.
+
+## Accessibility
+
+Targeting WCAG 2.2 AA. Currently in place:
+
+- Skip-to-content link as the first focusable element on every page.
+- `<main id="main-content" tabindex="-1">` landmark wraps page content (in `_layouts/default.html`).
+- Mobile nav toggle wired up via `assets/js/main.js` (vanilla JS, no framework — the project's only JS file). Closes on Esc and on link click; updates `aria-expanded`.
+- Visible 2px focus outline on form fields (~12.6:1 contrast against white).
+- `scroll-padding-top: 90px` on `<html>` so anchor jumps don't hide focused content under the 80px sticky header (WCAG 2.4.11, new in 2.2).
+- `<html lang="en">`, semantic landmarks, `aria-label` on logo + nav, `aria-current="page"` on the active nav item, meaningful alt text or empty alt for decorative images.
+
+Known gaps (low priority, do not block AA):
+
+- Hawaiian inline words (`makawalu`, `keiki`, `kakaʻako`) lack `<span lang="haw">` markup (WCAG 3.1.2 AA).
+- No `prefers-reduced-motion` rules (currently no animations to gate, but worth adding before any are introduced).
+
+Run Lighthouse → Accessibility on changed pages to catch regressions.
 
 ## Deployment
 
