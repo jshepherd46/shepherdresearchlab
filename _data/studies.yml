@@ -1,0 +1,67 @@
+# Studies displayed on /join-a-study/.
+#
+# The page renders cards from this list, sorted by status:
+#   enrolling → reopening → closed
+#
+# Fields:
+#   name          (required) — full study title
+#   short_name    (required) — used in form dropdowns
+#   status        (required) — enrolling | reopening | closed
+#   eligibility   — one-line eligibility summary
+#   commitment    — visit duration / frequency
+#   compensation  — gift card, scan report, etc.
+#   description   — short paragraph
+#   email         — study contact email (defaults to bodycompstudies@cc.hawaii.edu
+#                   for studies that don't yet have a dedicated address)
+#   phone         — usually shared lab phone (808-440-5234); only set if different
+#   detail_page   — URL to a deeper study page if one exists
+#   note          — extra annotation displayed near the status badge
+#                   (e.g. "Closed; expected to reopen 2026")
+
+- name: "Samsung Study (2026)"
+  short_name: "Samsung Study"
+  status: enrolling
+  eligibility: "Healthy adults; no removable metal, jewelry, or incompatible medical devices, and no chronic disease. Recruitment uses age and BMI categories — see the BMI calculator to estimate yours."
+  commitment: "Single 4-hour appointment"
+  compensation: "Compensation + complimentary DXA scan report"
+  description: "Evaluates whether extracellular water and total body water measured by Samsung Bioimpedance Analysis (BIA) devices are accurate compared to standard tests including the dilution method and dual-energy X-ray absorptiometry (DXA). Includes BIA, DXA, 3D optical scan, Bod Pod, biological samples (urine, saliva, blood), and a diet questionnaire."
+  email: bodycompstudies@cc.hawaii.edu
+
+- name: "Tanita Study"
+  short_name: "Tanita Study"
+  status: enrolling
+  eligibility: "Healthy adults; no non-removable metal, jewelry, or medical devices, and no chronic disease."
+  commitment: "One ~4-hour visit, Mondays–Fridays at 7:30 AM check-in"
+  compensation: "Compensation + complimentary DXA scan report"
+  description: "Evaluates the accuracy of TANITA Bioimpedance Analysis (BIA) devices for measuring extracellular and total body water — compared against standard methods like dilution analysis and dual-energy X-ray absorptiometry (DXA). Includes BIA, DXA, urine/saliva/blood samples, 3D optical scan, Bod Pod, and a diet questionnaire."
+  email: bodycompstudies@cc.hawaii.edu
+
+- name: "Comparative studies in body composition"
+  short_name: "Comparative body-composition studies"
+  status: enrolling
+  eligibility: TBD
+  commitment: TBD
+  compensation: TBD
+  description: "TBD — details coming soon."
+  email: bodycompstudies@cc.hawaii.edu
+
+- name: "Makawalu Study"
+  short_name: "Makawalu"
+  status: reopening
+  note: "Closed for now; expected to reopen — get in touch to be notified."
+  eligibility: "Women 18+ with a mammogram scheduled within 6 months. Not currently pregnant or breastfeeding. No breast augmentation or implants."
+  commitment: "One-time, 1-hour Saturday visit at the UH Cancer Center"
+  compensation: "Gift card"
+  description: "A pilot study evaluating a handheld portable ultrasound device (Clarius HD3 L15) integrated with AI for breast-cancer detection — comparing its performance to traditional mammography. The research aims to enhance screening accessibility in remote and underserved Pacific communities. \"Makawalu\" means \"eight eyes\" in Hawaiian — symbolizing examination from multiple perspectives."
+  email: makawalustudy@cc.hawaii.edu
+  detail_page: /makawalu-study-breast-cancer-screening/
+
+- name: "Shape Up! Keiki"
+  short_name: "Shape Up! Keiki"
+  status: closed
+  eligibility: "Toddlers and infants, ages 0–5 years."
+  commitment: "—"
+  compensation: "—"
+  description: "Helped families learn about their children's health while researchers developed technologies to measure body shape and understand its relationship to physical strength and cardiovascular health."
+  email: bodycompstudies@cc.hawaii.edu
+  detail_page: /shapeup/for-keiki/

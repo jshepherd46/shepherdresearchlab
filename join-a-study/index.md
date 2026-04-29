@@ -9,21 +9,67 @@ description: "Participate in a Shepherd Research Lab study on body composition, 
 
 # Join A Study
 
-The Shepherd Research Lab invites participants to join research studies focused on body composition, health-measurement technologies, and related health outcomes.
+The Shepherd Research Lab invites participants to join research studies focused on body composition, health-measurement technologies, and related health outcomes. Studies that are **currently enrolling** appear first below; closed studies are kept on the page for reference.
+
+For general inquiries, call **808-440-5234** or email [bodycompstudies@cc.hawaii.edu](mailto:bodycompstudies@cc.hawaii.edu). Each study below also has its own contact details.
 
 </div>
 </section>
 
 <section class="section section--alt">
-<div class="container" markdown="1" style="max-width: 820px;">
+<div class="container">
 
-## Shape Up! Keiki
+{% assign sorted_statuses = "enrolling,reopening,closed" | split: "," %}
+<div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+{% for status in sorted_statuses %}
+{% assign filtered = site.data.studies | where: "status", status %}
+{% for s in filtered %}
 
-**Eligibility:** Toddlers and infants, ages 0–5 years.
+<article class="feature-card" style="display: flex; flex-direction: column; gap: 1rem; padding: 2rem;{% if s.status == 'closed' %} opacity: 0.7;{% endif %}">
 
-This study helps families learn about their children's health while researchers develop technologies to measure body shape and understand its relationship to physical strength and cardiovascular health.
+<div>
+{% if s.status == 'enrolling' %}
+<span style="display: inline-block; padding: 0.3rem 0.85rem; border-radius: 100px; background: rgba(2, 71, 49, 0.12); color: var(--primary); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">Enrolling</span>
+{% elsif s.status == 'reopening' %}
+<span style="display: inline-block; padding: 0.3rem 0.85rem; border-radius: 100px; background: rgba(217, 119, 6, 0.14); color: #b45309; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">Reopening soon</span>
+{% else %}
+<span style="display: inline-block; padding: 0.3rem 0.85rem; border-radius: 100px; background: rgba(107, 114, 128, 0.14); color: #4b5563; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">Closed</span>
+{% endif %}
+</div>
 
-[Shape Up! Keiki participant FAQ →]({{ site.baseurl }}/shapeup/for-keiki/)
+<h2 style="margin: 0; font-size: 1.35rem; line-height: 1.3;">{{ s.name }}</h2>
+
+{% if s.note %}
+<p style="margin: 0; color: var(--gray-700); font-size: 0.9rem; font-style: italic;">{{ s.note }}</p>
+{% endif %}
+
+<p style="margin: 0; color: var(--gray-700);">{{ s.description }}</p>
+
+<dl style="margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; font-size: 0.9rem; color: var(--gray-700);">
+<dt style="font-weight: 600; color: var(--gray-900);">Eligibility</dt><dd style="margin: 0;">{{ s.eligibility }}</dd>
+<dt style="font-weight: 600; color: var(--gray-900);">Commitment</dt><dd style="margin: 0;">{{ s.commitment }}</dd>
+<dt style="font-weight: 600; color: var(--gray-900);">Compensation</dt><dd style="margin: 0;">{{ s.compensation }}</dd>
+</dl>
+
+<div style="border-top: 1px solid var(--gray-300); padding-top: 1rem; font-size: 0.85rem; color: var(--gray-700);">
+<strong>Phone:</strong> 808-440-5234<br>
+<strong>Email:</strong> <a href="mailto:{{ s.email }}">{{ s.email }}</a>
+</div>
+
+<div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto;">
+{% if s.status != 'closed' %}
+<a href="mailto:{{ s.email }}?subject=Interest in {{ s.name }}" class="btn btn-primary">Email the team</a>
+{% endif %}
+{% if s.detail_page %}
+<a href="{{ site.baseurl }}{{ s.detail_page }}" class="btn btn-outline-primary">Study details →</a>
+{% endif %}
+</div>
+
+</article>
+
+{% endfor %}
+{% endfor %}
+</div>
 
 </div>
 </section>
@@ -31,55 +77,9 @@ This study helps families learn about their children's health while researchers 
 <section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
 
-## Samsung Study (2026)
+## Not sure which study? Want to be notified?
 
-**Eligibility:** Healthy adults; no removable metal, jewelry, or incompatible medical devices, and no chronic disease. Recruitment uses age and BMI categories — see the [BMI calculator ↗](https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm) to estimate yours.
-
-This research evaluates whether extracellular water and total body water measured by Samsung Bioimpedance Analysis (BIA) devices are accurate compared to standard tests including the dilution method and dual-energy X-ray absorptiometry (DXA).
-
-**Participation:** A single 4-hour appointment that includes BIA, DXA, 3D optical scan, Bod Pod, biological samples (urine, saliva, blood), and a diet questionnaire. Participants receive compensation and a complimentary DXA scan report.
-
-</div>
-</section>
-
-<section class="section section--alt">
-<div class="container" markdown="1" style="max-width: 820px;">
-
-## Makawalu Study
-
-**Eligibility:** Women 18+ with a mammogram scheduled within 6 months. Not currently pregnant or breastfeeding. No breast augmentation or implants.
-
-A pilot study evaluating a handheld portable ultrasound device (Clarius HD3 L15) integrated with AI for breast-cancer detection — comparing its performance to traditional mammography. The research aims to enhance screening accessibility in remote and underserved Pacific communities. *"Makawalu" means "eight eyes" in Hawaiian — symbolizing examination from multiple perspectives.*
-
-**Participation:** One-time, 1-hour visit on a Saturday at the UH Cancer Center. Includes a portable-ultrasound breast exam and a short breast-health questionnaire. All participants receive a gift card.
-
-**Sign up:** Call **808-440-5234** or email [makawalustudy@cc.hawaii.edu](mailto:makawalustudy@cc.hawaii.edu).
-
-[Makawalu study details →]({{ site.baseurl }}/makawalu-study-breast-cancer-screening/)
-
-</div>
-</section>
-
-<section class="section">
-<div class="container" markdown="1" style="max-width: 820px;">
-
-## Tanita Study
-
-**Eligibility:** Healthy adults; no non-removable metal, jewelry, or medical devices, and no chronic disease.
-
-This research evaluates the accuracy of TANITA Bioimpedance Analysis (BIA) devices for measuring extracellular and total body water — compared against standard methods like dilution analysis and dual-energy X-ray absorptiometry (DXA).
-
-**Participation:** One visit, approximately 4 hours (Mondays–Fridays, 7:30 AM check-in). Includes BIA, DXA, urine/saliva/blood samples, 3D optical scan, Bod Pod, and a diet questionnaire. Participants receive compensation and a complimentary DXA scan report.
-
-</div>
-</section>
-
-<section class="section section--alt">
-<div class="container" markdown="1" style="max-width: 820px;">
-
-## Get in touch
-
-Interested in participating, or want to be notified when new studies open? Fill in the form below or email us directly.
+Fill in the form below or email the lab directly — we'll route your interest to the right study coordinator and add you to the future-studies notification list if you'd like.
 
 <div class="contact-grid" markdown="1" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-top: 2rem;">
 <div markdown="1">
@@ -95,8 +95,8 @@ Honolulu, HI 96813
 
 </div>
 <div>
-<!-- TODO (Phase 3): replace YOUR_FORMSPREE_STUDIES_ID with the real form ID. -->
-<!-- Final field list TBD with John when the form is created. -->
+<!-- TODO (Phase 3): replace YOUR_FORMSPREE_STUDIES_ID with the real form ID from formspree.io -->
+<!-- All submissions route to bodycompstudies@cc.hawaii.edu (configured in Formspree). -->
 <form action="https://formspree.io/f/YOUR_FORMSPREE_STUDIES_ID" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
 <label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Your name
 <input type="text" name="name" required style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit;">
@@ -107,11 +107,8 @@ Honolulu, HI 96813
 <label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Which study interests you?
 <select name="study" style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit;">
 <option>I'm not sure yet — please contact me</option>
-<option>Shape Up! Keiki</option>
-<option>Samsung Study (2026)</option>
-<option>Makawalu Study</option>
-<option>Tanita Study</option>
-<option>Future studies — just add me to the list</option>
+{% for s in site.data.studies %}<option>{{ s.short_name }}{% if s.status == 'closed' %} (closed){% endif %}</option>
+{% endfor %}<option>Future studies — just add me to the list</option>
 </select>
 </label>
 <label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Anything you'd like us to know
