@@ -111,10 +111,12 @@ Run Lighthouse → Accessibility on changed pages to catch regressions.
 
 Push to `main` → GitHub Pages builds automatically.
 
-Currently served at: `https://jshepherd46.github.io/shepherdresearchlab/`
+Currently served at: `https://shepherd-lab.github.io/shepherdresearchlab/` (after the org transfer from `jshepherd46` to `shepherd-lab`).
 
-To cut over the custom domain:
+To cut over the custom domain (Cloudflare + GitHub Pages):
 1. Add a `CNAME` file to this repo containing: `shepherdresearchlab.org`
 2. In GitHub repo Settings → Pages → Custom domain: enter `shepherdresearchlab.org`
-3. Update DNS at the registrar: CNAME `www` → `jshepherd46.github.io`; A records for apex → GitHub Pages IPs (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`)
-4. Set up 301 redirects on the legacy WP host(s) so external links to the four subdomains (`bcl.`, `aiphi.`, `hipimr.`, `shapeup.`) land on the new apex paths before the WP install is retired. A scheduled audit agent will sweep the BCL subdomain on 2026-06-08 to flag missing redirects.
+3. In Cloudflare DNS for `shepherdresearchlab.org`, add A records for apex → GitHub Pages IPs (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`) and CNAME `www` → `shepherd-lab.github.io`. SSL/TLS mode: Full. Proxy: DNS-only (gray cloud) until the Let's Encrypt cert provisions, then optionally enable proxy.
+4. Switch nameservers at the registrar to the two Cloudflare nameservers shown in the Cloudflare dashboard.
+5. Once the GitHub Pages DNS check turns green: enable **Enforce HTTPS**, then change `_config.yml` to `url: "https://shepherdresearchlab.org"` and `baseurl: ""`.
+6. Set up 301 redirects in Cloudflare for the legacy subdomains (`bcl.`, `bcepem.`, `aiphi.`, `hipimr.`, `shapeup.`, `blog.`) so external links land on the new apex paths.
