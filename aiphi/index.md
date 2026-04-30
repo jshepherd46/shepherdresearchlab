@@ -41,7 +41,7 @@ AI PHI develops and validates AI models for cancer risk, detection, and interven
 <p style="color: var(--gray-500); margin-top: 0.5rem; margin-bottom: 0;">Friday, May 1, 2026 · 9:00 AM HST · via Zoom</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; align-items: center; max-width: 1000px; margin: 0 auto;">
-<img src="{{ site.baseurl }}/wp-content/uploads/2024/04/yading_yuan_may_2026.jpg" alt="Yading Yuan" style="width:100%; max-width: 360px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin: 0 auto; display: block;">
+<img src="{{ site.baseurl }}/wp-content/uploads/2026/05/yading-yuan-talk.png" alt="Yading Yuan" style="width:100%; max-width: 360px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin: 0 auto; display: block;">
 <div markdown="1">
 
 **Yading Yuan**

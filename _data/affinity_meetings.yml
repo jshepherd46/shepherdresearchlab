@@ -1,0 +1,155 @@
+# AI PHI Affinity Group monthly meetings.
+# Drives /aiphi/events/ — the page splits this list into Upcoming (date >= today)
+# and Past (date < today) at build time using site.time. Past meetings with a
+# `stein_photo` field also populate the speaker-compensation collage below the
+# past-meetings grid.
+#
+# Schema (per meeting):
+#   date           required  YYYY-MM-DD (string). Page sorts and groups by this.
+#   speaker        required  Speaker name (or "A and B" for joint talks).
+#   affiliation    optional  Institution / role.
+#   title          required  Talk title.
+#   abstract       optional  1-2 sentence summary, shown for the upcoming card.
+#   image          optional  Path under wp-content/uploads/... — shown on the
+#                            upcoming card. Past cards are compact and don't
+#                            show this field.
+#   stein_photo    optional  Photo of the speaker with their AI PHI beer stein,
+#                            sent back by the speaker after the talk. When set,
+#                            the entry appears in the speaker-compensation
+#                            collage. Path under wp-content/uploads/...
+#   recording_url  optional  YouTube video URL for that specific talk.
+#   recap_post     optional  /news/<slug>/ for a written recap.
+#
+# To schedule a new meeting: add an entry at the TOP of the file with a future
+# date. To attach a stein photo as they come in: drop the image into
+# wp-content/uploads/YYYY/MM/ and add the `stein_photo:` line to that meeting.
+#
+# KNOWN GAP: Oliver Diaz spoke in the affinity group (we have his stein photo at
+# wp-content/uploads/2024/06/OliverDiaz.png) but the talk date isn't recorded
+# here yet — please add a meeting entry with the correct date and title.
+
+# ===== Upcoming =====
+
+- date: "2026-05-01"
+  speaker: "Yading Yuan"
+  title: "Federated prediction for scalable and privacy-preserved knowledge-based planning in radiotherapy"
+  abstract: "How deep learning can improve radiation-therapy planning efficiency through federated prediction — addressing data scarcity across institutions while preserving privacy."
+  image: /wp-content/uploads/2026/05/yading-yuan-talk.png
+
+# ===== Past =====
+
+- date: "2026-04-10"
+  speaker: "Igor Shuryak"
+  title: "CAST: Causal Modeling of Time-Varying Treatment Effects on Head and Neck Cancer"
+
+- date: "2026-03-06"
+  speaker: "Matthew McDermott"
+  title: "Medical Foundation Models"
+
+- date: "2026-02-06"
+  speaker: "Andrew Sellergren"
+  title: "MedGemma Technical Report"
+
+- date: "2026-01-09"
+  speaker: "Melissa McCradden"
+  title: "AI's 'canary in the coal mine': how silent evaluations are critical to ethical translation"
+
+- date: "2025-12-05"
+  speaker: "Axel Masquelin"
+  title: "Pretraining on Chronic Lung Inflammatory Disease Datasets for lung cancer classification"
+
+- date: "2025-11-07"
+  speaker: "Kenneth Kehl"
+  title: "Shareable artificial intelligence to extract cancer outcomes from electronic health records"
+
+- date: "2025-10-03"
+  speaker: "Nan Liu"
+  title: "Ethical and Responsible AI in Healthcare"
+
+- date: "2025-09-05"
+  speaker: "Pranav Rajpurkar"
+  title: "Beyond Assistance: Rethinking AI-Human Integration in Radiology"
+
+- date: "2025-08-01"
+  speaker: "Chris Kaufmann"
+  title: "Fluctuating Performance and Discordance of LLMs in Radiology Over Time"
+
+- date: "2025-07-11"
+  speaker: "Ulas Bagci"
+  title: "Eyes Don't Lie: A Human in the Loop Approach for Medical AI Applications"
+  stein_photo: /wp-content/uploads/2025/12/UlasBagci-scaled-e1765574119133.jpg
+
+- date: "2024-12-06"
+  speaker: "Shuxing Zhang"
+  title: "AI Drug Discovery and Development: Perils and Successes"
+
+- date: "2024-10-04"
+  speaker: "Karthika Mohan"
+  title: "Causal Inference with Missing Data: Missingness Graphs, Recoverability and Testability"
+
+- date: "2024-09-06"
+  speaker: "Jason Johnson and Renato Umeton"
+  title: "Unlocking the Potential of Large Language Models in Healthcare: A Case Study from Dana-Farber Cancer Institute"
+
+- date: "2024-08-02"
+  speaker: "Joy Jiang"
+  title: "Dynamic prediction with repeated mammograms improved 5-year breast cancer risk prediction performance"
+
+- date: "2024-07-12"
+  speaker: "Yuan Luo"
+  title: "Large Language Models for Biomedical Research"
+
+- date: "2024-06-14"
+  speaker: "Zakhar Shumaylov"
+  title: "What happens if we use synthetic data without any curation"
+
+- date: "2024-05-10"
+  speaker: "Travis Osterman"
+  title: "Data Standards in Action"
+
+- date: "2024-04-12"
+  speaker: "Rory Sayres"
+  title: "AI-powered dermatology tools: What is the impact on layperson decision making?"
+  stein_photo: /wp-content/uploads/2024/06/Sayres-scaled.jpg
+
+- date: "2024-03-01"
+  speaker: "Deeptankar DeMazumder"
+  title: "Automated Bayesian Analysis of Physiological Waveforms Adds Major Independent Prognostic Value to Conventional Clinical Practice"
+
+- date: "2024-02-02"
+  speaker: "Artem Trotsyuk"
+  title: "Mitigating Unintended Consequences of AI in Biomedicine"
+
+- date: "2024-01-12"
+  speaker: "Aekta Shah"
+  title: "Unknown Health Futures: How we can build Responsible, Safe, Trusted AI"
+  stein_photo: /wp-content/uploads/2024/06/AektaShah-scaled.jpeg
+
+- date: "2023-12-01"
+  speaker: "William Rudman"
+  title: "Towards Robust Interpretability Methods for Large Language Models"
+  stein_photo: /wp-content/uploads/2024/07/Rudman-scaled.jpeg
+
+- date: "2023-11-03"
+  speaker: "Pallavi Tiwari"
+  title: "Artificial Intelligence and Computational Imaging: Opportunities for Precision Medicine"
+
+- date: "2023-10-06"
+  speaker: "Vignesh A. Arasu"
+  affiliation: "MD, PhD"
+  title: "Comparison of Mammography Artificial Intelligence Algorithms for 5-year Breast Cancer Risk Prediction: An Observational Study"
+
+- date: "2023-09-01"
+  speaker: "Keolu Fox"
+  title: "Disrupting the Indigenous DNA Supply Chain"
+
+- date: "2023-07-07"
+  speaker: "PreciseDx"
+  title: "Morphology Feature Array (MFA) as a Risk Assessment Platform for Breast Cancer Treatment"
+
+- date: "2022-12-02"
+  speaker: "Adam Yala"
+  affiliation: "UC Berkeley & UCSF"
+  title: "Seeing into the future: Machine learning methods for personalized screening"
+  stein_photo: /wp-content/uploads/2024/06/AdamYala-scaled-e1719438069919.jpg
+  recap_post: /news/affinity-adam-yala-personalized-screening/
