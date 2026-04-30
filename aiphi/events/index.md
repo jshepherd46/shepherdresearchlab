@@ -84,19 +84,27 @@ A monthly group discussing current trends and applications of artificial intelli
 </div>
 
 {% if past_meetings.size > 0 %}
-<div style="max-width: 1100px; margin: 3.5rem auto 0;">
+<div style="max-width: 920px; margin: 3.5rem auto 0;">
 <h3 style="text-align: center; margin-bottom: 0.5rem;">Past meetings</h3>
-<p style="text-align: center; color: var(--gray-500); margin-bottom: 2rem; max-width: 640px; margin-left: auto; margin-right: auto;">Recordings of all past meetings are on the <a href="https://www.youtube.com/@UHCC_AIPHI">AI PHI YouTube channel ↗</a>.</p>
+<p style="text-align: center; color: var(--gray-500); margin-bottom: 2.5rem; max-width: 640px; margin-left: auto; margin-right: auto;">Recordings are on the <a href="https://www.youtube.com/@UHCC_AIPHI">AI PHI YouTube channel ↗</a>.</p>
 
-<div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+<div style="display: flex; flex-direction: column;">
 {% for m in past_meetings %}
-<article class="feature-card" style="display: flex; flex-direction: column; gap: 0.4rem; padding: 1.1rem 1.25rem;">
-<p style="font-size: 0.7rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin: 0;">{{ m.date | date: "%b %-d, %Y" }}</p>
-<h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">{{ m.speaker }}{% if m.affiliation %} · <span style="font-weight: 400; color: var(--gray-700); font-size: 0.9rem;">{{ m.affiliation }}</span>{% endif %}</h4>
-<p style="margin: 0; font-size: 0.88rem; color: var(--gray-700); line-height: 1.45;">{{ m.title }}</p>
-{% if m.recap_post %}
-<a href="{{ site.baseurl }}{{ m.recap_post }}" style="font-size: 0.85rem; font-weight: 600; margin-top: auto;">Read recap →</a>
+<article id="meeting-{{ m.date }}" style="display: grid; grid-template-columns: 110px 1fr; gap: 2rem; padding: 1.75rem 0; border-top: 1px solid var(--gray-300);">
+<div style="font-size: 0.8rem; color: var(--gray-700); font-weight: 700; line-height: 1.35;">
+<div style="text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray-500); font-size: 0.7rem;">{{ m.date | date: "%Y" }}</div>
+<div style="font-size: 1rem; color: var(--primary);">{{ m.date | date: "%b %-d" }}</div>
+</div>
+<div>
+<h4 style="margin: 0 0 0.4rem; font-size: 1.1rem; line-height: 1.35;">{{ m.title }}</h4>
+<p style="margin: 0 0 1rem; font-size: 0.95rem; color: var(--gray-700);"><strong>{{ m.speaker }}</strong>{% if m.affiliation %} · <span style="color: var(--gray-500);">{{ m.affiliation }}</span>{% endif %}</p>
+{% if m.abstract %}
+<div style="color: var(--gray-700); font-size: 0.95rem; line-height: 1.7;" markdown="0">{{ m.abstract | markdownify }}</div>
 {% endif %}
+{% if m.recap_post %}
+<p style="margin: 0.75rem 0 0;"><a href="{{ site.baseurl }}{{ m.recap_post }}" style="font-weight: 600;">Read recap →</a></p>
+{% endif %}
+</div>
 </article>
 {% endfor %}
 </div>

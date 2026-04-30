@@ -2,17 +2,18 @@
 # Drives /aiphi/events/ — the page splits this list into Upcoming (date >= today)
 # and Past (date < today) at build time using site.time. Past meetings with a
 # `stein_photo` field also populate the speaker-compensation collage below the
-# past-meetings grid.
+# past-meetings list.
 #
 # Schema (per meeting):
 #   date           required  YYYY-MM-DD (string). Page sorts and groups by this.
 #   speaker        required  Speaker name (or "A and B" for joint talks).
 #   affiliation    optional  Institution / role.
 #   title          required  Talk title.
-#   abstract       optional  1-2 sentence summary, shown for the upcoming card.
+#   abstract       optional  Multi-paragraph string (use YAML `|` literal block
+#                            to preserve line breaks). Rendered with markdownify
+#                            so blank lines become <p> tags.
 #   image          optional  Path under wp-content/uploads/... — shown on the
-#                            upcoming card. Past cards are compact and don't
-#                            show this field.
+#                            upcoming card. Past entries don't display this.
 #   stein_photo    optional  Photo of the speaker with their AI PHI beer stein,
 #                            sent back by the speaker after the talk. When set,
 #                            the entry appears in the speaker-compensation
@@ -20,136 +21,259 @@
 #   recording_url  optional  YouTube video URL for that specific talk.
 #   recap_post     optional  /news/<slug>/ for a written recap.
 #
-# To schedule a new meeting: add an entry at the TOP of the file with a future
-# date. To attach a stein photo as they come in: drop the image into
-# wp-content/uploads/YYYY/MM/ and add the `stein_photo:` line to that meeting.
-#
-# KNOWN GAP: Oliver Diaz spoke in the affinity group (we have his stein photo at
-# wp-content/uploads/2024/06/OliverDiaz.png) but the talk date isn't recorded
-# here yet — please add a meeting entry with the correct date and title.
+# To schedule a new meeting: add an entry at the TOP with a future date.
+# When a stein photo arrives: drop the file in wp-content/uploads/YYYY/MM/
+# and add the stein_photo: line — it appears in the collage automatically.
 
 # ===== Upcoming =====
 
 - date: "2026-05-01"
   speaker: "Yading Yuan"
+  affiliation: "PhD, Herbert and Florence Associate Professor of Radiation Oncology (Physics), Columbia University Irving Medical Center"
   title: "Federated prediction for scalable and privacy-preserved knowledge-based planning in radiotherapy"
-  abstract: "How deep learning can improve radiation-therapy planning efficiency through federated prediction — addressing data scarcity across institutions while preserving privacy."
+  abstract: |
+    Deep learning has potential to improve the efficiency and consistency of radiation therapy planning, but clinical adoption is hindered by limited model generalizability due to data scarcity and heterogeneity among institutions. Although aggregating data from different institutions could alleviate this problem, data sharing presents practical challenges due to patient data privacy concerns and technical obstacles.
+
+    The presenters implemented a unified communication stack based on Google Remote Procedure Call (gRPC) to support communication between participants on the same or distributed workstations. Beyond supporting centralized federated learning strategies available in existing open-source frameworks, FedKBP+ provides a fully decentralized model where participants directly exchange model weights through peer-to-peer communication.
+
+    Results using scale-attention network (SA-Net) across three predictive tasks demonstrate that FedKBP+ is highly effective, efficient and robust, indicating significant potential as a federated learning platform for radiation therapy.
   image: /wp-content/uploads/2026/05/yading-yuan-talk.png
 
 # ===== Past =====
 
 - date: "2026-04-10"
   speaker: "Igor Shuryak"
+  affiliation: "MD, PhD; Associate Professor of Radiation Oncology, Center for Radiological Research, Columbia University Irving Medical Center"
   title: "CAST: Causal Modeling of Time-Varying Treatment Effects on Head and Neck Cancer"
+  abstract: |
+    Causal machine learning is gaining traction in medical research for estimating treatment effects from real-world data to optimize patient care. Causal survival forests represent a powerful technique for identifying heterogeneous treatment responses in survival outcomes, which informs healthcare decisions. However, this method has limitations — it estimates effects only at fixed time points rather than multiple intervals.
+
+    The researchers introduce CAST (Causal Analysis for Survival Trajectories), extending the prior approach to model treatment effects as continuous trajectories over time using both parametric and non-parametric methods. When applied to the RADCURE dataset containing 2,651 head and neck cancer patients, CAST demonstrates how chemotherapy and radiotherapy effects evolve temporally at population and individual levels. This methodology enables clinicians to identify optimal treatment timing and patient subgroups most likely to benefit from intervention.
 
 - date: "2026-03-06"
-  speaker: "Matthew McDermott"
+  speaker: "Matthew B. A. McDermott"
+  affiliation: "Assistant Professor, Columbia University Department of Biomedical Informatics"
   title: "Medical Foundation Models"
+  abstract: |
+    Machine learning is experiencing a "foundation model" revolution driven by successes in natural language processing and computer vision like GPT-4 and Stable Diffusion. These representation learning technologies are expanding the scope of solvable problems across domains. In healthcare and biomedicine, foundation models are particularly valuable because many tasks involve small or noisy datasets. However, building effective foundation model systems for healthcare presents challenges due to data heterogeneity, limited dataset sizes, and structural differences between health data and natural language.
+
+    McDermott will discuss his prior research and vision for advancing foundation model research in health and biomedicine. Drawing on his background in high-capacity representation learning systems enhanced by external structure and knowledge, he will explain what constitutes a "medical foundation model," how to construct and scale them, and how to integrate them with existing medical expertise and modeling approaches.
 
 - date: "2026-02-06"
   speaker: "Andrew Sellergren"
+  affiliation: "Software Engineer, Google"
   title: "MedGemma Technical Report"
+  abstract: |
+    Artificial intelligence (AI) has significant potential in healthcare applications, but its training and deployment faces challenges due to healthcare's diverse data, complex tasks, and the need to preserve privacy. Foundation models performing well on medical tasks while requiring minimal task-specific tuning data are essential for advancing healthcare AI development.
+
+    We introduce MedGemma, a collection of medical vision-language foundation models based on Gemma 3 4B and 27B. The models demonstrate sophisticated medical understanding and reasoning capabilities across images and text, substantially surpassing similar-sized generative models and nearing task-specific model performance levels, while maintaining the general capabilities of the Gemma 3 base models.
 
 - date: "2026-01-09"
   speaker: "Melissa McCradden"
+  affiliation: "Deputy Director, Australian Institute for Machine Learning; Deputy Research Director and AI Director, Women's and Children's Health Network; Adjunct Scientist, The Hospital for Sick Children (SickKids)"
   title: "AI's 'canary in the coal mine': how silent evaluations are critical to ethical translation"
+  abstract: |
+    This presentation will explore the ethical and evidentiary importance of the under-recognised "silent" evaluation phase of AI translation in healthcare. I will describe the role of silent evaluations in the larger context of Health AI and introduce Project CANAIRI, an international initiative working on building normative guidance for this critical translational stage. I will present results from our scoping study exploring current practices and discuss next directions for the initiative.
 
 - date: "2025-12-05"
   speaker: "Axel Masquelin"
-  title: "Pretraining on Chronic Lung Inflammatory Disease Datasets for lung cancer classification"
+  affiliation: "PhD, Brigham and Women's Hospital — Department of Radiology (Applied Chest Imaging Laboratory)"
+  title: "Pretraining on Chronic Lung Inflammatory Disease Datasets to Enhance Indeterminate Lung Cancer Classification using Masked Autoencoders"
+  abstract: |
+    Lung cancer remains the leading cause of cancer-related mortality in the United States, despite the adoption of low-dose computed tomography (LDCT) and updated screening guidelines from the United States Preventive Service Task Force (USPSTF).
+
+    Limited infrastructure and financial costs continue to hinder widespread LDCT adoption, while the increasing detection of indeterminate pulmonary nodules (4–20 mm) challenges accurate diagnosis and clinical decision-making. We address these limitations by pretraining masked autoencoders (MAE) on the COPDGene dataset, which captures chronic lung inflammatory disease features. Our results demonstrate that pretraining on the COPDGene dataset using random masking (r-masking) achieves superior classification performance, with a sensitivity of 88.79%, specificity of 86.27%, and an AUC of 0.931.
 
 - date: "2025-11-07"
-  speaker: "Kenneth Kehl"
-  title: "Shareable artificial intelligence to extract cancer outcomes from electronic health records"
+  speaker: "Kenneth L. Kehl"
+  affiliation: "Thoracic medical oncologist and researcher in Population Sciences, Dana-Farber Cancer Institute"
+  title: "Shareable artificial intelligence to extract cancer outcomes from electronic health records for precision oncology research"
+  abstract: |
+    Artificial intelligence plays an increasingly prominent role in healthcare generally and cancer research specifically, but patient privacy requirements pose barriers to sharing AI models trained on clinical data. I will review these risks and discuss methods under development for overcoming them.
 
 - date: "2025-10-03"
   speaker: "Nan Liu"
-  title: "Ethical and Responsible AI in Healthcare"
+  affiliation: "PhD, Director of the Duke-NUS AI + Medical Sciences Initiative (DAISI); Associate Professor at the Centre for Quantitative Medicine, Duke-NUS Medical School"
+  title: "Ethical and Responsible AI in Healthcare: Balancing Innovation and Patient Safety"
+  abstract: |
+    As AI continues to transform the healthcare landscape, it is essential to balance innovation with patient safety and ethical responsibility. This talk will explore the challenges and opportunities of integrating AI in healthcare, focusing on the importance of patient safety, the ethics of AI, and the limitations of emerging technologies. It will also address ethical guidelines and considerations that must be followed, along with practical strategies for the safe and responsible use of AI in healthcare. The aim is to provide a comprehensive understanding of how to implement AI in ways that benefit patients while maintaining safety and ethical integrity.
 
 - date: "2025-09-05"
   speaker: "Pranav Rajpurkar"
+  affiliation: "Associate Professor of Biomedical Informatics, Harvard Medical School; Co-founder of a2z Radiology AI"
   title: "Beyond Assistance: Rethinking AI-Human Integration in Radiology"
+  abstract: |
+    Recent evidence challenges a fundamental assumption in medical AI: that combining AI with physician expertise naturally leads to better outcomes. Studies show that AI assistance often fails to improve diagnostic accuracy and can even slow down clinical workflows. This talk presents an alternative vision: instead of forcing integration, we should embrace clear role separation between AI systems and physicians. Drawing from recent large-scale studies and advances in generalist medical AI systems, I will examine promising models where AI and doctors work separately but complementarily, each leveraging their unique strengths. Through practical examples and emerging evidence, I will demonstrate how this approach could transform clinical practice while maintaining the essential role of human medical expertise.
 
 - date: "2025-08-01"
   speaker: "Chris Kaufmann"
+  affiliation: "MD, MS; The University of Texas at Austin, Dell Medical School, Department of Diagnostic Medicine; Oden Institute for Computational Engineering and Sciences"
   title: "Fluctuating Performance and Discordance of LLMs in Radiology Over Time"
+  abstract: |
+    **Objective.** Since the introduction of large language models (LLMs), near expert level performance in medical specialties such as radiology has been demonstrated. However, there is limited to no comparative information of model performance, accuracy, and reliability over time in these medical specialty domains.
+
+    **Methods.** LLMs (GPT-4, GPT-3.5, Claude, and Google Bard) were queried monthly from November 2023 to January 2024, utilizing ACR Diagnostic in Training Exam (DXIT) practice questions. Model overall accuracy and by subspecialty category was assessed over time. Internal consistency was evaluated through answer mismatch or intra-model discordance between trials.
+
+    **Results.** GPT-4 had the highest accuracy (78 ± 4.1 %), followed by Google Bard (73 ± 2.9 %), Claude (71 ± 1.5 %), and GPT-3.5 (63 ± 6.9 %). Models demonstrated temporal performance fluctuations, with intra-model discordance rates decreasing for all systems and variable subspecialty performance.
+
+    **Conclusion.** LLMs, except GPT-3.5, performed above 70%, demonstrating substantial subject-specific knowledge. However, performance fluctuated over time, underscoring the need for continuous, radiology-specific standardized benchmarking metrics to gauge LLM reliability before clinical use.
 
 - date: "2025-07-11"
   speaker: "Ulas Bagci"
+  affiliation: "PhD, Associate Professor at Northwestern University's Radiology, Electrical and Computer Engineering, and Biomedical Engineering Department; courtesy professor at Center for Research in Computer Vision (CRCV), University of Central Florida"
   title: "Eyes Don't Lie: A Human in the Loop Approach for Medical AI Applications"
+  abstract: |
+    In this talk, I will focus on human-in-the-loop machine learning systems, specifically those with eye-tracking technologies in radiology rooms. I will share our unique experiences in developing a paradigm-shifting computer-aided diagnosis (CAD) system, unifying eye-tracking systems in realistic radiology room settings. I will introduce our new(est) algorithms that learn from human (radiologists) real-time (or nearly real-time) and combine human attention within the modern deep learning settings to improve diagnostic and prognostic applications. Starting with our 2016 study Gaze2Segment, I will go through the evolution of our human-in-the-loop algorithms, including C-CAD, GazeSam, GazeGNN, and our 2025 studies EyeSee and GazeVal.
   stein_photo: /wp-content/uploads/2025/12/UlasBagci-scaled-e1765574119133.jpg
 
 - date: "2024-12-06"
   speaker: "Shuxing Zhang"
+  affiliation: "PhD, Professor/Researcher in Cancer Biology Program, University of Hawaiʻi Cancer Center"
   title: "AI Drug Discovery and Development: Perils and Successes"
+  abstract: |
+    In this talk, I will present the current status of AI-based cancer drug discovery and development and their application to personalized cancer treatment. I will also discuss the future challenges and what can be done to achieve our goal of using the latest AI technologies to transform the field.
 
 - date: "2024-10-04"
   speaker: "Karthika Mohan"
+  affiliation: "Assistant Professor, School of Electrical Engineering and Computer Science, Oregon State University"
   title: "Causal Inference with Missing Data: Missingness Graphs, Recoverability and Testability"
+  abstract: |
+    The remarkable progress in AI and machine learning owes much to the availability of massive amounts of data, and where there is data, there is missingness. Conventional approaches to missing data rely on assumptions that are both opaque and untestable, such as Missing At Random (MAR).
+
+    Dr. Mohan addresses these limitations through graphical representations called "Missingness Graphs" that illustrate causal mechanisms behind missing data. She introduces the concept of recoverability — determining whether consistent estimators exist for quantities of interest including joint distributions, conditional distributions, and causal effects. These methods apply to all missing data types, including NMAR (Not Missing At Random) categories. The research also examines testability, addressing whether assumed models can withstand statistical scrutiny despite missingness.
 
 - date: "2024-09-06"
   speaker: "Jason Johnson and Renato Umeton"
+  affiliation: "Chief Data and Analytics Officer (Johnson) and Director of AI Operations and Data Science Services (Umeton), Dana-Farber Cancer Institute"
   title: "Unlocking the Potential of Large Language Models in Healthcare: A Case Study from Dana-Farber Cancer Institute"
+  abstract: |
+    The speakers shared their experience implementing LLMs in a private, secure, and HIPAA-compliant way at Dana-Farber Cancer Institute. They explained how they adapted the GPT family of models (GPT-3.5 Turbo, GPT-4 Turbo, GPT-4o) to institutional needs while addressing ethical, legal, and technical challenges.
+
+    A key decision involved excluding direct clinical use of LLMs (i.e., to treat, diagnose, or drive/inform clinical management) and limiting clinical explorations to research studies and authorized pilots. This approach unlocked lower-risk use cases in research and operations. The presentation covered ancillary deployment requirements including policy, ethics, training, monitoring, user support, and working with external companies for safe and impactful AI adoption.
 
 - date: "2024-08-02"
   speaker: "Joy Jiang"
+  affiliation: "Associate Professor in the Division of Public Health Sciences, Washington University School of Medicine"
   title: "Dynamic prediction with repeated mammograms improved 5-year breast cancer risk prediction performance"
+  abstract: |
+    Current image-based long term risk prediction models do not fully utilize existing data. Dynamic risk prediction models that incorporate current and prior screening mammogram images have not been investigated for use in routine care. We trained a dynamic model using repeated screening mammograms at WashU to predict 5-year risk. We then applied the model to the external validation data to evaluate discrimination performance measured by AUC and calibrated to US incidence from SEER.
+
+    Using 3 years of prior mammogram images available at the current screening mammogram, we obtained a 5-year AUC of 0.80 (95% CI, 0.78, 0.83) in the external validation when controlling for age and BI-RADS density. This represents a significant improvement over only using the current visit mammogram AUC 0.74 (95% CI, 0.71, 0.77) (p<0.01). When calibrated to SEER incidence rates, a risk ratio of 21.1 was observed comparing high (>0.04%) to very low (<0.003%) 5-year risk. Adding previous screening mammogram images improves 5-year breast cancer risk prediction beyond static models used in clinics today. It can identify women at high risk who might benefit from supplemental screening or risk reduction strategies.
 
 - date: "2024-07-12"
   speaker: "Yuan Luo"
+  affiliation: "Chief AI Officer at Clinical and Translational Sciences Institute (NUCATS) and Institute for AI in Medicine; Associate Professor, Department of Preventive Medicine, Feinberg School of Medicine, Northwestern University"
   title: "Large Language Models for Biomedical Research"
+  abstract: |
+    Large Language Models such as transformer-based models have been wildly successful in setting state-of-the-art benchmarks on a broad range of natural language processing (NLP) tasks, including question answering (QA), document classification, machine translation, text summarization, and others.
+
+    Recently, the release of OpenAI's free tool ChatGPT demonstrated the ability of large language models to generate content, with anticipations on its possible uses and potential controversies. The ethical and acceptable boundaries of ChatGPT's use in scientific writing remain unclear.
+
+    I will talk about our research on exploring large language models, e.g., long-sequence transformers and GPT style models, in the clinical and biomedical domains. Our work examines the adaptability of these large language models to a series of clinical NLP tasks including clinical inferencing, biomedical named entity recognition, EHR based question answering, interoperability etc.
 
 - date: "2024-06-14"
   speaker: "Zakhar Shumaylov"
+  affiliation: "PhD student and Trinity Henry Barlow scholar, University of Cambridge (supervised by Professor Carola-Bibiane Schönlieb)"
   title: "What happens if we use synthetic data without any curation"
+  abstract: |
+    Synthetic data are now commonly used to train machine learning models. In this talk we will discuss the ramifications of uncurated synthetic data usage for machine learning development and maintenance.
 
 - date: "2024-05-10"
   speaker: "Travis Osterman"
+  affiliation: "Associate Vice President for Research Informatics, Vanderbilt University Medical Center; Director of Cancer Clinical Informatics, Vanderbilt-Ingram Cancer Center"
   title: "Data Standards in Action"
+  abstract: |
+    This talk will focus on an overview of several recent data standards including mCODE and the HL7 Genomics Reporting standard. A special focus will be implementation and future directions of interoperability.
 
 - date: "2024-04-12"
   speaker: "Rory Sayres"
+  affiliation: "Google Health AI group"
   title: "AI-powered dermatology tools: What is the impact on layperson decision making?"
+  abstract: |
+    Artificial Intelligence (AI)-based tools to support clinical decision making have been examined at length; but the role of AI tools in supporting lay users' health information needs is not well established.
+
+    Whereas clinician-facing AI applications often support clinical diagnosis and specific decisions such as testing or treatment, lay users may use these tools at an earlier stage to help inform a different set of decisions.
+
+    I will present two studies, both aimed at understanding the impact of AI-powered dermatology applications (apps) on consumer decision-making. One is large, quantitative and using retrospective data, the other relatively smaller, mixed-methods and on prospective cases.
+
+    For both, we observe potential benefits of interaction with the tool, but also a need to better clarify the different roles in sensemaking provided by AI tools. I will also briefly touch on related research in medical AI. This will include earlier work developing AI assistance for different clinical specialists (dermatologists, ophthalmologists, and pathologists); and more recent work on how current-generation large language models may address some medical information needs.
   stein_photo: /wp-content/uploads/2024/06/Sayres-scaled.jpg
 
 - date: "2024-03-01"
   speaker: "Deeptankar DeMazumder"
+  affiliation: "MD; Attending Physician in Clinical Cardiac Electrophysiology, Veterans Administration Pittsburgh Health System; Associate Professor, McGowan Institute for Regenerative Medicine, Department of Surgery, and Department of Internal Medicine (Cardiology), University of Pittsburgh School of Medicine and UPMC"
   title: "Automated Bayesian Analysis of Physiological Waveforms Adds Major Independent Prognostic Value to Conventional Clinical Practice"
+  abstract: |
+    This talk will describe Dr. DeMazumder's longstanding goals to transform clinical observations into testable research hypotheses, translate basic research findings into medical advances, and evaluate personalized treatment protocols in rigorous clinical trials, while caring for and improving the quality of life in patients with heart rhythm disorders. The work integrates basic mechanistic studies of stress-induced alterations in oxidative stress and heart-brain signaling, and complementary translational research using novel machine learning algorithms in multicenter clinical studies, aimed at early diagnosis and treatment of critical illness.
 
 - date: "2024-02-02"
   speaker: "Artem Trotsyuk"
+  affiliation: "AI Ethics and Policy Fellow, Stanford University School of Medicine"
   title: "Mitigating Unintended Consequences of AI in Biomedicine"
+  abstract: |
+    The rapid advancements of artificial intelligence (AI) in biomedical research present considerable potential for misuse, including authoritarian surveillance, data misuse, bioweapon development, increase in inequity, and abuse of privacy. A multi-pronged framework may be required to mitigate these risks, looking first to non-computational spaces, next to off-the-shelf AI solutions, then to design-specific features researchers can build into their AI. When researchers remain unable to address potential for harmful misuse, the "no" principle may be a better approach: the notion that researchers may need to forego certain veins of research when misuse risks are too great.
 
 - date: "2024-01-12"
   speaker: "Aekta Shah"
+  affiliation: "Most recently a senior leader for GenAI products at Google"
   title: "Unknown Health Futures: How we can build Responsible, Safe, Trusted AI"
+  abstract: |
+    How can we, as current and future leaders in health technology design, chart a course toward a future where AI seamlessly integrates with human values, particularly within the critical realm of health? In this talk, Aekta Shah will delve into the intersections of Trust, Safety, and the Responsible Use of AI within the context of health and precision health. Focusing on the societal implications of AI in healthcare and the unique challenges associated with developing AI for precision health, Aekta will explore both the opportunities and risks inherent in these transformative technologies. Drawing on cases at the crossroads of human-centered design, health technology, the future of generative AI, and precision health, Aekta will invite a discussion on how society can actively shape the trajectory of these tools.
   stein_photo: /wp-content/uploads/2024/06/AektaShah-scaled.jpeg
 
 - date: "2023-12-01"
   speaker: "William Rudman"
+  affiliation: "PhD student, Computer Science Department, Brown University; member of the joint Health NLP Lab at Brown & Tübingen University"
   title: "Towards Robust Interpretability Methods for Large Language Models"
+  abstract: |
+    The "black box" nature of deep learning techniques has limited their application in clinical settings. Traditional interpretability methods, such as gradient-based saliency maps or model probing, are subject to "interpretability illusions" where networks may spuriously appear to encode interpretable concepts.
+
+    Our work focuses on finding more robust techniques for understanding deep learning models by investigating the vector space of model representations. In particular, we find that a single basis dimension in fine-tuned large language models drives model decisions and preserves >99% of the original classification performance of the full model. Our ongoing research project investigates how interpretability methods developed for large language models can be applied to understand how multimodal clinical models developed for detecting child abuse from free-text clinical narratives and patient demographic information make diagnostic decisions.
   stein_photo: /wp-content/uploads/2024/07/Rudman-scaled.jpeg
 
 - date: "2023-11-03"
   speaker: "Pallavi Tiwari"
+  affiliation: "Associate Professor in the Departments of Radiology, Biomedical Engineering, and Medical Physics; Co-Director of Imaging and Radiation Science at the Carbone Cancer Center, University of Wisconsin–Madison"
   title: "Artificial Intelligence and Computational Imaging: Opportunities for Precision Medicine"
+  abstract: |
+    In this talk, Dr. Tiwari will focus on her lab's recent efforts in developing machine learning techniques to capture insights into the underlying tumor biology as observed across non-invasive imaging, histopathology, and omics data. She will focus on applications of this work for predicting disease outcome, recurrence, progression and response to therapy specifically in the context of brain tumors. She will also discuss current efforts in developing new image-based features for post-treatment evaluation and predicting response to chemo-radiation treatment. Dr. Tiwari will conclude her talk with a discussion of some of the translational aspects of her work from a clinical perspective.
 
 - date: "2023-10-06"
   speaker: "Vignesh A. Arasu"
-  affiliation: "MD, PhD"
+  affiliation: "MD, PhD; Research Scientist, Kaiser Permanente Northern California Division of Research; practicing radiologist at Kaiser Permanente Vallejo Medical Center"
   title: "Comparison of Mammography Artificial Intelligence Algorithms for 5-year Breast Cancer Risk Prediction: An Observational Study"
+  abstract: |
+    Dr. Arasu conducts research at the intersection of medical imaging, breast cancer, and artificial intelligence (AI), evaluating priority operational issues in breast cancer medical imaging to accelerate implementation and innovation. He oversees two randomized trials investigating the use of AI for breast cancer screening. His talk presents a comparison of mammography AI algorithms for 5-year breast cancer risk prediction in an observational cohort.
 
 - date: "2023-09-01"
   speaker: "Keolu Fox"
+  affiliation: "PhD; Assistant Professor, University of California, San Diego (UCSD); co-founder of the NativeBioData Consortium (NBDC); co-founder and co-director of the Indigenous Futures Institute"
   title: "Disrupting the Indigenous DNA Supply Chain"
+  abstract: |
+    Just as oil was once the most valuable resource on earth, data has now taken its place, including genetic information. But like large tech companies being out of touch with their cobalt supply chain, Indigenous peoples face ongoing concerns around control and access to their data. This lecture will explore how Indigenous data governance can disrupt the current supply chain and transform the field of data science. By centering Indigenous knowledge and values, we can create a sustainable future where data and technology are harnessed to reclaim our past, revitalize our cultures, restore our lands, and empower future generations. Join us to learn about the potential of big data ecosystems and Indigenous governance of AI in 2023 and beyond.
 
 - date: "2023-07-07"
-  speaker: "PreciseDx"
+  speaker: "Michael Donovan and Gerardo Fernandez (PreciseDx)"
+  affiliation: "Donovan: Co-Founder and CMO, PreciseDx; Vice-chair and Professor, University of Miami Department of Pathology. Fernandez: Co-Founder and CSO, PreciseDx; Adjunct Associate Professor, Icahn School of Medicine at Mount Sinai"
   title: "Morphology Feature Array (MFA) as a Risk Assessment Platform for Breast Cancer Treatment"
+  abstract: |
+    In our presentation we cover the development and practical application of a digital pathology, AI-derived digital laboratory-developed test (LDT) to phenotype, grade, and prognosticate early-stage invasive breast cancer — ultimately to support patient treatment planning and management decisions.
+
+- date: "2023-06-02"
+  speaker: "Oliver Díaz"
+  affiliation: "Associate Professor at the Faculty of Mathematics and Informatics, University of Barcelona; senior researcher at Barcelona Artificial Intelligence in Medicine (BCN-AIM) laboratory"
+  title: "Trustworthy AI and clinical validation in (breast) cancer imaging"
+  abstract: |
+    In recent years, Artificial Intelligence (AI) models have demonstrated remarkable effectiveness in the realms of cancer prevention, detection, and treatment planning. This success can largely be attributed to advancements in deep learning technology.
+
+    Nevertheless, the integration of AI-based algorithms into clinical practices faces limitations, primarily stemming from the opaque nature of these models. This webinar aims to explore strategies aimed at improving the trustworthiness of AI models in clinical practice, such as the FUTURE-AI principles.
+  stein_photo: /wp-content/uploads/2024/06/OliverDiaz.png
 
 - date: "2022-12-02"
   speaker: "Adam Yala"
-  affiliation: "UC Berkeley & UCSF"
+  affiliation: "Assistant Professor of Computational Precision Health and EECS, UC Berkeley & UCSF"
   title: "Seeing into the future: Machine learning methods for personalized screening"
+  abstract: |
+    Risk models impact millions of patients every year, guiding current screening and prevention efforts. This talk balances early-detection benefit against overscreening harm, introducing AI tools for risk assessment from imaging and screening policy design — emphasizing approaches robust to data-generation biases with safeguards for clinical deployment. Yala's models demonstrate improvements over current standard care across diverse patient populations, with several already moving into prospective trials.
   stein_photo: /wp-content/uploads/2024/06/AdamYala-scaled-e1719438069919.jpg
   recap_post: /news/affinity-adam-yala-personalized-screening/
