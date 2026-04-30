@@ -20,6 +20,19 @@
 #                            collage. Path under wp-content/uploads/...
 #   recording_url  optional  YouTube video URL for that specific talk.
 #   recap_post     optional  /news/<slug>/ for a written recap.
+#   register_url   optional  Per-meeting Zoom registration URL with a tracking
+#                            tag, so we can see which speaker/month drove each
+#                            registration. Two ways to generate one:
+#                              A. Zoom's Source Tracking (Pro+ plan): edit the
+#                                 recurring meeting → Registration → Source
+#                                 Tracking → Add Source. Zoom emits a URL with
+#                                 a `meeting_source` parameter.
+#                              B. UTM parameter (any plan): append something
+#                                 like `?utm_source=<speaker>-<month>` to the
+#                                 default series URL. Zoom stores the full URL
+#                                 in the registrant CSV export.
+#                            When unset, the page falls back to the default
+#                            series URL (one shared link, no per-source split).
 #
 # To schedule a new meeting: add an entry at the TOP with a future date.
 # When a stein photo arrives: drop the file in wp-content/uploads/YYYY/MM/

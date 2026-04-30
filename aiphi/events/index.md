@@ -8,6 +8,7 @@ description: "AI PHI events — monthly Affinity Group meetings on AI in cancer 
 {% assign upcoming_meetings = site.data.affinity_meetings | where_exp: "m", "m.date >= now_date" | sort: "date" %}
 {% assign past_meetings = site.data.affinity_meetings | where_exp: "m", "m.date < now_date" | sort: "date" | reverse %}
 {% assign stein_meetings = past_meetings | where_exp: "m", "m.stein_photo" %}
+{% assign default_register_url = "https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg" %}
 
 <section class="section">
 <div class="container" markdown="1" style="max-width: 820px;">
@@ -55,7 +56,8 @@ To suggest a speaker for the Affinity Group, contact [johnshep@hawaii.edu](mailt
 
 {% if next.abstract %}{{ next.abstract }}{% endif %}
 
-[Register for this Event →](https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg){: .btn .btn-primary style="margin-top: 0.5rem;"}
+{% assign next_register_url = next.register_url | default: default_register_url %}
+<a href="{{ next_register_url }}" class="btn btn-primary" style="margin-top: 0.5rem;">Register for this Event →</a>
 
 *Register once to attend this and any future Affinity Group meeting — Zoom emails you the join link and reminders automatically.*
 

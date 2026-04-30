@@ -5,6 +5,12 @@ description: "AI Precision Health Institute at the University of Hawaiʻi Cancer
 og_image: /wp-content/uploads/2019/06/uhcc-moonshine-summit-group.jpg
 ---
 
+{%- assign now_date = site.time | date: "%Y-%m-%d" -%}
+{%- assign upcoming_meetings = site.data.affinity_meetings | where_exp: "m", "m.date >= now_date" | sort: "date" -%}
+{%- assign next_meeting = upcoming_meetings[0] -%}
+{%- assign default_register_url = "https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg" -%}
+{%- assign next_register_url = next_meeting.register_url | default: default_register_url -%}
+
 <section class="hero">
 <div class="hero__bg" style="background-image: url('{{ site.baseurl }}/wp-content/uploads/2019/06/uhcc-moonshine-summit-group.jpg');" aria-hidden="true"></div>
 <div class="container">
@@ -48,7 +54,7 @@ AI PHI develops and validates AI models for cancer risk, detection, and interven
 
 A talk on how deep learning can improve radiation-therapy planning efficiency through federated prediction — addressing data scarcity while preserving privacy across institutions.
 
-[Register for this Event →](https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg){: .btn .btn-primary style="margin-top: 0.5rem;"}
+[Register for this Event →]({{ next_register_url }}){: .btn .btn-primary style="margin-top: 0.5rem;"}
 [All upcoming events →]({{ site.baseurl }}/aiphi/events/){: .btn .btn-outline-primary style="margin-top: 0.5rem;"}
 
 *Register once to attend this and any future AI PHI Affinity Group meeting — Zoom emails you the join link automatically.*
