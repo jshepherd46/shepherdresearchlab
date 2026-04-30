@@ -27,10 +27,16 @@
 #                                 recurring meeting → Registration → Source
 #                                 Tracking → Add Source. Zoom emits a URL with
 #                                 a `meeting_source` parameter.
-#                              B. UTM parameter (any plan): append something
-#                                 like `?utm_source=<speaker>-<month>` to the
-#                                 default series URL. Zoom stores the full URL
-#                                 in the registrant CSV export.
+#                              B. UTM parameter (any plan): append
+#                                 `?utm_source=<lastname>-<month>-<year>` to
+#                                 the default series URL. Zoom stores the full
+#                                 URL in the registrant CSV export, so you can
+#                                 group by `utm_source` to see per-source counts.
+#                                 We use Option B for this site — see the
+#                                 Yading Yuan May 2026 entry as the worked
+#                                 example. Slug convention: lowercase last
+#                                 name + month abbreviation or full + 4-digit
+#                                 year, hyphen-separated (e.g. `yuan-may-2026`).
 #                            When unset, the page falls back to the default
 #                            series URL (one shared link, no per-source split).
 #
@@ -51,6 +57,7 @@
 
     Results using scale-attention network (SA-Net) across three predictive tasks demonstrate that FedKBP+ is highly effective, efficient and robust, indicating significant potential as a federated learning platform for radiation therapy.
   image: /wp-content/uploads/2026/05/yading-yuan-talk.png
+  register_url: "https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg?utm_source=yuan-may-2026"
 
 # ===== Past =====
 
