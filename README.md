@@ -70,6 +70,71 @@ Edit the `nav:` list in `_config.yml`.
 ### Publications
 The Python pipeline owns `_data/publications.yaml`. Don't hand-edit unless tombstoning a misattribution. See `AGENT.md` for the workflow.
 
+## Site management and contribution workflow
+
+The site is the lab's public face, so changes should go through review before they ship. The default flow for everyone — researchers, students, and admins alike — is **branch → pull request → admin review → merge**. Direct commits to `main` should be reserved for very small fixes by admins (typo, broken link, etc.).
+
+### Who's who
+
+- **Site administrators** — currently **John Shepherd** and **Thomas Wolfgruber**. They have write access to `main` and approve merges. Day-to-day editorial decisions (what content goes up, what gets corrected) flow through them.
+- **Contributors** — anyone in the research group with a GitHub account who wants to update content or fix something. Contributors get write access to branches but not direct write to `main`.
+- **Publications pipeline** — automated, runs monthly via GitHub Actions and opens its own PR (`📚 New publications — tags need review`). Reviewing those tag-classification PRs is also an admin job. See `AGENT.md`.
+
+### Contribution flow (researchers + students)
+
+1. **Open an issue first** (optional but recommended for non-trivial changes) so the change is visible to the group and won't conflict with someone else's edits.
+
+2. **Create a branch** off `main`. Pick a short, descriptive name:
+   - News post: `news/google-workshop-recap`
+   - Study update: `studies/tanita-eligibility-fix`
+   - AI PHI page edit: `aiphi/add-june-speaker`
+   - Bug fix: `fix/broken-link-services-page`
+
+3. **Make your edits.** Most content lives in obvious places — see [How to update content](#how-to-update-content) above. Common edits:
+   - News post → `_posts/YYYY-MM-DD-slug.md`
+   - Study card → `_data/studies.yml`
+   - Team member → `_data/team.yml`
+   - Page copy → the page's `index.md` (e.g., `aiphi/index.md`, `services/index.md`)
+
+4. **Preview locally** before opening the PR (`bundle exec jekyll serve`, then visit `http://localhost:4000/shepherdresearchlab/`). GitHub Pages does **not** build feature branches automatically, so the PR diff is what reviewers see.
+
+5. **Open a pull request** against `main`. Write a one-line summary of the change. Tag a site administrator (`@jshepherd46`, `@thomas-wolfgruber` — or whoever the admin GitHub handles are) for review.
+
+6. **Wait for review.** An administrator either approves and merges, or requests changes. Once merged, GitHub Pages rebuilds within about 30 seconds and the change goes live.
+
+### For administrators: enforcing this with branch protection
+
+The workflow above is conventional but only **enforced** if branch protection is configured. To require PR + review on every change to `main`:
+
+1. Repo → **Settings → Branches → Branch protection rules → Add rule** (or "Add classic branch protection rule")
+2. Pattern: `main`
+3. Enable:
+   - **Require a pull request before merging**
+   - **Require approvals: 1**
+   - **Dismiss stale pull request approvals when new commits are pushed** (recommended)
+   - **Do not allow bypassing the above settings** (recommended; otherwise admins can override)
+
+Without these rules, anyone with write access can still push directly. The rules are what make the workflow mandatory.
+
+### Optional: a `CODEOWNERS` file for automatic reviewer assignment
+
+If you want a specific person (or people) automatically requested for review based on which paths change, add `.github/CODEOWNERS`. Example:
+
+```
+# Default reviewer for everything
+*                              @jshepherd46
+
+# Publications pipeline changes
+scripts/                       @jshepherd46
+_data/publications.yaml        @jshepherd46
+.github/workflows/             @jshepherd46
+
+# Studies recruitment data
+_data/studies.yml              @jshepherd46 @thomas-wolfgruber
+```
+
+Pair this with the branch-protection rule **Require review from Code Owners** to enforce.
+
 ## Local development
 
 ```bash
