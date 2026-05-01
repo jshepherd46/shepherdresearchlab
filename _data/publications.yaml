@@ -1,3 +1,39 @@
+- key: valdez-2026-ethnic
+  title: 'Ethnic Mixture and Body Mass Index as Modifiers of Breast Cancer Risk among
+    Native Hawaiian Women: Insights from the Multiethnic Cohort'
+  authors: Valdez D, Abe JV, Bohmann P, Bogumil D, Wilkens LR, Marchand LL, Haiman
+    CA, Shepherd JA, Maskarinec G
+  year: 2026
+  journal: Cancer Epidemiology Biomarkers & Prevention
+  volume: '35'
+  issue: '4'
+  pages: 597-603
+  doi: 10.1158/1055-9965.epi-25-1101
+  abstract: 'BACKGROUND: Native Hawaiian (NH) women experience high breast cancer
+    incidence and mortality. Although obesity is a known risk factor, the role of
+    ethnic mixture, defined as self-reported combinations of racial or ethnic backgrounds,
+    remains understudied. This population-based study examined whether breast cancer
+    risk varies by ethnic mixture among NH women and whether these associations differ
+    across body mass index (BMI) categories. METHODS: We analyzed data from 7,700
+    NH women in the Multieth...'
+  openalex_id: W7127949499
+  oa_type: article
+  source_url: https://doi.org/10.1158/1055-9965.epi-25-1101
+  tags:
+  - health-equity
+  - risk-modeling
+  - body-composition
+  - metabolic-health
+  - impact
+  added: '2026-05-01'
+  notes: AUTO-TAGGED (medium confidence) - please review
+  tag_confidence: medium
+  tag_reasoning: This paper examines breast cancer risk among Native Hawaiian women
+    in the Multiethnic Cohort, analyzing ethnic mixture and BMI as modifiers, which
+    aligns with health equity, risk modeling, body composition/metabolic health themes,
+    and potentially the IMPACT cooperative agreement given Shepherd authorship and
+    MEC data.
+
 - key: prado-2025-methodological
   title: 'Methodological standards for body composition—an expert-endorsed guide for
     research and clinical applications: levels, models, and terminology'
@@ -387,7 +423,7 @@
     composition measurements.
 
 - key: rfp-2025-abstract
-  title: 'Prevalence of mammographically dense breasts in Guam'
+  title: Prevalence of mammographically dense breasts in Guam
   authors: Evangelista RFP, Dulana L, Teria R, Jin SB, Paras G, Grino R, Shepherd
     J, Badowski G
   year: 2025
@@ -396,9 +432,9 @@
   issue: 8_Supplement_1
   pages: '1029'
   doi: 10.1158/1538-7445.am2025-1029
-  abstract: 'Background: Breast cancer is the most diagnosed cancer among
-    women in Guam. Mammographic breast density is a critical factor in assessing breast
-    cancer risk and the effectiveness of screening. Guam’s female population is diverse,
+  abstract: 'Background: Breast cancer is the most diagnosed cancer among women in
+    Guam. Mammographic breast density is a critical factor in assessing breast cancer
+    risk and the effectiveness of screening. Guam’s female population is diverse,
     comprising CHamoru (37.3%), Filipino (26.3%), Mixed (9.5%), White (7.1%), Chuukese
     (7%), and other Pacific Islander and Asian ethnicities. Understanding breast density
     patterns among these groups is essential for developing tailored public health
@@ -1608,13 +1644,12 @@
   issue: ''
   pages: ''
   doi: 10.21203/rs.3.rs-4251510/v1
-  abstract: Accurate assessment of body composition is essential
-    for evaluating the risk of chronic disease. Access to medical imaging methods
-    is limited due to practical and ethical constraints. 3D body shape, which can
-    be obtained using smartphones, correlates strongly with body composition. However,
-    large-scale datasets containing 3D body shapes with paired anthropometric and
-    metabolic traits are scarce. Here, we present a novel method that fits a 3D body
-    mesh to a dual-energy X-r...
+  abstract: Accurate assessment of body composition is essential for evaluating the
+    risk of chronic disease. Access to medical imaging methods is limited due to practical
+    and ethical constraints. 3D body shape, which can be obtained using smartphones,
+    correlates strongly with body composition. However, large-scale datasets containing
+    3D body shapes with paired anthropometric and metabolic traits are scarce. Here,
+    we present a novel method that fits a 3D body mesh to a dual-energy X-r...
   openalex_id: W4395080120
   source_url: http://dx.doi.org/10.21203/rs.3.rs-4251510/v1
   tags:
@@ -3815,13 +3850,13 @@
   issue: ''
   pages: ''
   doi: 10.2196/preprints.49529
-  abstract: BACKGROUND Artificial intelligence (AI) large language
-    models (LLMs) such as ChatGPT have demonstrated the ability to pass standardized
-    exams. These models are not trained for a specific task, but instead trained to
-    predict sequences of text from large corpora of documents sourced from the internet.
-    It has been shown that even models trained on this general task can pass exams
-    in a variety of domain-specific fields, including the United States Medical Licensing
-    Examination. ...
+  abstract: BACKGROUND Artificial intelligence (AI) large language models (LLMs) such
+    as ChatGPT have demonstrated the ability to pass standardized exams. These models
+    are not trained for a specific task, but instead trained to predict sequences
+    of text from large corpora of documents sourced from the internet. It has been
+    shown that even models trained on this general task can pass exams in a variety
+    of domain-specific fields, including the United States Medical Licensing Examination.
+    ...
   openalex_id: W4379159860
   source_url: http://dx.doi.org/10.2196/preprints.49529
   tags:
@@ -4818,6 +4853,41 @@
     with relevant tags for body composition methods, DXA comparison, metabolic health
     outcomes, and health equity considerations across diverse populations.
   exclude: true
+
+- key: lesser-2022-habitual
+  title: Habitual Phytoestrogen Intake Is Associated with Breast Composition in Girls
+    at 2 Years after Menarche Onset
+  authors: Lesser C, Mericq V, Reyes M, Garmendia ML, Shepherd JA, Michels KB, Corvalán
+    C, Pereira A
+  year: 2022
+  journal: Cancer Epidemiology Biomarkers & Prevention
+  volume: '31'
+  issue: '7'
+  pages: 1334-1340
+  doi: 10.1158/1055-9965.epi-22-0016
+  abstract: 'BACKGROUND: High phytoestrogen intake during adolescence is associated
+    with a reduced risk of breast cancer. Breast density (BD) is a strong predictor
+    of breast cancer and can be considered an early marker. We aim to assess the association
+    between the mean habitual intake of isoflavones, lignans, and total phytoestrogens
+    intake during puberty until 2 years after menarche onset and absolute fibroglandular
+    volume (AFGV) and percentage of fibroglandular volume (%FGV) in Hispanic girls
+    at the end of...'
+  openalex_id: W4224994955
+  oa_type: article
+  source_url: https://doi.org/10.1158/1055-9965.epi-22-0016
+  tags:
+  - breast-density
+  - body-composition
+  - risk-modeling
+  - ibdw
+  added: '2026-05-01'
+  notes: AUTO-TAGGED (high confidence) - please review
+  tag_confidence: high
+  tag_reasoning: This paper examines phytoestrogen intake associations with fibroglandular
+    volume (breast composition/density measures) in adolescent Hispanic girls, directly
+    relating to breast density as a cancer risk marker, with Shepherd as a co-author
+    suggesting involvement in breast composition measurement methodology consistent
+    with IBDW work.
 
 - key: cousminer-2021-genomewide
   title: Genome-wide association study implicates novel loci and reveals candidate
@@ -17795,8 +17865,8 @@
     research areas, imaging modalities, or study cohorts listed in the available tags.
 
 - key: shepherd-1993-lttitlegtthinfilm
-  title: Thin-film NaI(Tl) scintillators for high-resolution large-area
-    imaging of soft x rays&lt;/title&gt;'
+  title: Thin-film NaI(Tl) scintillators for high-resolution large-area imaging of
+    soft x rays&lt;/title&gt;'
   authors: Shepherd J, Sobottka S, Williams MB
   year: 1993
   journal: Proceedings of SPIE, the International Society for Optical Engineering/Proceedings
@@ -17826,8 +17896,8 @@
     study tag.
 
 - key: williams-1993-lttitlegtproperties
-  title: Properties of 100-mm x 100-mm triple stacks of microchannel
-    plates used in a sealed detector for x-ray crystallography&lt;/title&gt;'
+  title: Properties of 100-mm x 100-mm triple stacks of microchannel plates used in
+    a sealed detector for x-ray crystallography&lt;/title&gt;'
   authors: Williams MB, Sobottka S, Shepherd J
   year: 1993
   journal: Proceedings of SPIE, the International Society for Optical Engineering/Proceedings
