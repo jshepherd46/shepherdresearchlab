@@ -1,14 +1,16 @@
 <!-- NEWSLETTER BAND -->
-<!-- TODO (Phase 3): replace the form action URL + hidden u/id params with John's
-     Mailchimp embed values. Format: https://<datacenter>.list-manage.com/subscribe/post?u=<USER>&id=<LIST> -->
+<!-- Mailchimp embedded signup form for the SRL audience.
+     Audience ID 9fe54583c5 on us19 datacenter, account
+     shepherdresearchlab. Distinct from the IBDW audience used by
+     breastdensityworkshop.org. -->
 <section class="newsletter-band" style="background: var(--primary); color: white; padding: 3rem 0;">
   <div class="container" style="text-align: center; max-width: 640px;">
     <h2 style="color: white; margin-bottom: 0.5rem;">Stay in the loop</h2>
     <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">New publications, study announcements, and research updates — occasional, no spam.</p>
-    <form action="https://YOUR_MAILCHIMP_DATACENTER.list-manage.com/subscribe/post?u=YOUR_MAILCHIMP_USER_ID&amp;id=YOUR_MAILCHIMP_LIST_ID" method="POST" target="_blank" class="mailing-list-form" style="display: flex; gap: 0.75rem; max-width: 480px; margin: 0 auto;">
+    <form action="https://shepherdresearchlab.us19.list-manage.com/subscribe/post?u=9148bea16d5e7d0e1d3d49f25&amp;id=9fe54583c5&amp;f_id=001eb2e6f0" method="POST" target="_blank" novalidate class="mailing-list-form" style="display: flex; gap: 0.75rem; max-width: 480px; margin: 0 auto;">
       <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex: 1; padding: 0.75rem 1rem; border-radius: var(--radius); border: 0; font: inherit; min-width: 0;">
       <!-- Honeypot — Mailchimp convention; do not remove -->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_YOUR_MAILCHIMP_USER_ID_YOUR_MAILCHIMP_LIST_ID" tabindex="-1" value=""></div>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9148bea16d5e7d0e1d3d49f25_9fe54583c5" tabindex="-1" value=""></div>
       <button type="submit" class="btn" style="background: white; color: var(--primary); border-color: white;">Subscribe</button>
     </form>
   </div>
