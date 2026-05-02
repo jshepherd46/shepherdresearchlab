@@ -20,10 +20,10 @@ Migration from WordPress is essentially complete. Remaining work is DNS cutover 
 - ✅ **AI Precision Health Institute** (Phase 7) — `aiphi.` → `/aiphi/` branded sub-section
 - ✅ **HIPIMR** (Phase 8) — `hipimr.` → `/hipimr/` branded sub-section
 - ✅ **Shape Up! Studies** (Phase 9) — `shapeup.` → `/shapeup/` branded sub-section
-- 🟡 **Forms** — Mixed status:
-  - **Mailchimp newsletter** is paused (the existing IBDW Mailchimp account is over its 2,000-contact free-tier limit, sending disabled until the list is cleaned up). Footer form still uses placeholder values.
-  - **Formspree forms** (`/contact/`, `/join-a-study/`, `/shapeup/3do-bodycomp-analyzer/`) still use `YOUR_FORMSPREE_*` placeholders.
-  - **AI PHI affinity-meeting registration** *is* live via Zoom recurring-meeting registration — a single URL covers the entire monthly series.
+- ✅ **Forms** — All wired:
+  - **Mailchimp newsletter** — footer form posts to the SRL audience (`9fe54583c5`, us19). Distinct from the IBDW audience used by the workshop site.
+  - **Formspree forms** — `/contact/` → `xpqbwyde`, `/join-a-study/` → `xvzlgwae`, `/shapeup/3do-bodycomp-analyzer/` → `xdabkwzg`. Separate IDs so submissions land in per-intent inboxes.
+  - **AI PHI affinity-meeting registration** is live via Zoom recurring-meeting registration — a single URL covers the entire monthly series.
 - 🟡 **3DO Body Composition Analyzer** — `/shapeup/3do-bodycomp-analyzer/` shows abstract + access-request form; the live interactive tool needs a new host (HuggingFace Space, Streamlit, internal UH server, …)
 - 🟡 **Oversize sample mesh PLYs** — two ~60 MB reference files at `/shapeup/mesh-preparation/` still link to the legacy WP host; need git-lfs / external storage before WP shutdown
 - ⬜ **DNS cutover** — `shepherdresearchlab.org` still points at the WordPress host; once cut over, all four WP subdomains can be retired
@@ -145,10 +145,10 @@ bundle exec jekyll serve
 
 ## Services wired into the site
 
-- **Newsletter** — Mailchimp embed (paused; the IBDW Mailchimp account that owns the audience is over its 2,000-contact free-tier limit and needs list cleanup before sending resumes)
-- **Contact form** — Formspree (placeholder)
-- **Join A Study form** — Formspree (placeholder; pre-fills via the `Learn More` buttons on each study card)
-- **3DO Analyzer access request** — Formspree (placeholder)
+- **Newsletter** — Mailchimp embed in the footer; SRL audience `9fe54583c5` on us19 (account `shepherdresearchlab`)
+- **Contact form** — Formspree `xpqbwyde`
+- **Join A Study form** — Formspree `xvzlgwae` (pre-fills via the `Learn More` buttons on each study card)
+- **3DO Analyzer access request** — Formspree `xdabkwzg`
 - **Appointment booking** — [Koalendar](https://koalendar.com/) iframe at `/make-an-appointment/` (live; embed `koalendar.com/e/dxa-bodpod`)
 - **AI PHI affinity-meeting registration** — Zoom recurring-meeting registration (live; single URL `https://hawaii.zoom.us/meeting/register/IXHDo0CjTPaKD12Om3ALMg` covers the whole monthly series, with Zoom emailing the join link and reminders to each registrant)
 
