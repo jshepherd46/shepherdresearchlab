@@ -53,6 +53,7 @@ defaults:
 # Jekyll picks THAT up normally. Its sources live here but aren't pages.
 exclude:
   - README.md
+  - TODO.md
   - Gemfile
   - Gemfile.lock
   - AGENT.md
