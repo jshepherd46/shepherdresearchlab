@@ -30,8 +30,7 @@ Honolulu, HI 96813
 </div>
 <div>
 <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">Send a message</h2>
-<!-- TODO (Phase 3): replace YOUR_FORMSPREE_CONTACT_ID with the real form ID from formspree.io -->
-<form action="https://formspree.io/f/YOUR_FORMSPREE_CONTACT_ID" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+<form action="https://formspree.io/f/xpqbwyde" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
 <label style="display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;">Your name
 <input type="text" name="name" required style="padding: 0.65rem 0.9rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit;">
 </label>
